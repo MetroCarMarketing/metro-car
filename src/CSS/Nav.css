@@ -1,0 +1,39 @@
+nav{
+    position: sticky;
+    top: 0;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2em;
+    display: flex;
+    gap: 3em;
+    align-items: center;
+    background-color: transparent;
+    height: 6em;
+}
+
+.nav__logo--wrapper{
+    width: 6em;
+    cursor: pointer;
+}
+
+.nav__list{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 70%;
+}
+
+.nav__list > button{
+    color: white;
+    text-transform: inherit;
+    height: 100%;
+    flex: .2;
+    font-size: 1.1em;
+    font-weight: 600;
+}
+
+.nav__list > button:hover{
+color: var(--main-color);
+background-color: #e1ba660e;
+}

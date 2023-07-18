@@ -1,0 +1,29 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  font-family: 'Playfair Display', serif;
+}
+
+body{
+--main-color: #e1ba66;
+--secondary-color: #202020;
+background-color: #202020;
+}
+
+img{
+  width: 100%;
+}
+
+.car__background{
+  display: flex;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: -1;
+  opacity: .85;
+}
