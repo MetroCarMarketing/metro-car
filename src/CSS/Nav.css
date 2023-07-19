@@ -6,8 +6,10 @@ nav > h1,
 }
 
 nav{
-    position: sticky;
+    position: fixed;
     top: 0;
+    right: 0;
+    left: 0;
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 2em;
@@ -61,9 +63,4 @@ background-color: #e1ba660e;
     right: 0;
     height: 6em;
     overflow: hidden;
-}
-
-.nav__car > img{
-    object-position: top;
-    height: 100vh;
 }

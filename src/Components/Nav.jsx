@@ -27,7 +27,6 @@ const Nav = ({ content }) => {
 
         <Button onClick={() => navigateTo("/nosotros")}>{content.navLink5}</Button>
       </div>
-        {/* <img src={car} className="nav__car" alt=""  /> */}
       <figure className="nav__car">
         <img src={car} alt=""  />
       </figure>
