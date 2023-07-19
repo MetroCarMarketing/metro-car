@@ -5,6 +5,7 @@ import Home from "./Pages/Home";
 import Nav from "./Components/Nav";
 import car from "./Assets/metrocar regency.jpg";
 import Translation from "./Translation/Languages.json";
+import { Button } from "@mui/material";
 
 function App() {
   const [language, setLanguage] = useState("spanish");
@@ -22,10 +23,22 @@ function App() {
     <div className="App">
       <Router>
         <Nav content={content} />
-        <select value={language} onChange={(e) => setLanguage(e.target.value)}>
-          <option value="spanish">SPA</option>
-          <option value="english">ENG</option>
-        </select>
+        {/* <select
+          id="language"
+          value={language}
+          onChange={(e) => setLanguage(e.target.value)}
+        >
+          <option value="spanish">🇪🇸</option>
+          <option value="english">🇺🇸</option>
+        </select> */}
+        <div className="translate__btns">
+          <Button onClick={() => setLanguage("spanish")}>
+            <figure>🇪🇸</figure>
+          </Button>
+          <Button onClick={() => setLanguage("english")}>
+            <figure>🇺🇸</figure>
+          </Button>
+        </div>
         <Routes>
           <Route path="/" element={<Home content={content} />} />
         </Routes>
