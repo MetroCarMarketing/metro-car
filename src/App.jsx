@@ -32,11 +32,17 @@ function App() {
           <option value="english">🇺🇸</option>
         </select> */}
         <div className="translate__btns">
-          <Button onClick={() => setLanguage("spanish")}>
+          <Button className="translate__btns--phone" onClick={() => setLanguage("spanish")}>
             🇪🇸
           </Button>
-          <Button onClick={() => setLanguage("english")}>
+          <Button className="translate__btns--phone" onClick={() => setLanguage("english")}>
             🇺🇸
+          </Button>
+          <Button onClick={() => setLanguage("spanish")}>
+            Español
+          </Button>
+          <Button onClick={() => setLanguage("english")}>
+            English
           </Button>
         </div>
         <Routes>
