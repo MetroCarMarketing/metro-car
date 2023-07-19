@@ -3,8 +3,6 @@ import React from "react";
 import icon from "../Assets/1.png";
 
 const Landing = ({ content }) => {
-
-
   return (
     <section id="Landing">
       <div className="container landing__container">
@@ -21,11 +19,14 @@ const Landing = ({ content }) => {
             </Button>
             <div className="landing__text">
               <h2>{content.landingTitle}</h2>
-              <p>
-              {content.landingText}
-              </p>
+              <p>{content.landingText}</p>
             </div>
           </div>
+        </div>
+      </div>
+      <div className="scroll__container">
+        <div className="scroll__icon">
+          <div className="scroll__dot"></div>
         </div>
       </div>
     </section>

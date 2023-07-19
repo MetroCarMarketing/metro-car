@@ -2,13 +2,12 @@
   min-height: calc(100vh - 6em);
 }
 
-.landing__container{
+.landing__container {
   padding-top: 6em;
   min-height: 100vh;
   display: flex;
   align-items: center;
 }
-
 
 /* header {
   color: white;
@@ -31,7 +30,7 @@
 }
 
 .landing__text--container > .landing__btn {
-  padding: 0.3em .8em;
+  padding: 0.3em 0.8em;
   font-size: 3.5em;
   display: flex;
   align-items: center;
@@ -47,7 +46,7 @@
   width: 2.8em;
 }
 .landing__btn--icon {
-  filter: brightness(.9);
+  filter: brightness(0.9);
   transition: all 300ms ease;
 }
 
@@ -55,7 +54,7 @@
   background-color: rgba(186, 153, 82, 0.597);
 }
 .landing__text--container > button:hover .landing__btn--icon {
-  filter: brightness(.2);
+  filter: brightness(0.2);
 }
 
 .landing__text {
@@ -67,8 +66,47 @@
 }
 
 .landing__text > p {
-    margin-top: 1em;
-    text-align: justify;
-    font-size: 1.2em;
+  margin-top: 1em;
+  text-align: justify;
+  font-size: 1.2em;
   line-height: 1.8em;
+}
+
+.scroll__container {
+  position: absolute;
+  bottom: 4em;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 1.1em;
+}
+
+.scroll__dot,
+.scroll__icon {
+  border: 0.2em solid var(--main-color);
+  border-radius: 1em;
+}
+
+.scroll__icon {
+  position: relative;
+  width: 1.25em;
+  height: 2.5em;
+}
+
+.scroll__dot {
+  width: 0.2em;
+  height: 0.2em;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation: scrolldown 1200ms ease infinite alternate-reverse;
+}
+
+@keyframes scrolldown {
+  0% {
+    transform: translate(-50%, .6em);
+  }
+  100% {
+    transform: translate(-50%, -.8em);
+  }
 }
