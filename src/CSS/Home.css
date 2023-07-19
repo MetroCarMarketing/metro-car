@@ -52,7 +52,7 @@
   background-color: rgba(186, 153, 82, 0.597);
 }
 .landing__text--container > button:hover .landing__btn--icon {
-  filter: brightness(0);
+  filter: brightness(.2);
 }
 
 .landing__text {

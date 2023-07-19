@@ -33,10 +33,10 @@ function App() {
         </select> */}
         <div className="translate__btns">
           <Button onClick={() => setLanguage("spanish")}>
-            <figure>🇪🇸</figure>
+            🇪🇸
           </Button>
           <Button onClick={() => setLanguage("english")}>
-            <figure>🇺🇸</figure>
+            🇺🇸
           </Button>
         </div>
         <Routes>
