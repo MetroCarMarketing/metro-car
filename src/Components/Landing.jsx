@@ -7,9 +7,9 @@ const Landing = () => {
     <section id="Landing">
       <div className="container landing__container">
         <div className="row landing__row">
-          <header>
+          {/* <header>
             <h1>MetroCar Regency</h1>
-          </header>
+          </header> */}
           <div className="landing__text--container">
             <Button className="landing__btn">
               Reserva ya tu <br /> transporte

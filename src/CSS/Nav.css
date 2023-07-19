@@ -16,6 +16,11 @@ nav{
     cursor: pointer;
 }
 
+nav > h1{
+    color: var(--main-color);
+    text-align: center;
+}
+
 .nav__list{
     flex: 1;
     display: flex;

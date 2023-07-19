@@ -8,6 +8,8 @@
 }
 
 body{
+/* --main-color: #19437D;
+--secondary-color: #202020; */
 --main-color: #e1ba66;
 --secondary-color: #202020;
 background-color: #202020;
@@ -44,5 +46,5 @@ img{
   right: 0;
   z-index: -1;
   opacity: .85;
-  filter: brightness(.65);
+  filter: brightness(1);
 }
