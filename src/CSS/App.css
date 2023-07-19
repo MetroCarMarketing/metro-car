@@ -8,11 +8,17 @@
 }
 
 body{
-/* --main-color: #19437D;
---secondary-color: #202020; */
 --main-color: #e1ba66;
 --secondary-color: #202020;
 background-color: #202020;
+height: 200vh;
+}
+
+select{
+  z-index: 10;
+  position: fixed;
+  top: 3em;
+  left: 3em;
 }
 
 .container{
@@ -37,7 +43,6 @@ img{
 }
 
 .car__background{
-  display: flex;
   position: fixed;
   align-items: normal;
   top: 0;
@@ -45,6 +50,5 @@ img{
   left: 0;
   right: 0;
   z-index: -1;
-  opacity: .85;
   filter: brightness(1);
 }

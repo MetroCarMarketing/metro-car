@@ -3,9 +3,9 @@ import "../CSS/Home.css";
 
 import Landing from "../Components/Landing";
 
-const Home = () => {
+const Home = ({ content }) => {
   return (
-<Landing/>
+<Landing content={content} />
   );
 };
 

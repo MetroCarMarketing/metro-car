@@ -1,3 +1,10 @@
+nav,
+.nav__logo--wrapper,
+nav > h1,
+.nav__list{
+    z-index: 10;
+}
+
 nav{
     position: sticky;
     top: 0;
@@ -9,6 +16,7 @@ nav{
     align-items: center;
     background-color: transparent;
     height: 6em;
+    overflow: hidden;
 }
 
 .nav__logo--wrapper{
@@ -17,6 +25,7 @@ nav{
 }
 
 nav > h1{
+    font-size: 1.25em;
     color: var(--main-color);
     text-align: center;
 }
@@ -26,7 +35,7 @@ nav > h1{
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    height: 70%;
+    height: 80%;
 }
 
 .nav__list > button{
@@ -34,11 +43,27 @@ nav > h1{
     text-transform: inherit;
     height: 100%;
     flex: .2;
-    font-size: 1.1em;
+    font-size: 1.3em;
     font-weight: 600;
 }
 
 .nav__list > button:hover{
 color: var(--main-color);
 background-color: #e1ba660e;
+}
+
+.nav__car{
+    align-items: flex-start;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 6em;
+    overflow: hidden;
+}
+
+.nav__car > img{
+    object-position: top;
+    height: 100vh;
 }
