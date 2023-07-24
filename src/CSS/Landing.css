@@ -99,12 +99,12 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  animation: scrolldown 1200ms ease infinite alternate-reverse;
+  animation: scrolldown 2.5s ease infinite alternate-reverse;
 }
 
 @keyframes scrolldown {
   0% {
-    transform: translate(-50%, .6em);
+    transform: translate(-50%, .5em);
   }
   100% {
     transform: translate(-50%, -.8em);

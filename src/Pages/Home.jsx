@@ -1,6 +1,4 @@
 import React from "react";
-import "../CSS/Home.css";
-
 import Landing from "../Components/Landing";
 
 const Home = ({ content }) => {

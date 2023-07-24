@@ -1,6 +1,7 @@
 import { Button } from "@mui/material";
 import React from "react";
 import icon from "../Assets/1.png";
+import '../CSS/Landing.css'
 
 const Landing = ({ content }) => {
   return (
