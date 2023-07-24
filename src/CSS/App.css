@@ -8,6 +8,15 @@
 }
 
 body{
+  scrollbar-width: 0;
+  -ms-overflow-style: none;
+}
+
+body::-webkit-scrollbar{
+  display: none;
+}
+
+body{
 --main-color: #e1ba66;
 --secondary-color: #202020;
 background-color: #202020;
