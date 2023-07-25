@@ -47,6 +47,7 @@ function App() {
         </div>
         <Routes>
           <Route path="/" element={<Home content={content} />} />
+          <Route path="/flota" element={<Home content={content} />} />
         </Routes>
         <figure className="car__background">
           <img src={car} alt="" />
