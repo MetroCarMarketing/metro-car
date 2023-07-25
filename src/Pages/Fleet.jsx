@@ -1,10 +1,9 @@
 import React from 'react';
+import Carrousel from '../Components/Carrousel';
 
-const Fleet = () => {
+const Fleet = ({ content }) => {
     return (
-        <div>
-            
-        </div>
+        <Carrousel />
     );
 }
 

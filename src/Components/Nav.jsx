@@ -21,7 +21,7 @@ const Nav = ({ content }) => {
 
         <Button onClick={() => navigateTo("/cobertura")}>{content.navLink2}</Button>
 
-        <Button onClick={() => navigateTo("/flota")}>{content.navLink3}</Button>
+        <Button onClick={() => navigateTo("/fleet")}>{content.navLink3}</Button>
 
         <Button onClick={() => navigateTo("/contactenos")}>{content.navLink4}</Button>
 
