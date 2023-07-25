@@ -6,7 +6,7 @@ import '../CSS/Landing.css'
 const Landing = ({ content }) => {
   return (
     <section id="Landing">
-      <div className="container landing__container">
+      <div className="container landing__container top__container">
         <div className="row landing__row">
           {/* <header>
             <h1>MetroCar Regency</h1>

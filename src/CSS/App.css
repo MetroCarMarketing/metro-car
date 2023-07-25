@@ -34,6 +34,12 @@ select{
   height: 100%;
 }
 
+.top__container {
+  padding-top: 6em;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+}
 .row{
   display: flex;
   flex-direction: column;

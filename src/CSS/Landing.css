@@ -2,12 +2,7 @@
   min-height: calc(100vh - 6em);
 }
 
-.landing__container {
-  padding-top: 6em;
-  min-height: 100vh;
-  display: flex;
-  align-items: center;
-}
+
 
 /* header {
   color: white;
