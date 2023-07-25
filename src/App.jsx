@@ -6,6 +6,7 @@ import Nav from "./Components/Nav";
 import car from "./Assets/metrocar regency.jpg";
 import Translation from "./Translation/Languages.json";
 import { Button } from "@mui/material";
+import Fleet from "./Pages/Fleet";
 
 function App() {
   const [language, setLanguage] = useState("spanish");
@@ -47,7 +48,7 @@ function App() {
         </div>
         <Routes>
           <Route path="/" element={<Home content={content} />} />
-          <Route path="/flota" element={<Home content={content} />} />
+          <Route path="/flota" element={<Fleet content={content} />} />
         </Routes>
         <figure className="car__background">
           <img src={car} alt="" />
