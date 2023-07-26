@@ -1,0 +1,16 @@
+#Carrousel{
+color: white;
+display: flex;
+align-items: center;
+}
+
+.carrousel-container{
+    width: 500px;
+    height: 300px;
+    margin: 10em auto;
+}
+
+#Carrousel > .MuiSvgIcon-root{
+    font-size: 5em;
+    cursor: pointer;
+}
