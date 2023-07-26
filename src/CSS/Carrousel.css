@@ -3,6 +3,7 @@ color: white;
 display: flex;
 align-items: center;
 justify-content: flex-end;
+gap: 1em;
 }
 
 .fleet__container{
@@ -27,8 +28,8 @@ justify-content: flex-end;
 
 #Carrousel > figure {
     width: 50%;
-    aspect-ratio: 16 / 9 !important;
 }
 #Carrousel > figure > img {
-    object-fit: contain;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
 }

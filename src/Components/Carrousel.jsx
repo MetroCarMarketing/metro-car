@@ -10,15 +10,16 @@ const Carrousel = ({ slides }) => {
     const firstSlide = currentIndex === 0;
     const newIndex = firstSlide ? slides.length - 1 : currentIndex - 1;
     setCurrentIndex(newIndex);
-  };
+};
 
-  const goToNext = () => {
+const goToNext = () => {
     const lastSlide = currentIndex === slides.length - 1;
     const newIndex = lastSlide ? 0 : currentIndex + 1;
     setCurrentIndex(newIndex);
 };
 
 // const autoNext = () => {
+//     const firstSlide = currentIndex === 0;
 //     const lastSlide = currentIndex === slides.length - 1;
 //     const newIndex = lastSlide ? 0 : currentIndex + 1;
 //     setCurrentIndex(newIndex);
