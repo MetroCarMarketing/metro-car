@@ -4,10 +4,8 @@ display: flex;
 align-items: center;
 }
 
-.carrousel-container{
-    width: fit-content;
-    height: 300px;
-    margin: 10em auto;
+.fleet__container{
+   justify-content: center;
 }
 
 #Carrousel > button {
@@ -17,6 +15,10 @@ align-items: center;
     font-size: 5em;
 }
 
-#Carrousel > div {
-    
+#Carrousel > figure {
+    width: 50%;
+    aspect-ratio: 16 / 9 !important;
+}
+#Carrousel > figure > img {
+    object-fit: contain;
 }

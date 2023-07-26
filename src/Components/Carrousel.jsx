@@ -19,17 +19,17 @@ const Carrousel = ({ slides }) => {
   };
 
   return (
-    <div id="Carrousel">
-      <IconButton>
-        <ChevronLeft onClick={goToPrevious} />
-      </IconButton>
-      <div>
-        <img src={slides[currentIndex]} alt="" />
-      </div>
-      <IconButton>
-        <ChevronRight onClick={goToNext} />
-      </IconButton>
-    </div>
+        <div id="Carrousel">
+          <IconButton>
+            <ChevronLeft onClick={goToPrevious} />
+          </IconButton>
+          <figure>
+            <img src={slides[currentIndex]} alt="" />
+          </figure>
+          <IconButton>
+            <ChevronRight onClick={goToNext} />
+          </IconButton>
+        </div>
   );
 };
 
