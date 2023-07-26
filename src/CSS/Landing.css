@@ -31,7 +31,8 @@
   align-items: center;
   gap: 0.3em;
   line-height: 1.3em;
-  background-color: rgba(158, 158, 158, 0.15);
+  background-color: var(--main-hover);
+  /* background-color: rgba(158, 158, 158, 0.15); */
   text-transform: inherit;
   text-align: left;
   color: white;
@@ -47,6 +48,7 @@
 
 .landing__text--container > button:hover {
   background-color: rgba(186, 153, 82, 0.597);
+  background-color: var(--main-alter);
 }
 .landing__text--container > button:hover .landing__btn--icon {
   filter: brightness(0.2);

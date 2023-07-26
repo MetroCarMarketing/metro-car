@@ -16,18 +16,26 @@ const Carrousel = ({ slides }) => {
     const lastSlide = currentIndex === slides.length - 1;
     const newIndex = lastSlide ? 0 : currentIndex + 1;
     setCurrentIndex(newIndex);
-  };
+};
+
+// const autoNext = () => {
+//     const lastSlide = currentIndex === slides.length - 1;
+//     const newIndex = lastSlide ? 0 : currentIndex + 1;
+//     setCurrentIndex(newIndex);
+// }
+
+// setInterval(autoNext, 3500)
 
   return (
         <div id="Carrousel">
-          <IconButton>
-            <ChevronLeft onClick={goToPrevious} />
+          <IconButton onClick={goToPrevious}>
+            <ChevronLeft  />
           </IconButton>
           <figure>
             <img src={slides[currentIndex]} alt="" />
           </figure>
-          <IconButton>
-            <ChevronRight onClick={goToNext} />
+          <IconButton onClick={goToNext}>
+            <ChevronRight  />
           </IconButton>
         </div>
   );

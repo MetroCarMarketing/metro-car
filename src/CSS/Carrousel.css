@@ -13,10 +13,12 @@ justify-content: flex-end;
     color: white;
     font-size: 5em;
     padding: 0 !important;
+    transition: all 350ms ease;
 }
 
 #Carrousel > button:hover {
-    background-color: var(--main-color);
+    color: var(--main-color);
+    background-color: var(--main-hover);
 }
 
 #Carrousel > button > .MuiSvgIcon-root{
