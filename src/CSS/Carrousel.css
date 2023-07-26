@@ -2,6 +2,7 @@
 color: white;
 display: flex;
 align-items: center;
+justify-content: flex-end;
 }
 
 .fleet__container{
@@ -10,9 +11,16 @@ align-items: center;
 
 #Carrousel > button {
     color: white;
-}
-#Carrousel > button > .MuiSvgIcon-root{
     font-size: 5em;
+    padding: 0 !important;
+}
+
+#Carrousel > button:hover {
+    background-color: var(--main-color);
+}
+
+#Carrousel > button > .MuiSvgIcon-root{
+    font-size: 1em;
 }
 
 #Carrousel > figure {
