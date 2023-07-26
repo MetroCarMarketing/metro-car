@@ -1,8 +1,8 @@
-const slides = [
-    {img: 'https://molberda.github.io/metrocar-pics/assets/1.JPG', title: 'test' },
-    {img: 'https://molberda.github.io/metrocar-pics/assets/2.JPG', title: 'test2' },
-    {img: 'https://molberda.github.io/metrocar-pics/assets/3.JPG', title: 'test3' },
-    {img: 'https://molberda.github.io/metrocar-pics/assets/4.JPG', title: 'test4' },
-]
+import img from './Assets/1.png'
+import img2 from './Assets/2.png'
+import img3 from './Assets/3.png'
+import img4 from './Assets/4.png'
+
+const slides = [img, img2, img3, img4]
 
 export default slides 

@@ -5,12 +5,18 @@ align-items: center;
 }
 
 .carrousel-container{
-    width: 500px;
+    width: fit-content;
     height: 300px;
     margin: 10em auto;
 }
 
-#Carrousel > .MuiSvgIcon-root{
+#Carrousel > button {
+    color: white;
+}
+#Carrousel > button > .MuiSvgIcon-root{
     font-size: 5em;
-    cursor: pointer;
+}
+
+#Carrousel > div {
+    
 }
