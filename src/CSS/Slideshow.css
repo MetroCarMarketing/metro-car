@@ -1,0 +1,12 @@
+.fleet__row{
+    overflow: hidden;
+}
+
+.arrows > button{
+    color: white;
+    padding: 0 !important;
+    font-size: 3em ;
+}
+.arrows > button > .MuiSvgIcon-root{
+    font-size: 1em;
+}

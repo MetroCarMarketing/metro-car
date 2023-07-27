@@ -1,13 +1,15 @@
 import React from "react";
-import Carrousel from "../Components/Carrousel";
-import slides from "../Slides";
-import "../CSS/Carrousel.css";
+// import slides from "../Slides";
+// import "../CSS/Carrousel.css";
+import Slideshow from "../Components/Slideshow";
+import '../CSS/Slideshow.css'
+
 
 const Fleet = ({ content }) => {
   return (
     <div className="container fleet__container top__container">
       <div className="row fleet__row">
-        <Carrousel slides={slides} />
+        <Slideshow />
       </div>
     </div>
   );
