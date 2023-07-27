@@ -9,11 +9,28 @@ import { IconButton } from "@mui/material";
 
 const Slideshow = () => {
   return (
-    <div>
-      <div>
-        <a href="https://google.com">
-          <img src={img1} alt="" />
-        </a>
+    <div className="slideshow__container">
+      <div className="slideshow">
+        <div className="slide">
+          <a href="https://google.com">
+            <img src={img1} alt="" />
+          </a>
+        </div>
+        <div className="slide">
+          <a href="https://google.com">
+            <img src={img2} alt="" />
+          </a>
+        </div>
+        <div className="slide">
+          <a href="https://google.com">
+            <img src={img3} alt="" />
+          </a>
+        </div>
+        <div className="slide">
+          <a href="https://google.com">
+            <img src={img4} alt="" />
+          </a>
+        </div>
       </div>
 
       <div className="arrows">
