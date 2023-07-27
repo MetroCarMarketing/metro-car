@@ -22,7 +22,8 @@ body{
   --main-hover: #4164e10e; */
 --main-color: #e1ba66;
 --main-alter: #ba995298;
---main-hover: #e1ba660e;
+/* --main-hover: #e1ba660e; */
+--main-hover: #4234163f;
 --secondary-color: #202020;
 height: 300vh;
 }
