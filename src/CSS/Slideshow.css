@@ -1,7 +1,14 @@
 .fleet__row{
+    align-items: center;
+}
+
+#slideshow{
     overflow: hidden;
-    padding: 0;
     max-width: 800px;
+}
+
+.slideshow__container{
+    position: relative;
 }
 
 .slideshow{
@@ -22,11 +29,24 @@
     object-fit: cover;
 }
 
-.arrows > button{
-    color: white;
-    padding: 0 !important;
-    font-size: 3em ;
+.arrows{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0 .5em;
+    z-index: 7;
 }
+
+.arrows > button{
+    color: var(--main-color);
+    padding: 0 !important;
+    font-size: 5em ;
+    background-color: var(--main-alter);
+}
+
 .arrows > button > .MuiSvgIcon-root{
     font-size: 1em;
 }
