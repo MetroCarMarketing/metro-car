@@ -23,7 +23,7 @@
     z-index: 5;
 }
 
-.slide > a > img{
+.slide  > img{
     vertical-align: top;
     aspect-ratio: 16 / 9;
     object-fit: cover;
@@ -45,6 +45,12 @@
     padding: 0 !important;
     font-size: 5em ;
     background-color: var(--main-alter);
+    transition: all 300ms ease;
+}
+
+.arrows > button:hover{
+    background-color: var(--main-color);
+    color: white;
 }
 
 .arrows > button > .MuiSvgIcon-root{

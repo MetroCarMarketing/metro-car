@@ -12,24 +12,16 @@ const Slideshow = () => {
     <div className="slideshow__container">
       <div className="slideshow">
         <div className="slide">
-          <a href="https://google.com">
-            <img src={img1} alt="" />
-          </a>
+          <img src={img1} alt="" />
         </div>
         <div className="slide">
-          <a href="https://google.com">
-            <img src={img2} alt="" />
-          </a>
+          <img src={img2} alt="" />
         </div>
         <div className="slide">
-          <a href="https://google.com">
-            <img src={img3} alt="" />
-          </a>
+          <img src={img3} alt="" />
         </div>
         <div className="slide">
-          <a href="https://google.com">
-            <img src={img4} alt="" />
-          </a>
+          <img src={img4} alt="" />
         </div>
       </div>
 
