@@ -24,14 +24,6 @@ function App() {
     <div className="App">
       <Router>
         <Nav content={content} />
-        {/* <select
-          id="language"
-          value={language}
-          onChange={(e) => setLanguage(e.target.value)}
-        >
-          <option value="spanish">🇪🇸</option>
-          <option value="english">🇺🇸</option>
-        </select> */}
         <div className="translate__btns">
           <Button className="translate__btns--phone" onClick={() => setLanguage("spanish")}>
             🇪🇸
