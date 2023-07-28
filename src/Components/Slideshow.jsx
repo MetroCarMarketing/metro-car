@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import "../CSS/Slideshow.css";
 import img1 from "../Assets/Carrousel/carr1.JPG";
 import img2 from "../Assets/Carrousel/carr2.JPG";
@@ -8,9 +8,8 @@ import { ChevronLeft, ChevronRight } from "@mui/icons-material";
 import { Button } from "@mui/material";
 
 const Slideshow = () => {
-
-    // https://youtu.be/q00ldTrywLU?t=5265
   const slideshow = useRef(null);
+  const [autoplayPaused, setAutoplayPaused] = useState(false);
 
   const next = () => {
     if (slideshow.current.children.length > 0) {
@@ -27,7 +26,7 @@ const Slideshow = () => {
 
         slideshow.current.appendChild(firstSlide);
 
-        slideshow.current.removeEventListener('transitionend', transition)
+        slideshow.current.removeEventListener("transitionend", transition);
       };
 
       slideshow.current.addEventListener("transitionend", transition);
@@ -53,19 +52,24 @@ const Slideshow = () => {
   };
 
   useEffect(() => {
-    const interval = setInterval(() => {
-      next()
-    }, 5000)
+    let timer
+    if(autoplayPaused === false) {
+      timer = setInterval(next, 3000);
+    }
+    return () => clearInterval(timer)
+  }, [autoplayPaused])
 
-    slideshow.current.addEventListener('mouseenter', () => {
-      clearInterval(interval)
-    })
-
-  }, [])
+  const pause = () => {
+    setAutoplayPaused(true)
+  }
+  
+  const play = () => {
+    setAutoplayPaused(false)
+  }
 
   return (
     <div className="slideshow__container">
-      <div ref={slideshow} className="slideshow">
+      <div ref={slideshow} onMouseEnter={pause} onMouseLeave={play} className="slideshow">
         <div className="slide">
           <img src={img1} alt="" />
         </div>
