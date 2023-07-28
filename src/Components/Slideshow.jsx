@@ -68,8 +68,8 @@ const Slideshow = () => {
   }
 
   return (
-    <div className="slideshow__container">
-      <div ref={slideshow} onMouseEnter={pause} onMouseLeave={play} className="slideshow">
+    <div onMouseEnter={pause} onMouseLeave={play} className="slideshow__container">
+      <div ref={slideshow} className="slideshow">
         <div className="slide">
           <img src={img1} alt="" />
         </div>
