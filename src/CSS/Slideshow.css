@@ -39,6 +39,7 @@
     justify-content: space-between;
     width: 100%;
     z-index: 7;
+    pointer-events: none;
 }
 
 .arrows > button{
@@ -47,6 +48,7 @@
     font-size: 5em ;
     height: 100% !important;
     transition: all 300ms ease;
+    pointer-events: all;
 }
 
 .arrows > button:hover{
@@ -65,5 +67,3 @@
 .right > path{
     filter: drop-shadow( -2px 0 0 #000) ;
 }
-
-https://youtu.be/q00ldTrywLU?t=3638

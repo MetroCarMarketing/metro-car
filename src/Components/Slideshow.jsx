@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import React, { useEffect, useRef } from "react";
 import "../CSS/Slideshow.css";
 import img1 from "../Assets/Carrousel/carr1.JPG";
 import img2 from "../Assets/Carrousel/carr2.JPG";
@@ -8,48 +8,60 @@ import { ChevronLeft, ChevronRight } from "@mui/icons-material";
 import { Button } from "@mui/material";
 
 const Slideshow = () => {
+
+    // https://youtu.be/q00ldTrywLU?t=5265
   const slideshow = useRef(null);
-  const currentSlide = slideshow.current;
 
   const next = () => {
-    if (currentSlide.children.length > 0) {
-      const firstSlide = currentSlide.children[0];
+    if (slideshow.current.children.length > 0) {
+      const firstSlide = slideshow.current.children[0];
 
-      currentSlide.style.transition = `all .8s ease`;
+      slideshow.current.style.transition = `all .8s ease`;
 
-      currentSlide.style.transform = `translateX(-100%)`;
+      slideshow.current.style.transform = `translateX(-100%)`;
 
       const transition = () => {
-        currentSlide.style.transition = `none`;
+        slideshow.current.style.transition = `none`;
 
-        currentSlide.style.transform = `translateX(0)`;
+        slideshow.current.style.transform = `translateX(0)`;
 
-        currentSlide.appendChild(firstSlide);
+        slideshow.current.appendChild(firstSlide);
 
-        currentSlide.removeEventListener('transitionend', transition)
+        slideshow.current.removeEventListener('transitionend', transition)
       };
 
-      currentSlide.addEventListener("transitionend", transition);
+      slideshow.current.addEventListener("transitionend", transition);
     }
   };
 
   const prev = () => {
-    if (currentSlide.children.length > 0) {
-      const lastIndex = currentSlide.children.length - 1;
-      const lastSlide = currentSlide.children[lastIndex];
+    if (slideshow.current.children.length > 0) {
+      const lastIndex = slideshow.current.children.length - 1;
+      const lastSlide = slideshow.current.children[lastIndex];
 
-      currentSlide.insertBefore(lastSlide, currentSlide.firstChild);
+      slideshow.current.insertBefore(lastSlide, slideshow.current.firstChild);
 
-      currentSlide.style.transition = "none";
-      currentSlide.style.transform = "translateX(-100%)";
+      slideshow.current.style.transition = "none";
+      slideshow.current.style.transform = "translateX(-100%)";
 
       setTimeout(() => {
-        currentSlide.style.transition = "all .8s ease";
+        slideshow.current.style.transition = "all .8s ease";
 
-        currentSlide.style.transform = `translateX(0)`;
+        slideshow.current.style.transform = `translateX(0)`;
       }, 30);
     }
   };
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      next()
+    }, 5000)
+
+    slideshow.current.addEventListener('mouseenter', () => {
+      clearInterval(interval)
+    })
+
+  }, [])
 
   return (
     <div className="slideshow__container">
