@@ -8,6 +8,7 @@ import Translation from "./Translation/Languages.json";
 import { Button } from "@mui/material";
 import Fleet from "./Pages/Fleet";
 import Coverage from "./Pages/Coverage";
+import { cars } from "./Cars";
 
 function App() {
   const [language, setLanguage] = useState("spanish");
@@ -42,7 +43,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home translation={translation} />} />
           <Route path="/fleet" element={<Fleet translation={translation} />} />
-          <Route path="/coverage" element={<Coverage translation={translation} />} />
+          <Route path="/coverage" element={<Coverage translation={translation} cars={cars} />} />
         </Routes>
         <figure className="car__background">
           <img src={car} alt="" />
