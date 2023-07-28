@@ -1,10 +1,10 @@
 import React from 'react';
 import Carmap from '../Components/Carmap';
 
-const Coverage = ({ content }) => {
+const Coverage = ({ translation }) => {
     return (
         <div>
-            <Carmap content={content}/>
+            <Carmap translation={translation}/>
         </div>
     );
 }

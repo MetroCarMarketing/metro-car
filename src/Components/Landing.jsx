@@ -3,7 +3,7 @@ import React from "react";
 import icon from "../Assets/1.png";
 import '../CSS/Landing.css'
 
-const Landing = ({ content }) => {
+const Landing = ({ translation }) => {
   return (
     <section id="Landing">
       <div className="container landing__container top__container">
@@ -13,14 +13,14 @@ const Landing = ({ content }) => {
           </header> */}
           <div className="landing__text--container">
             <Button className="landing__btn">
-              {content.landingBtn}
+              {translation.landingBtn}
               <figure>
                 <img src={icon} alt="" className="landing__btn--icon" />
               </figure>
             </Button>
             <div className="landing__text">
-              <h2>{content.landingTitle}</h2>
-              <p>{content.landingText}</p>
+              <h2>{translation.landingTitle}</h2>
+              <p>{translation.landingText}</p>
             </div>
           </div>
         </div>

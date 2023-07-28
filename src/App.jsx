@@ -11,20 +11,20 @@ import Coverage from "./Pages/Coverage";
 
 function App() {
   const [language, setLanguage] = useState("spanish");
-  const [content, setContent] = useState({});
+  const [translation, setTranslation] = useState({});
 
   useEffect(() => {
     if (language === "english") {
-      setContent(Translation.english);
+      setTranslation(Translation.english);
     } else if (language === "spanish") {
-      setContent(Translation.spanish);
+      setTranslation(Translation.spanish);
     }
   }, [language]);
 
   return (
     <div className="App">
       <Router>
-        <Nav content={content} />
+        <Nav translation={translation} />
         <div className="translate__btns">
           <Button className="translate__btns--phone" onClick={() => setLanguage("spanish")}>
             🇪🇸
@@ -40,9 +40,9 @@ function App() {
           </Button>
         </div>
         <Routes>
-          <Route path="/" element={<Home content={content} />} />
-          <Route path="/fleet" element={<Fleet content={content} />} />
-          <Route path="/coverage" element={<Coverage content={content} />} />
+          <Route path="/" element={<Home translation={translation} />} />
+          <Route path="/fleet" element={<Fleet translation={translation} />} />
+          <Route path="/coverage" element={<Coverage translation={translation} />} />
         </Routes>
         <figure className="car__background">
           <img src={car} alt="" />

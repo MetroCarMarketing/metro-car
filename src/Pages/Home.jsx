@@ -1,8 +1,8 @@
 import React from "react";
 import Landing from "../Components/Landing";
 
-const Home = ({ content }) => {
-  return <Landing content={content} />;
+const Home = ({ translation }) => {
+  return <Landing translation={translation} />;
 };
 
 export default Home;

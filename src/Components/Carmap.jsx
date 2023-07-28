@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Carmap = () => {
+const Carmap = ({ translation }) => {
     return (
         <div>
             
