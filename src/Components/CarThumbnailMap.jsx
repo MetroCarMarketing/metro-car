@@ -1,9 +1,14 @@
 import React from "react";
 import "../CSS/CarThumbnailMap.css";
+import { useNavigate } from "react-router-dom";
 
-const CarThumbnailMap = ({ translation, item }) => {
+const CarThumbnailMap = ({ item }) => {
+
+  const navigateTo = useNavigate();
+
+
   return (
-    <div className="thumbnail">
+    <div className="thumbnail" onClick={() => navigateTo(`/fleet/${item.id}`)}>
       <figure className="thumbnail__wrapper">
         <img src={item.imageMain} alt="" />
       </figure>
