@@ -14,7 +14,7 @@ const CarThumbnailMap = ({ item }) => {
       </figure>
       <div className="thumbnail__info">
         <h2 className="thumbnail__title">{item.name}</h2>
-        <h3 className="thumbnail__price">
+        <h3 className="thumbnail__price number">
           $ {item.price} <span>/ h</span>
         </h3>
       </div>

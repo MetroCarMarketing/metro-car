@@ -110,3 +110,7 @@ img {
 .translate__btns--phone {
   display: none !important;
 }
+
+.number{
+    font-family: "Noto Serif Vithkuqi", serif !important;
+}

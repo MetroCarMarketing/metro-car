@@ -7,7 +7,8 @@
     "navLink5": "About Us",
     "landingBtn": "Order Your Ride Now",
     "landingTitle": "VIP Vehicles",
-    "landingText": "Chauffeured vehicles for easy transport, rent by hour or day. Tours in Colombia and several other countries; available 24 hours a day in cities such as Bogota, Cartagena, Medellin and their surroundings. Also called Remises, the experience we offer is executed through the latest luxury vehicles y bilingual and professional chauffeurs cetified by 'PAX' the official training partner for the National Limousine Association. "
+    "landingText": "Chauffeured vehicles for easy transport, rent by hour or day. Tours in Colombia and several other countries; available 24 hours a day in cities such as Bogota, Cartagena, Medellin and their surroundings. Also called Remises, the experience we offer is executed through the latest luxury vehicles y bilingual and professional chauffeurs cetified by 'PAX' the official training partner for the National Limousine Association. ",
+    "pradoDescription": ""
   },
   "spanish": {
     "navLink1": "Servicios",
@@ -17,6 +18,7 @@
     "navLink5": "Nosotros",
     "landingBtn": "Reserva ya tu transporte",
     "landingTitle": "Vehiculos VIP",
-    "landingText": "Vehículos con conductor para traslados, por horas o días, y toures en Colombia y otros 29 países; Disponibles las 24 horas del día en ciudades como Bogotá, Cartagena, Medellín y sus alrededores. También llamados Remises, la experiencia que ofrecemos se ejecuta con vehículos de lujo último modelo y conductores bilingües, profesionales, y certificados por 'PAX' el Official Training Partner de la National Limousine Association. "
+    "landingText": "Vehículos con conductor para traslados, por horas o días, y toures en Colombia y otros 29 países; Disponibles las 24 horas del día en ciudades como Bogotá, Cartagena, Medellín y sus alrededores. También llamados Remises, la experiencia que ofrecemos se ejecuta con vehículos de lujo último modelo y conductores bilingües, profesionales, y certificados por 'PAX' el Official Training Partner de la National Limousine Association. ",
+    "pradoDescription": ""
   }
 }

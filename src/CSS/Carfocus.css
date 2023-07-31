@@ -1,0 +1,24 @@
+.carfocus__container{
+    background-color: white;
+}
+
+.carfocus__row{
+    flex-direction: row;
+    gap: 2em;
+}
+
+.carfocus__imgs--wrapper{
+    flex: .55;
+}
+
+.carfocus__mainImage{
+    border: 2px dotted red;
+    width: 100%;
+}
+
+
+
+.carfocus__text--wrapper{
+    flex: .65;
+}
+
