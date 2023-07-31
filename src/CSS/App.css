@@ -1,41 +1,41 @@
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   text-decoration: none;
   list-style: none;
-  font-family: 'Playfair Display', serif !important;
+  font-family: "Playfair Display", serif !important;
 }
 
-body{
+body {
   scrollbar-width: 0;
   -ms-overflow-style: none;
 }
 
-body::-webkit-scrollbar{
+body::-webkit-scrollbar {
   display: none;
 }
 
-body{
+body {
   /* --main-color: #3b66d3;
   --main-alter: #3f5dd698;
   --main-hover: #4164e10e; */
---main-color: #e1ba66;
---main-alter: #ba995298;
-/* --main-hover: #e1ba660e; */
---main-hover: #4234163f;
---secondary-color: #202020;
-height: 300vh;
+  --main-color: #e1ba66;
+  --main-alter: #ba995298;
+  /* --main-hover: #e1ba660e; */
+  --main-hover: #4234163f;
+  --secondary-color: #202020;
+  height: 300vh;
 }
 
-select{
+select {
   z-index: 10;
   position: fixed;
   top: 3em;
   left: 3em;
 }
 
-.container{
+.container {
   height: 100%;
 }
 
@@ -45,7 +45,7 @@ select{
   display: flex;
   align-items: center;
 }
-.row{
+.row {
   display: flex;
   flex-direction: column;
   padding: 0 2em;
@@ -54,16 +54,16 @@ select{
   margin: 0 auto;
 }
 
-figure{
+figure {
   display: flex;
   align-items: center;
 }
 
-img{
+img {
   width: 100%;
 }
 
-.car__background{
+.car__background {
   position: fixed;
   align-items: normal;
   top: 0;
@@ -74,7 +74,7 @@ img{
   filter: brightness(1);
 }
 
-.translate__btns{
+.translate__btns {
   display: flex;
   align-items: center;
   position: fixed;
@@ -86,27 +86,27 @@ img{
   z-index: 10;
 }
 
-.translate__btns--phone{
+.translate__btns--phone {
   color: white;
-  width: .5em;
+  width: 0.5em;
   font-size: 1.5em;
   padding-top: 0 !important;
 }
 
-.translate__btns > button{
+.translate__btns > button {
   color: white;
   height: 80%;
-  padding: .3em 2em;
+  padding: 0.3em 2em;
   font-size: 1.3em;
   font-weight: 600;
   text-transform: inherit !important;
 }
 
-.translate__btns > button:hover{
+.translate__btns > button:hover {
   background-color: var(--main-alter);
   /* background-color: #ba995298; */
 }
 
-.translate__btns--phone{
+.translate__btns--phone {
   display: none !important;
 }

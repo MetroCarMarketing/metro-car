@@ -1,70 +1,70 @@
-.fleet__row{
-    align-items: center;
+.fleet__row {
+  align-items: center;
 }
 
-#slideshow{
-    overflow: hidden;
-    max-width: 800px;
-    border-radius: 1em;
+#slideshow {
+  overflow: hidden;
+  max-width: 800px;
+  border-radius: 1em;
 }
 
-.slideshow__container{
-    position: relative;
+.slideshow__container {
+  position: relative;
 }
 
-.slideshow{
-    display: flex;
-    flex-wrap: nowrap;
+.slideshow {
+  display: flex;
+  flex-wrap: nowrap;
 }
 
-.slide{
-    min-width: 100%;
-    overflow: hidden;
-    transition: all 300ms ease;
-    z-index: 5;
-    pointer-events: all;
+.slide {
+  min-width: 100%;
+  overflow: hidden;
+  transition: all 300ms ease;
+  z-index: 5;
+  pointer-events: all;
 }
 
-.slide  > img{
-    vertical-align: top;
-    aspect-ratio: 16 / 9;
-    object-fit: cover;
+.slide > img {
+  vertical-align: top;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
 }
 
-.arrows{
-    position: absolute;
-    height: 100%;
-    top: 50%;
-    transform: translateY(-50%);
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    z-index: 7;
-    pointer-events: none;
+.arrows {
+  position: absolute;
+  height: 100%;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  z-index: 7;
+  pointer-events: none;
 }
 
-.arrows > button{
-    color: var(--main-color);
-    padding: 0 !important;
-    font-size: 5em ;
-    height: 100% !important;
-    transition: all 300ms ease;
-    pointer-events: all;
+.arrows > button {
+  color: var(--main-color);
+  padding: 0 !important;
+  font-size: 5em;
+  height: 100% !important;
+  transition: all 300ms ease;
+  pointer-events: all;
 }
 
-.arrows > button:hover{
-    background-color: var(--main-hover);
-    color: white;
+.arrows > button:hover {
+  background-color: var(--main-hover);
+  color: white;
 }
 
-.arrows > button > .MuiSvgIcon-root{
-    font-size: 1em;
+.arrows > button > .MuiSvgIcon-root {
+  font-size: 1em;
 }
 
-.left > path{
-    filter: drop-shadow( 2px 0 0 #000) ;
+.left > path {
+  filter: drop-shadow(2px 0 0 #000);
 }
 
-.right > path{
-    filter: drop-shadow( -2px 0 0 #000) ;
+.right > path {
+  filter: drop-shadow(-2px 0 0 #000);
 }
