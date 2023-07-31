@@ -1,0 +1,20 @@
+.thumbnail__map{
+    display: flex;
+    gap: 2em;
+}
+
+.thumbnail{
+    color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+.thumbnail__wrapper{
+    width: 20em;
+    overflow: hidden;
+    border-radius: 1em;
+}
+
+.thumbnail__wrapper > img{
+    scale: 1.2;
+}

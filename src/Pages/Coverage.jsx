@@ -1,14 +1,20 @@
 import React from "react";
-import Carmap from "../Components/Carmap";
+import CarThumbnailMap from "../Components/CarThumbnailMap";
 
 const Coverage = ({ translation, cars }) => {
   return (
     <div className="container top__container">
       <div className="row">
         <div className="coverage">
-          {cars.map((item) => (
-            <Carmap translation={translation} cars={cars} item={item} />
-          ))}
+          <div className="thumbnail__map">
+            {cars.map((item) => (
+              <CarThumbnailMap
+                translation={translation}
+                cars={cars}
+                item={item}
+              />
+            ))}
+          </div>
         </div>
       </div>
     </div>
