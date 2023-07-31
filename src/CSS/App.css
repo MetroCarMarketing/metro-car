@@ -107,4 +107,6 @@ img{
   /* background-color: #ba995298; */
 }
 
-.translate__btns--phone{display: none !important;}
+.translate__btns--phone{
+  display: none !important;
+}

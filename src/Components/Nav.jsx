@@ -17,15 +17,15 @@ const Nav = ({ translation }) => {
       </figure>
       <h1>Metro-Car <br /> Regency</h1>
       <div className="nav__list">
-        <Button onClick={() => navigateTo("/servicios")}>{translation.navLink1}</Button>
+        <Button onClick={() => navigateTo("/services")}>{translation.navLink1}</Button>
 
-        <Button onClick={() => navigateTo("/cobertura")}>{translation.navLink2}</Button>
+        <Button onClick={() => navigateTo("/coverage")}>{translation.navLink2}</Button>
 
         <Button onClick={() => navigateTo("/fleet")}>{translation.navLink3}</Button>
 
-        <Button onClick={() => navigateTo("/contactenos")}>{translation.navLink4}</Button>
+        <Button onClick={() => navigateTo("/contactus")}>{translation.navLink4}</Button>
 
-        <Button onClick={() => navigateTo("/nosotros")}>{translation.navLink5}</Button>
+        <Button onClick={() => navigateTo("/aboutus")}>{translation.navLink5}</Button>
       </div>
       <figure className="nav__car">
         <img src={car} alt=""  />

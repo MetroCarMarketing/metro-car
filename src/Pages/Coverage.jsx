@@ -3,8 +3,12 @@ import Carmap from '../Components/Carmap';
 
 const Coverage = ({ translation, cars }) => {
     return (
-        <div>
-            <Carmap translation={translation} cars={cars}/>
+        <div className="container top__container">
+            <div className="row">
+                <div className='coverage'>
+                    <Carmap translation={translation} cars={cars} />
+                </div>
+            </div>
         </div>
     );
 }
