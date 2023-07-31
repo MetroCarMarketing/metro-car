@@ -9,6 +9,7 @@ import { Button } from "@mui/material";
 import Fleet from "./Pages/Fleet";
 import Coverage from "./Pages/Coverage";
 import { cars } from "./Cars";
+import Carfocus from "./Pages/Carfocus";
 
 function App() {
   const [language, setLanguage] = useState("spanish");
@@ -43,6 +44,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home translation={translation} />} />
           <Route path="/fleet" element={<Fleet translation={translation} />} />
+          <Route path="/fleet/:id" element={<Carfocus translation={translation} cars={cars} />} />
           <Route path="/coverage" element={<Coverage translation={translation} cars={cars} />} />
         </Routes>
         <figure className="car__background">

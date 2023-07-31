@@ -12,7 +12,7 @@ export const cars = [
   },
   {
     id: 2,
-    name: "Prado SUV",
+    name: "Mercedes amg",
     brand: "Toyota",
     description: "description test",
     model: 2019,
