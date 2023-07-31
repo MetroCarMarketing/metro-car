@@ -7,7 +7,12 @@ const CarThumbnailMap = ({ translation, item }) => {
       <figure className="thumbnail__wrapper">
         <img src={item.imageMain} alt="" />
       </figure>
-      <h2 className="thumbnail__title">{item.name}</h2>
+      <div className="thumbnail__info">
+        <h2 className="thumbnail__title">{item.name}</h2>
+        <h3 className="thumbnail__price">
+          $ {item.price} <span>/ h</span>
+        </h3>
+      </div>
     </div>
   );
 };
