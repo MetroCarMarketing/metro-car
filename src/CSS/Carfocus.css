@@ -2,6 +2,14 @@
     background-color: white;
     flex-direction: row;
     gap: 2em;
+    position: relative;
+}
+
+.carfocus__backBtn{
+    position: absolute !important;
+    top: 1em;
+    left: 1em;
+    text-transform: inherit !important;
 }
 
 .carfocus__imgs--wrapper{

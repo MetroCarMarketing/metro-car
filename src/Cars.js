@@ -4,7 +4,7 @@ export const cars = [
     name: "Prado",
     type: 'SUV',
     brand: "Toyota",
-    description: "El Toyota Land Cruiser Prado cuenta con un fuerte carácter y un atractivo y robusto diseño basado en líneas agresivas y estilo compacto de gran elegancia con una mezcla de texturas de forma armónica para brindar un diseño que otorga distinción. Este potente todo terreno se ha reinventado y superado a sí mismo.",
+    description: "The Toyota prado has 1 Diesel Engine and 1 Petrol Engine on offer. The Diesel engine is 4461 cc while the Petrol engine is 3956 cc . It is available with Automatic transmission.Depending upon the variant and fuel type the prado has a mileage of 7.3 to 8.0 kmpl & Ground clearance of prado is 220 mm. The prado is a 8 seater 6 cylinder car and has length of 4,715 mm, width of 1,875 mm and a wheelbase of 2,790 mm.",
     descriptionEsp: "El Toyota Land Cruiser Prado cuenta con un fuerte carácter y un atractivo y robusto diseño basado en líneas agresivas y estilo compacto de gran elegancia con una mezcla de texturas de forma armónica para brindar un diseño que otorga distinción. Este potente todo terreno se ha reinventado y superado a sí mismo.",
     model: 2019,
     price: 68.99,
