@@ -1,8 +1,5 @@
-.carfocus__container{
-    background-color: white;
-}
-
 .carfocus__row{
+    background-color: white;
     flex-direction: row;
     gap: 2em;
 }
@@ -12,7 +9,6 @@
 }
 
 .carfocus__mainImage{
-    border: 2px dotted red;
     width: 100%;
 }
 

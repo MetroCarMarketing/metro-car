@@ -12,6 +12,7 @@ const Coverage = ({ translation, cars }) => {
                 translation={translation}
                 cars={cars}
                 item={item}
+                key={item.id}
               />
             ))}
           </div>

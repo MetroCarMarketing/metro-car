@@ -44,7 +44,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home translation={translation} />} />
           <Route path="/fleet" element={<Fleet translation={translation} />} />
-          <Route path="/fleet/:id" element={<Carfocus translation={translation} cars={cars} />} />
+          <Route path="/fleet/:id" element={<Carfocus cars={cars} language={language} />} />
           <Route path="/coverage" element={<Coverage translation={translation} cars={cars} />} />
         </Routes>
         <figure className="car__background">
