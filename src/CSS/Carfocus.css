@@ -7,9 +7,16 @@
 
 .carfocus__backBtn{
     position: absolute !important;
+    color: black !important;
+    font-size: 1.2em !important;
+    font-weight: 700 !important;
     top: 1em;
     left: 1em;
     text-transform: inherit !important;
+}
+
+.carfocus__backBtn > span > .MuiSvgIcon-root{
+    font-size: 1.5em;
 }
 
 .carfocus__imgs--wrapper{
