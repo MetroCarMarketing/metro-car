@@ -14,13 +14,16 @@
     left: 1em;
     text-transform: inherit !important;
 }
+.carfocus__backBtn:hover{
+    background-color: var(--main-hover) !important;
+}
 
 .carfocus__backBtn > span > .MuiSvgIcon-root{
     font-size: 1.5em;
 }
 
 .carfocus__imgs--wrapper{
-    flex: .55;
+    flex: .65;
 }
 
 .carfocus__mainImage{
@@ -30,6 +33,13 @@
 
 
 .carfocus__text--wrapper{
-    flex: .65;
+    margin-top: 1em;
+    flex: .35;
+}
+
+.carfocus__text--wrapper > p {
+    margin-top: 3em;
+    text-align: justify;
+    line-height: 1.75em;
 }
 
