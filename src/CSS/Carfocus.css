@@ -35,6 +35,12 @@
     width: 100%;
 }
 
+.carfocus__mainImage > img,
+.carfocus__slide > img {
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+}
+
 .carfocus__slideshow{
     display: flex;
     flex-wrap: nowrap;
