@@ -5,7 +5,6 @@ import { Button } from "@mui/material";
 import { ChevronLeft } from "@mui/icons-material";
 
 const Carfocus = ({ cars, language }) => {
-
   const { id } = useParams();
   const car = cars.find((car) => car.id === +id);
 
@@ -13,7 +12,7 @@ const Carfocus = ({ cars, language }) => {
 
   const currentLang = language;
 
-const [displayImage, setDisplayImage] = useState(car.imageMain);
+  const [displayImage, setDisplayImage] = useState(car.imageMain);
 
   return (
     <div className="container top__container carfocus__container">
@@ -41,22 +40,52 @@ const [displayImage, setDisplayImage] = useState(car.imageMain);
           </figure>
           <div className="carfocus__slideshow">
             <figure className="carfocus__slide">
-              <img src={car.imageMain} onClick={() => setDisplayImage(car.imageMain)} alt="" className="carfocus__img" />
+              <img
+                src={car.imageMain}
+                onClick={() => setDisplayImage(car.imageMain)}
+                alt=""
+                className="carfocus__img"
+              />
             </figure>
             <figure className="carfocus__slide">
-              <img src={car.image2} onClick={() => setDisplayImage(car.image2)} alt="" className="carfocus__img" />
+              <img
+                src={car.image2}
+                onClick={() => setDisplayImage(car.image2)}
+                alt=""
+                className="carfocus__img"
+              />
             </figure>
             <figure className="carfocus__slide">
-              <img src={car.image3} onClick={() => setDisplayImage(car.image3)} alt="" className="carfocus__img" />
+              <img
+                src={car.image3}
+                onClick={() => setDisplayImage(car.image3)}
+                alt=""
+                className="carfocus__img"
+              />
             </figure>
             <figure className="carfocus__slide">
-              <img src={car.image4} onClick={() => setDisplayImage(car.image4)} alt="" className="carfocus__img" />
+              <img
+                src={car.image4}
+                onClick={() => setDisplayImage(car.image4)}
+                alt=""
+                className="carfocus__img"
+              />
             </figure>
             <figure className="carfocus__slide">
-              <img src={car.image5} onClick={() => setDisplayImage(car.image5)} alt="" className="carfocus__img" />
+              <img
+                src={car.image5}
+                onClick={() => setDisplayImage(car.image5)}
+                alt=""
+                className="carfocus__img"
+              />
             </figure>
             <figure className="carfocus__slide">
-              <img src={car.image6} onClick={() => setDisplayImage(car.image6)} alt="" className="carfocus__img" />
+              <img
+                src={car.image6}
+                onClick={() => setDisplayImage(car.image6)}
+                alt=""
+                className="carfocus__img"
+              />
             </figure>
           </div>
         </div>
@@ -70,6 +99,11 @@ const [displayImage, setDisplayImage] = useState(car.imageMain);
             <p>{car.description}</p>
           ) : (
             <p>{car.descriptionEsp}</p>
+          )}
+          {currentLang === "english" ? (
+            <Button>Book this Ride!</Button>
+          ) : (
+            <Button>Reserva este vehiculo!</Button>
           )}
         </div>
       </div>

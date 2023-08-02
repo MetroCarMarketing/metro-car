@@ -13,7 +13,7 @@ export const cars = [
     image3: "https://www.autosrodando.com/wp-content/uploads/2023/03/toyota-landcruiser-prado-2024.jpg.webp",
     image4: "https://i0.wp.com/minivanusa.com/wp-content/uploads/2022/07/2024-Toyota-Land-Cruiser-Prado-ernder.jpg?fit=640%2C335&ssl=1",
     image5: "https://www.autopediame.com/storage/images/Toyota/Prado/exr40.jpg",
-    image6: "https://www.elcarrocolombiano.com/wp-content/uploads/2021/08/20212308-TOYOTA-PRADO-2023-RENDER-02PORTADA-750x518.jpgg",
+    image6: "https://yokomotor.com.co/toyota/wp-content/uploads/sites/2/2021/11/ROJO-3.jpg",
   },
   {
     id: 2,

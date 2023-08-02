@@ -54,7 +54,7 @@ const Slideshow = () => {
   useEffect(() => {
     let timer
     if(autoplayPaused === false) {
-      timer = setInterval(next, 3000);
+      timer = setInterval(next, 2000);
     }
     return () => clearInterval(timer)
   }, [autoplayPaused])

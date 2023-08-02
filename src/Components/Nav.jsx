@@ -15,7 +15,7 @@ const Nav = ({ translation }) => {
       <figure onClick={() => navigateTo("/")} className="nav__logo--wrapper">
         <img src={logo} alt="" />
       </figure>
-      <h1>Metro-Car <br /> Regency</h1>
+      <h1>MetroCar</h1>
       <div className="nav__list">
         <Button onClick={() => navigateTo("/services")}>{translation.navLink1}</Button>
 
