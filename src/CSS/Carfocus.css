@@ -1,17 +1,15 @@
 .carfocus__row{
     background-color: rgb(255, 255, 255);
     flex-direction: row;
-    gap: 2em;
-    position: relative;
+    align-items: flex-start;
+    gap: .5em;
 }
 
 .carfocus__backBtn{
-    position: absolute !important;
+    margin-top: 2em !important;
     color: black !important;
     font-size: 1.2em !important;
     font-weight: 700 !important;
-    top: 1em;
-    left: 1em;
     text-transform: inherit !important;
 }
 .carfocus__backBtn:hover{
@@ -31,6 +29,7 @@
 
 .carfocus__imgs--wrapper,
 .carfocus__text--wrapper{
+    font-size: 1.2em;
     padding: 2em 0;
 }
 
@@ -60,9 +59,8 @@
 
 
 .carfocus__text--wrapper{
-    font-size: 1.2em;
     position: relative;
-    margin-top: 1em;
+    margin-left:  1.5em;
     flex: .45;
 }
 
