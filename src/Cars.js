@@ -9,8 +9,8 @@ export const cars = [
     model: 2019,
     price: 68.99,
     imageMain: "https://www.toyota.com.co/wp-content/uploads/2020/08/PLATA-METALICO-14.jpg",
-    image2: "",
-    image3: "",
+    image2: "https://www.toyota.com.co/wp-content/uploads/2020/08/PLATA-METALICO-14.jpg",
+    image3: "https://www.toyota.com.co/wp-content/uploads/2020/08/PLATA-METALICO-14.jpg",
   },
   {
     id: 2,
@@ -22,7 +22,7 @@ export const cars = [
     model: 2019,
     price: 68.99,
     imageMain: "https://www.toyota.com.co/wp-content/uploads/2020/08/PLATA-METALICO-14.jpg",
-    image2: "",
-    image3: "",
+    image2: "https://www.toyota.com.co/wp-content/uploads/2020/08/PLATA-METALICO-14.jpg",
+    image3: "https://www.toyota.com.co/wp-content/uploads/2020/08/PLATA-METALICO-14.jpg",
   },
 ];

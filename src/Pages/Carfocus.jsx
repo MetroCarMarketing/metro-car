@@ -5,12 +5,15 @@ import { Button } from "@mui/material";
 import { ChevronLeft } from "@mui/icons-material";
 
 const Carfocus = ({ cars, language }) => {
+
+  const { id } = useParams();
+  const car = cars.find((car) => car.id === +id);
+
   const navigateto = useNavigate();
 
   const currentLang = language;
 
-  const { id } = useParams();
-  const car = cars.find((car) => car.id === +id);
+
 
   return (
     <div className="container top__container carfocus__container">

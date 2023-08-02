@@ -30,6 +30,17 @@
     width: 100%;
 }
 
+.carfocus__slideshow{
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: scroll;
+    width: 100%;
+}
+
+.carfocus__slide {
+    min-width: calc(100% / 3);
+}
+
 
 
 .carfocus__text--wrapper{
