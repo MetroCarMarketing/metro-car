@@ -79,7 +79,7 @@
     margin-top: 2em;
 }
 
-.carfocus__btn > button {
+.carfocus__btn > a {
     white-space: nowrap;
     font-size: 2em;
     padding: .8em;
@@ -89,7 +89,7 @@
     transition: all 300ms ease;
 }
 
-.carfocus__btn > button:hover {
+.carfocus__btn > a:hover {
     background-color: var(--main-alter);
     color: white;
 }

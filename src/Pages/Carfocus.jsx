@@ -102,11 +102,27 @@ const Carfocus = ({ cars, language }) => {
           )}
           {currentLang === "english" ? (
             <div className="carfocus__btn">
-              <Button>Book this Ride!</Button>
+              <Button
+                target="_blank"
+                rel="noreferrer"
+                href={`https://wa.me/573163402080?text=Hola%20buenas%20tardes%2C%20estoy%20interesado%20en%20adquirir%20informacion%20sobre%20su%20servicio%20de%20transporte%20quiero%20mas%20informacion%20sobre%20${
+                  car.type === "SUV" ? "la" : "el"
+                }%20${car.typeEsp}%20${car.name}%20${car.model}`}
+              >
+                Book this Ride!
+              </Button>
             </div>
           ) : (
             <div className="carfocus__btn">
-              <Button>Reserva este vehiculo!</Button>
+              <Button
+                target="_blank"
+                rel="noreferrer"
+                href={`https://wa.me/573163402080?text=Hola%20buenas%20tardes%2C%20estoy%20interesado%20en%20adquirir%20informacion%20sobre%20su%20servicio%20de%20transporte%20quiero%20mas%20informacion%20sobre%20${
+                  car.type === "SUV" ? "la" : "el"
+                }%20${car.typeEsp}%20${car.name}%20${car.model}`}
+              >
+                Reserva este vehiculo!
+              </Button>
             </div>
           )}
         </div>
