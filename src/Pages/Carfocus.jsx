@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { useNavigate, useParams } from "react-router-dom";
 import "../CSS/Carfocus.css";
 import { Button } from "@mui/material";
@@ -13,7 +13,7 @@ const Carfocus = ({ cars, language }) => {
 
   const currentLang = language;
 
-
+const [displayImage, setDisplayImage] = useState(car.imageMain);
 
   return (
     <div className="container top__container carfocus__container">
@@ -37,23 +37,26 @@ const Carfocus = ({ cars, language }) => {
         )}
         <div className="carfocus__imgs--wrapper">
           <figure className="carfocus__mainImage">
-            <img src={car.imageMain} alt="" />
+            <img src={displayImage} alt="" />
           </figure>
           <div className="carfocus__slideshow">
             <figure className="carfocus__slide">
-              <img src={car.image2} alt="" className="carfocus__img" />
+              <img src={car.imageMain} onClick={() => setDisplayImage(car.imageMain)} alt="" className="carfocus__img" />
             </figure>
             <figure className="carfocus__slide">
-              <img src={car.image3} alt="" className="carfocus__img" />
+              <img src={car.image2} onClick={() => setDisplayImage(car.image2)} alt="" className="carfocus__img" />
             </figure>
             <figure className="carfocus__slide">
-              <img src={car.image3} alt="" className="carfocus__img" />
+              <img src={car.image3} onClick={() => setDisplayImage(car.image3)} alt="" className="carfocus__img" />
             </figure>
             <figure className="carfocus__slide">
-              <img src={car.image3} alt="" className="carfocus__img" />
+              <img src={car.image4} onClick={() => setDisplayImage(car.image4)} alt="" className="carfocus__img" />
             </figure>
             <figure className="carfocus__slide">
-              <img src={car.image3} alt="" className="carfocus__img" />
+              <img src={car.image5} onClick={() => setDisplayImage(car.image5)} alt="" className="carfocus__img" />
+            </figure>
+            <figure className="carfocus__slide">
+              <img src={car.image6} onClick={() => setDisplayImage(car.image6)} alt="" className="carfocus__img" />
             </figure>
           </div>
         </div>

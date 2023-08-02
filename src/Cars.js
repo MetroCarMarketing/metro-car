@@ -9,8 +9,11 @@ export const cars = [
     model: 2019,
     price: 68.99,
     imageMain: "https://www.toyota.com.co/wp-content/uploads/2020/08/PLATA-METALICO-14.jpg",
-    image2: "https://www.toyota.com.co/wp-content/uploads/2020/08/PLATA-METALICO-14.jpg",
+    image2: "https://www.toyotarp.com/images/ImagenesModelo/Prado/lineup/GT5L-8.webp",
     image3: "https://www.toyota.com.co/wp-content/uploads/2020/08/PLATA-METALICO-14.jpg",
+    image4: "https://www.toyota.com.co/wp-content/uploads/2020/08/PLATA-METALICO-14.jpg",
+    image5: "https://www.toyota.com.co/wp-content/uploads/2020/08/PLATA-METALICO-14.jpg",
+    image6: "https://www.toyota.com.co/wp-content/uploads/2020/08/PLATA-METALICO-14.jpg",
   },
   {
     id: 2,
