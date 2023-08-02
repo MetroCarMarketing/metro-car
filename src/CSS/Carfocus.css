@@ -23,7 +23,10 @@
 }
 
 .carfocus__imgs--wrapper{
+    display: flex;
     flex: .55;
+    flex-direction: column;
+    gap: 1em;
 }
 
 .carfocus__imgs--wrapper,
@@ -45,6 +48,7 @@
     display: flex;
     flex-wrap: nowrap;
     overflow-x: scroll;
+    gap: .5em;
     width: 100%;
 }
 
@@ -56,32 +60,36 @@
 
 
 .carfocus__text--wrapper{
+    font-size: 1.2em;
     position: relative;
     margin-top: 1em;
     flex: .45;
 }
 
 .carfocus__text--wrapper > p {
-    margin-top: 3em;
+    font-size: 1em;
+    margin-top: 2em;
     text-align: justify;
     line-height: 1.75em;
 }
 
-.carfocus__text--wrapper > button {
-    position: absolute;
-    bottom: 7em;
-    left: 50%;
-    transform: translateX(-50%);
+.carfocus__btn{
+    width: fit-content;
+    margin: 0 auto;
+    margin-top: 2em;
+}
+
+.carfocus__btn > button {
     white-space: nowrap;
     font-size: 2em;
-    padding: 1em;
+    padding: .8em;
     text-transform: inherit !important;
     color: black;
     background-color: var(--main-hover) ;
     transition: all 300ms ease;
 }
 
-.carfocus__text--wrapper > button:hover {
+.carfocus__btn > button:hover {
     background-color: var(--main-alter);
     color: white;
 }

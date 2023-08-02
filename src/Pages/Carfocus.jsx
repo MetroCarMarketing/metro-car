@@ -101,9 +101,13 @@ const Carfocus = ({ cars, language }) => {
             <p>{car.descriptionEsp}</p>
           )}
           {currentLang === "english" ? (
-            <Button>Book this Ride!</Button>
+            <div className="carfocus__btn">
+              <Button>Book this Ride!</Button>
+            </div>
           ) : (
-            <Button>Reserva este vehiculo!</Button>
+            <div className="carfocus__btn">
+              <Button>Reserva este vehiculo!</Button>
+            </div>
           )}
         </div>
       </div>
