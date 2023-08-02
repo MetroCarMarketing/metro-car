@@ -28,6 +28,9 @@ export const cars = [
     price: 58.99,
     imageMain: "https://www.mbusa.com/content/dam/mb-nafta/us/myco/my23/cla/class-page/series/2023-CLA-COUPE-CT-1-3-01-DR.jpg",
     image2: "https://www.mbusa.com/content/dam/mb-nafta/us/myco/my23/cla/class-page/series/2023-CLA-COUPE-CT-1-3-02-DR.jpg",
-    image3: "https://www.toyota.com.co/wp-content/uploads/2020/08/PLATA-METALICO-14.jpg",
+    image3: "https://www.mbusa.com/content/dam/mb-nafta/us/myco/my23/cla/gallery/series/gallery-class/2023-CLA-COUPE-GAL-010-A-FE-DR.jpg",
+    image4: "https://www.mbusa.com/content/dam/mb-nafta/us/myco/my23/cla/gallery/series/gallery-class/2023-CLA-COUPE-GAL-017-C-FI-DR.jpg",
+    image5: "https://www.mbusa.com/content/dam/mb-nafta/us/myco/my23/cla/gallery/series/gallery-class/2023-CLA-COUPE-GAL-018-C-FI-DR.jpg",
+    image6: "https://www.mbusa.com/content/dam/mb-nafta/us/myco/my23/cla/gallery/series/gallery-class/2023-CLA-COUPE-GAL-012-J-FI-DR.jpg",
   },
 ];
