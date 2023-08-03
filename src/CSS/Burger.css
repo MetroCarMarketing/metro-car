@@ -1,15 +1,22 @@
 .burger{
-    position: absolute;
+    position: fixed;
+    left: -50%;
     width: 50%;
     height: 100vh;
-    background-color: rgba(167, 165, 165, 0.949);
+    padding: 2em;
+    background-color: rgb(221, 221, 221);
     z-index: 20;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 1em;
-    transition: all 800ms ease;
+    gap: 1.5em;
+    transition: all 500ms ease;
+
+}
+
+.menuOpen .burger{
+    left: 0;
 }
 
 .burger > .MuiSvgIcon-root{
@@ -17,6 +24,19 @@
     font-size: 3.5em;
     top: 1em;
     right: .5em;
+    color: var(--main-color);
+}
+
+.burger > .burger__home--icon{
+    width: fit-content;
+    padding: 1em;
+}
+
+.burger > button {
+    width: 100%;
+    text-transform: inherit;
+    font-size: 2em;
+    padding: 1em 1.5em ;
     color: var(--main-color);
 }
   

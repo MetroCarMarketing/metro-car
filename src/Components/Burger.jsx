@@ -1,20 +1,36 @@
 import React from "react";
 import "../CSS/Burger.css";
-import { Button } from "@mui/material";
+import { Button, IconButton } from "@mui/material";
 import { useNavigate } from "react-router-dom";
-import { MenuOpenOutlined } from "@mui/icons-material";
+import { Home, MenuOpenOutlined } from "@mui/icons-material";
 
 const Burger = ({ translation }) => {
+  const navigateTo = useNavigate()
 
-    const navigateTo = useNavigate()
+  const navigateClose = ( value ) => {
+    navigateTo(value)
+    document.querySelector('body').classList.toggle('menuOpen')
+  }
+
+  const closeMenu = () => {
+    document.querySelector('body').classList.toggle('menuOpen')
+  };
 
   return (
     <div className="burger ">
-
-        <MenuOpenOutlined/>
-      <Button onClick={() => navigateTo("/services")}>
+      <MenuOpenOutlined onClick={closeMenu} />
+      <IconButton
+        className="burger__home--icon"
+        onClick={() => navigateTo("/")}
+      >
+        <Home />
+      </IconButton>
+      <Button onClick={() => navigateClose("/services")}>
         {translation.navLink1}
       </Button>
+      {/* <Button onClick={() => navigateTo("/services")}>
+        {translation.navLink1}
+      </Button> */}
 
       <Button onClick={() => navigateTo("/coverage")}>
         {translation.navLink2}
