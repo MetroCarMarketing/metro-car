@@ -1,4 +1,14 @@
-.burger{
+.burger {
+    position: fixed;
+    right: -50%;
+    width: 50%;
+    height: 100vh;
+    background-color:transparent;
+    z-index: 20;
+    transition: all 500ms ease;
+}
+
+.burger__half{
     position: fixed;
     left: -50%;
     width: 50%;
@@ -15,11 +25,14 @@
 
 }
 
-.menuOpen .burger{
+.menuOpen .burger__half{
     left: 0;
 }
+.menuOpen .burger{
+    right: 0;
+}
 
-.burger > .MuiSvgIcon-root{
+.burger__half > .MuiSvgIcon-root{
     position: absolute;
     font-size: 3.5em;
     top: 1em;
@@ -27,12 +40,12 @@
     color: var(--main-color);
 }
 
-.burger > .burger__home--icon{
+.burger__half > .burger__half__home--icon{
     width: fit-content;
     padding: 1em;
 }
 
-.burger > button {
+.burger__half > button {
     width: 100%;
     text-transform: inherit;
     font-size: 2em;

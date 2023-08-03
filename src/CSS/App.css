@@ -7,18 +7,6 @@
   font-family: "Playfair Display", serif !important;
 }
 
-#root{
-  font-size: 10px;
-}
-
-body {
-  scrollbar-width: 0;
-  -ms-overflow-style: none;
-}
-
-body::-webkit-scrollbar {
-  display: none;
-}
 
 body {
   /* --main-color: #3b66d3;
@@ -29,7 +17,22 @@ body {
   /* --main-hover: #e1ba660e; */
   --main-hover: #4234163f;
   --secondary-color: #202020;
+  scrollbar-width: 0;
+  -ms-overflow-style: none;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+#root{
+  font-size: 10px;
   height: 300vh;
+}
+
+.menuOpen #root{
+  max-height: 100vh;
+  overflow: hidden;
 }
 
 select {
