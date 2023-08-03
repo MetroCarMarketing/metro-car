@@ -83,21 +83,12 @@ img {
   align-items: center;
   position: fixed;
   top: 0;
-  right: 0;
-  padding-right: 1em;
+  right: 2em;
   gap: 1em;
   height: 6em;
   z-index: 10;
 }
 
-.translate__btns--phone {
-  color: white;
-  width: 0.5em;
-  font-size: 1.5em;
-}
-.translate__btns--phone > p {
-  line-height: .8em;
-}
 
 .translate__btns > button {
   color: white;
@@ -110,6 +101,15 @@ img {
 
 .translate__btns > button:hover {
   background-color: var(--main-alter);
+}
+
+.translate__btns > .translate__btns--phone {
+  width: 0.5em;
+  border-radius: .5em;
+}
+.translate__btns--phone > p {
+  line-height: .5em;
+  margin-bottom: .1em;
 }
 
 .translate__btns--desktop {

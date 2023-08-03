@@ -5,7 +5,7 @@ import Home from "./Pages/Home";
 import Nav from "./Components/Nav";
 import car from "./Assets/metrocar regency.jpg";
 import Translation from "./Translation/Languages.json";
-import { Button } from "@mui/material";
+import { Button, IconButton } from "@mui/material";
 import Fleet from "./Pages/Fleet";
 import Coverage from "./Pages/Coverage";
 import { cars } from "./Cars";
@@ -28,12 +28,12 @@ function App() {
       <Router>
         <Nav translation={translation} />
         <div className="translate__btns">
-          <Button className="translate__btns--phone" onClick={() => setLanguage("spanish")}>
-            🇪🇸
-          </Button>
-          <Button className="translate__btns--phone" onClick={() => setLanguage("english")}>
+          <IconButton className="translate__btns--phone" onClick={() => setLanguage("spanish")}>
+            <p>🇪🇸</p>
+          </IconButton>
+          <IconButton className="translate__btns--phone" onClick={() => setLanguage("english")}>
             <p>🇺🇸</p>
-          </Button>
+          </IconButton>
           <Button  className="translate__btns--desktop" onClick={() => setLanguage("spanish")}>
             Español
           </Button>
