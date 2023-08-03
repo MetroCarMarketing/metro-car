@@ -32,7 +32,7 @@ function App() {
             🇪🇸
           </Button>
           <Button className="translate__btns--phone" onClick={() => setLanguage("english")}>
-            🇺🇸
+            <p>🇺🇸</p>
           </Button>
           <Button  className="translate__btns--desktop" onClick={() => setLanguage("spanish")}>
             Español
