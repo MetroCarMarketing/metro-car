@@ -1,0 +1,33 @@
+@media screen and (min-width: 1000px){
+
+    #root{
+        font-size: 14px;
+    }
+    
+    nav > .MuiSvgIcon-root{
+        display: none;
+    }
+    
+    .nav__desktop{
+        display: flex;
+    }
+
+    .translate__btns--phone{
+        display: none !important;
+    }
+
+    .translate__btns--desktop{
+        display: flex !important;
+    }
+
+
+
+    .carfocus__row{
+        flex-direction: row;
+    }
+
+    .thumbnail{
+        width: 25%;
+    }
+
+}

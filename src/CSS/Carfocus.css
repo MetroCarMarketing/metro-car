@@ -1,6 +1,5 @@
 .carfocus__row{
     background-color: rgb(255, 255, 255);
-    flex-direction: row;
     align-items: flex-start;
     gap: .5em;
 }
@@ -8,10 +7,19 @@
 .carfocus__backBtn{
     margin-top: 2em !important;
     color: black !important;
-    font-size: 1.2em !important;
+    font-size: 1.5em !important;
     font-weight: 700 !important;
     text-transform: inherit !important;
 }
+.carfocus__backBtn > p {
+    line-height: .8em ;
+    margin-bottom: .1em;
+}
+
+.MuiButton-startIcon {
+    margin-right: .2em !important;
+}
+
 .carfocus__backBtn:hover{
     background-color: var(--main-hover) !important;
 }

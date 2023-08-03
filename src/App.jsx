@@ -11,8 +11,10 @@ import Coverage from "./Pages/Coverage";
 import { cars } from "./Cars";
 import Carfocus from "./Pages/Carfocus";
 import Burger from "./Components/Burger";
+import './CSS/Queries.css'
 
 function App() {
+  
   const [language, setLanguage] = useState("spanish");
   const [translation, setTranslation] = useState({});
 

@@ -55,7 +55,7 @@ nav > h1 {
   color: white;
   text-transform: inherit;
   height: 100%;
-  flex: 0.2;
+  flex: 1;
   font-size: 1.3em;
   font-weight: 600;
 }

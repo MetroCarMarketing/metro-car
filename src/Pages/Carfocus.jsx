@@ -23,7 +23,7 @@ const Carfocus = ({ cars, language }) => {
             startIcon={<ChevronLeft />}
             onClick={() => navigateto("/coverage")}
           >
-            Fleet
+            <p>Fleet</p>
           </Button>
         ) : (
           <Button
@@ -31,7 +31,7 @@ const Carfocus = ({ cars, language }) => {
             startIcon={<ChevronLeft />}
             onClick={() => navigateto("/coverage")}
           >
-            Flota
+            <p>Flota</p>
           </Button>
         )}
         <div className="carfocus__imgs--wrapper">

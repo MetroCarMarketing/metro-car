@@ -1,6 +1,7 @@
 .thumbnail__map {
   display: flex;
-  gap: 2em;
+  justify-content: center;
+  gap: 1em;
 }
 
 .thumbnail {
@@ -8,21 +9,19 @@
   display: flex;
   flex-direction: column;
   cursor: pointer;
+  width: 50%;
 }
 
 .thumbnail__wrapper {
-  width: 20em;
   overflow: hidden;
   border-radius: 1em;
 }
 
 .thumbnail__wrapper > img {
   scale: 1.2;
+  aspect-ratio: 16 / 10;
 }
 
 .thumbnail__info {
   margin: 0.25em 0 0 0.25em;
 }
-
-
-

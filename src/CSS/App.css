@@ -27,7 +27,7 @@ body::-webkit-scrollbar {
 
 #root{
   font-size: 10px;
-  height: 300vh;
+  /* height: 300vh; */
 }
 
 .menuOpen #root{
