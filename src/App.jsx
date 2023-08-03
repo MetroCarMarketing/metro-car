@@ -34,10 +34,10 @@ function App() {
           <Button className="translate__btns--phone" onClick={() => setLanguage("english")}>
             🇺🇸
           </Button>
-          <Button onClick={() => setLanguage("spanish")}>
+          <Button  className="translate__btns--desktop" onClick={() => setLanguage("spanish")}>
             Español
           </Button>
-          <Button onClick={() => setLanguage("english")}>
+          <Button  className="translate__btns--desktop" onClick={() => setLanguage("english")}>
             English
           </Button>
         </div>

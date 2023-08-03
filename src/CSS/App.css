@@ -7,6 +7,10 @@
   font-family: "Playfair Display", serif !important;
 }
 
+#root{
+  font-size: 10px;
+}
+
 body {
   scrollbar-width: 0;
   -ms-overflow-style: none;
@@ -104,10 +108,9 @@ img {
 
 .translate__btns > button:hover {
   background-color: var(--main-alter);
-  /* background-color: #ba995298; */
 }
 
-.translate__btns--phone {
+.translate__btns--desktop {
   display: none !important;
 }
 
