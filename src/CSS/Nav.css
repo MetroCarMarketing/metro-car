@@ -2,7 +2,7 @@ nav,
 .nav__logo--wrapper,
 nav > h1,
 .nav__list,
-.burger {
+nav > .MuiSvgIcon-root {
   z-index: 10;
 }
 
@@ -20,6 +20,10 @@ nav {
   background-color: transparent;
   height: 6em;
   overflow: hidden;
+}
+
+nav > .MuiSvgIcon-root {
+  color: white;
 }
 
 .nav__logo--wrapper {

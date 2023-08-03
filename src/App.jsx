@@ -10,6 +10,7 @@ import Fleet from "./Pages/Fleet";
 import Coverage from "./Pages/Coverage";
 import { cars } from "./Cars";
 import Carfocus from "./Pages/Carfocus";
+import Burger from "./Components/Burger";
 
 function App() {
   const [language, setLanguage] = useState("spanish");
@@ -27,6 +28,7 @@ function App() {
     <div className="App">
       <Router>
         <Nav translation={translation} />
+        <Burger translation={translation}/>
         <div className="translate__btns">
           <IconButton className="translate__btns--phone" onClick={() => setLanguage("spanish")}>
             <p>🇪🇸</p>
