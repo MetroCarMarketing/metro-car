@@ -14,7 +14,7 @@ import Burger from "./Components/Burger";
 import './CSS/Queries.css'
 
 function App() {
-  
+
   const [language, setLanguage] = useState("spanish");
   const [translation, setTranslation] = useState({});
 
@@ -51,8 +51,11 @@ function App() {
           <Route path="/fleet/:id" element={<Carfocus cars={cars} language={language} />} />
           <Route path="/coverage" element={<Coverage translation={translation} cars={cars} />} />
         </Routes>
-        <figure className="car__background">
+        <figure className="car__background--desktop">
           <img src={car} alt="" />
+        </figure>
+        <figure className="car__background--phone">
+          <img src='https://lh3.googleusercontent.com/-525huazOQu4/YtbKYzB9fNI/AAAAAAAASPI/CKI_QvFEHCAjvd5lGSCgj0iTtgM1lIyxACNcBGAsYHQ/s1600/1658243679408851-0.png' alt="" />
         </figure>
       </Router>
     </div>

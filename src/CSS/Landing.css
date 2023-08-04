@@ -10,9 +10,13 @@
   color: var(--main-color);
 } */
 
+.landing__row{
+  margin-bottom: 10em;
+}
+
 .landing__text--container {
   display: flex;
-  flex-direction: column;
+  flex-direction: column-reverse;
   gap: 4em;
   flex: 0.5;
   color: white;

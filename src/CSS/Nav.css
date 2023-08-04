@@ -20,6 +20,7 @@ nav {
   background-color: transparent;
   height: 6em;
   overflow: hidden;
+  background-color: black;
 }
 
 nav > .MuiSvgIcon-root {
@@ -65,7 +66,8 @@ nav > h1 {
   background-color: var(--main-hover);
 }
 
-.nav__car {
+.nav__car--desktop {
+  display: none;
   align-items: flex-start;
   position: fixed;
   top: 0;

@@ -9,6 +9,7 @@
 
 
 body {
+  background-color: #202020;
   /* --main-color: #3b66d3;
   --main-alter: #3f5dd698;
   --main-hover: #4164e10e; */
@@ -27,7 +28,7 @@ body::-webkit-scrollbar {
 
 #root{
   font-size: 10px;
-  /* height: 300vh; */
+  height: 300vh;
 }
 
 .menuOpen #root{
@@ -43,6 +44,7 @@ select {
 }
 
 .container {
+  background-color: #242424ab;
   height: 100%;
 }
 
@@ -70,7 +72,8 @@ img {
   width: 100%;
 }
 
-.car__background {
+.car__background--desktop {
+  display: none;
   position: fixed;
   align-items: normal;
   top: 0;
@@ -79,6 +82,16 @@ img {
   right: 0;
   z-index: -1;
   filter: brightness(1);
+}
+
+.car__background--phone{
+  position: fixed;
+  align-items: normal;
+  top: 0;
+  height: 100vh;
+  left: 0;
+  right: 0;
+  z-index: -1;
 }
 
 .translate__btns {

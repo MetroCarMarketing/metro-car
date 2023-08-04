@@ -1,12 +1,11 @@
 .carfocus__row{
-    background-color: rgb(255, 255, 255);
     align-items: flex-start;
     gap: .5em;
 }
 
 .carfocus__backBtn{
     margin-top: 2em !important;
-    color: black !important;
+    color: white !important;
     font-size: 1.5em !important;
     font-weight: 700 !important;
     text-transform: inherit !important;
@@ -67,6 +66,7 @@
 
 
 .carfocus__text--wrapper{
+    color: white;
     position: relative;
     margin-left:  1.5em;
     flex: .45;
@@ -90,7 +90,7 @@
     font-size: 2em;
     padding: .8em;
     text-transform: inherit !important;
-    color: black;
+    color: white;
     background-color: var(--main-hover) ;
     transition: all 300ms ease;
 }

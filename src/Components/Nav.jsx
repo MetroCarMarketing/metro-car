@@ -42,7 +42,7 @@ const Nav = ({ translation }) => {
           {translation.navLink5}
         </Button>
       </div>
-      <figure className="nav__car">
+      <figure className="nav__car--desktop">
         <img src={car} alt="" />
       </figure>
     </nav>

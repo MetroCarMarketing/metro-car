@@ -3,6 +3,18 @@
     #root{
         font-size: 14px;
     }
+
+    .nav__car--desktop{
+        display: flex;
+    }
+
+    .car__background--desktop{
+        display: flex;
+    }
+
+    .car__background--phone{
+        display: none;
+    }
     
     nav > .MuiSvgIcon-root{
         display: none;
@@ -18,6 +30,16 @@
 
     .translate__btns--desktop{
         display: flex !important;
+    }
+
+    .landing__row{
+        margin-bottom: 5em;
+    }
+
+    .landing__text--container{
+        flex-direction: column;
+        max-width: 45%;
+        margin-left: auto;
     }
 
 
