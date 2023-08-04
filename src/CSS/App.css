@@ -44,7 +44,7 @@ select {
 }
 
 .container {
-  background-color: #242424ab;
+  /* background-color: #242424ab; */
   height: 100%;
 }
 
@@ -81,7 +81,6 @@ img {
   left: 0;
   right: 0;
   z-index: -1;
-  filter: brightness(1);
 }
 
 .car__background--phone{

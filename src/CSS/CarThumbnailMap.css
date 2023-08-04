@@ -15,11 +15,13 @@
 .thumbnail__wrapper {
   overflow: hidden;
   border-radius: 1em;
+  background-color: white;
 }
 
 .thumbnail__wrapper > img {
   scale: 1.2;
   aspect-ratio: 16 / 10;
+  object-fit: contain;
 }
 
 .thumbnail__info {
