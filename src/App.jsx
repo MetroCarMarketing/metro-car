@@ -13,6 +13,7 @@ import Carfocus from "./Pages/Carfocus";
 import Burger from "./Components/Burger";
 import './CSS/Queries.css'
 import Contact from "./Pages/Contact";
+import About from "./Pages/About";
 
 function App() {
 
@@ -52,6 +53,7 @@ function App() {
           <Route path="/fleet/:id" element={<Carfocus  language={language} cars={cars}/>} />
           <Route path="/coverage" element={<Coverage translation={translation} cars={cars} />} />
           <Route path="/contact" element={<Contact translation={translation} />} />
+          <Route path="/about" element={<About translation={translation} />} />
         </Routes>
         <figure className="car__background--desktop">
           <img src={car} alt="" />
