@@ -49,6 +49,7 @@ function App() {
         </div>
         <Routes>
           <Route path="/" element={<Home translation={translation} />} />
+          <Route path="/services" element={<Home translation={translation} />} />
           <Route path="/fleet" element={<Fleet translation={translation} />} />
           <Route path="/fleet/:id" element={<Carfocus  language={language} cars={cars}/>} />
           <Route path="/coverage" element={<Coverage translation={translation} cars={cars} />} />

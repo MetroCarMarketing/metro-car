@@ -5,6 +5,12 @@ import { useNavigate } from "react-router-dom";
 import { Home, MenuOpenOutlined } from "@mui/icons-material";
 
 const Burger = ({ translation }) => {
+
+  const test = () => {
+    alert('Esta pagina esta en desarrollo. This page is currently being developed')
+  }
+
+
   const navigateTo = useNavigate();
 
   const navigateClose = (value) => {
@@ -26,7 +32,7 @@ const Burger = ({ translation }) => {
         >
           <Home />
         </IconButton>
-        <Button onClick={() => navigateClose("/services")}>
+        <Button onClick={test}>
           {translation.navLink1}
         </Button>
 
@@ -38,11 +44,11 @@ const Burger = ({ translation }) => {
           {translation.navLink3}
         </Button>
 
-        <Button onClick={() => navigateClose("/contact")}>
+        <Button onClick={test}>
           {translation.navLink4}
         </Button>
 
-        <Button onClick={() => navigateClose("/about")}>
+        <Button onClick={test}>
           {translation.navLink5}
         </Button>
       </div>
