@@ -38,11 +38,11 @@ const Burger = ({ translation }) => {
           {translation.navLink3}
         </Button>
 
-        <Button onClick={() => navigateClose("/contactus")}>
+        <Button onClick={() => navigateClose("/contact")}>
           {translation.navLink4}
         </Button>
 
-        <Button onClick={() => navigateClose("/aboutus")}>
+        <Button onClick={() => navigateClose("/about")}>
           {translation.navLink5}
         </Button>
       </div>

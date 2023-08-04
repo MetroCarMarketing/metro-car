@@ -12,6 +12,7 @@ import { cars } from "./Cars";
 import Carfocus from "./Pages/Carfocus";
 import Burger from "./Components/Burger";
 import './CSS/Queries.css'
+import Contact from "./Pages/Contact";
 
 function App() {
 
@@ -48,8 +49,9 @@ function App() {
         <Routes>
           <Route path="/" element={<Home translation={translation} />} />
           <Route path="/fleet" element={<Fleet translation={translation} />} />
-          <Route path="/fleet/:id" element={<Carfocus cars={cars} language={language} />} />
+          <Route path="/fleet/:id" element={<Carfocus  language={language} cars={cars}/>} />
           <Route path="/coverage" element={<Coverage translation={translation} cars={cars} />} />
+          <Route path="/contact" element={<Contact translation={translation} />} />
         </Routes>
         <figure className="car__background--desktop">
           <img src={car} alt="" />

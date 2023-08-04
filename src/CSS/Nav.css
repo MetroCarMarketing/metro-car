@@ -46,6 +46,7 @@ nav > h1 {
   align-items: center;
   justify-content: space-evenly;
   height: 80%;
+  gap: .25em;
 }
 
 .nav__desktop{
