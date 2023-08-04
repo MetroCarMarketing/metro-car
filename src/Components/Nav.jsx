@@ -1,14 +1,26 @@
-import React from "react";
+import React, { useState } from "react";
 import logo from "../Assets/2.png";
 import { useNavigate } from "react-router-dom";
 import "../CSS/Nav.css";
-import { Button } from "@mui/material";
 import car from "../Assets/metrocar regency.jpg";
 import { MenuOutlined } from "@mui/icons-material";
+import NavBtn from "./NavBtn";
 
 const Nav = ({ translation }) => {
 
   const navigateTo = useNavigate();
+
+  const homeBtn = () => {
+    navigateTo('/')
+    setActive(null)
+  }
+
+  const [active, setActive] = useState(null);
+
+  const activateBtn = ( value, buttonLabel ) => {
+    navigateTo(value)
+    setActive(buttonLabel)
+  }
 
   const openMenu = () => {
     document.querySelector('body').classList.toggle('menuOpen')
@@ -17,30 +29,16 @@ const Nav = ({ translation }) => {
   return (
     <nav>
       <MenuOutlined onClick={openMenu} />
-      <figure onClick={() => navigateTo("/")} className="nav__logo--wrapper">
+      <figure onClick={homeBtn} className="nav__logo--wrapper">
         <img src={logo} alt="" />
       </figure>
       <h1>MetroCar</h1>
       <div className="nav__list nav__desktop">
-        <Button onClick={() => navigateTo("/services")}>
-          {translation.navLink1}
-        </Button>
-
-        <Button onClick={() => navigateTo("/coverage")}>
-          {translation.navLink2}
-        </Button>
-
-        <Button onClick={() => navigateTo("/fleet")}>
-          {translation.navLink3}
-        </Button>
-
-        <Button onClick={() => navigateTo("/contactus")}>
-          {translation.navLink4}
-        </Button>
-
-        <Button onClick={() => navigateTo("/aboutus")}>
-          {translation.navLink5}
-        </Button>
+        <NavBtn label='button 1' translation={translation} text={translation.navLink1} navTo={() => activateBtn('services', 'button 1')} isActive={active === 'button 1'}/>
+        <NavBtn label='button 2' translation={translation} text={translation.navLink2} navTo={() => activateBtn('coverage', 'button 2')} isActive={active === 'button 2'}/>
+        <NavBtn label='button 3' translation={translation} text={translation.navLink3} navTo={() => activateBtn('fleet', 'button 3')} isActive={active === 'button 3'}/>
+        <NavBtn label='button 4' translation={translation} text={translation.navLink4} navTo={() => activateBtn('contactus', 'button 4')} isActive={active === 'button 4'}/>
+        <NavBtn label='button 5' translation={translation} text={translation.navLink5} navTo={() => activateBtn('aboutus', 'button 5')} isActive={active === 'button 5'}/>
       </div>
       <figure className="nav__car--desktop">
         <img src={car} alt="" />
