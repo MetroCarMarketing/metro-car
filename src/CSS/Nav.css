@@ -15,7 +15,7 @@ nav {
   margin: 0 auto;
   padding: 0 2em;
   display: flex;
-  gap: 3em;
+  gap: 2em;
   align-items: center;
   background-color: transparent;
   height: 6em;
@@ -33,10 +33,10 @@ nav > .MuiSvgIcon-root {
 }
 
 nav > h1 {
-  font-size: 1.75em;
+  font-size: 1.5em;
   color: var(--main-color);
   text-align: center;
-  line-height: .8em;
+  margin-bottom: .2em;
 }
 
 

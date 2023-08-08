@@ -1,5 +1,6 @@
 import { Button, IconButton } from '@mui/material';
 import React from 'react';
+import '../CSS/TranslateBtns.css'
 
 const TranslateBtns = ({ setEnglish, setSpanish }) => {
     return (
