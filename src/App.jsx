@@ -32,7 +32,7 @@ function App() {
   return (
     <div className="App">
       <Router>
-        <Nav translation={translation} />
+        <Nav translation={translation} setEnglish={() => setLanguage('english')} />
         <Burger translation={translation}/>
         <div className="translate__btns">
           <IconButton className="translate__btns--phone" onClick={() => setLanguage("spanish")}>

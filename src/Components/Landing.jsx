@@ -2,8 +2,12 @@ import { Button } from "@mui/material";
 import React from "react";
 import icon from "../Assets/1.png";
 import '../CSS/Landing.css'
+import { useNavigate } from "react-router-dom";
 
 const Landing = ({ translation }) => {
+
+  const navigateTo = useNavigate()
+  
   return (
     <section id="Landing">
       <div className="container landing__container top__container">
@@ -12,7 +16,7 @@ const Landing = ({ translation }) => {
             <h1>MetroCar Regency</h1>
           </header> */}
           <div className="landing__text--container">
-            <Button className="landing__btn">
+            <Button onClick={() => navigateTo('/coverage')} className="landing__btn">
               {translation.landingBtn}
               <figure>
                 <img src={icon} alt="" className="landing__btn--icon" />

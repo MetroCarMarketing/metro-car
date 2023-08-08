@@ -6,7 +6,7 @@ import car from "../Assets/metrocar regency.jpg";
 import { MenuOutlined } from "@mui/icons-material";
 import NavBtn from "./NavBtn";
 
-const Nav = ({ translation }) => {
+const Nav = ({ translation, setEnglish, setSpanish }) => {
 
   const test = () => {
     alert(
