@@ -28,6 +28,7 @@
 }
 
 .carfocus__imgs--wrapper{
+    background-color: white;
     display: flex;
     flex: .55;
     flex-direction: column;
@@ -37,7 +38,7 @@
 .carfocus__imgs--wrapper,
 .carfocus__text--wrapper{
     font-size: 1.2em;
-    padding: 2em 0;
+    margin: 2em 0;
 }
 
 .carfocus__mainImage{

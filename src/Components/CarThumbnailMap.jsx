@@ -13,7 +13,7 @@ const CarThumbnailMap = ({ item }) => {
     image.onload = () => {
       setTimeout(() => {
         setImg(image)
-      },800)
+      },600)
     }
     
   })
