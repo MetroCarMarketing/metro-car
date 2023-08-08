@@ -33,7 +33,11 @@ const CarThumbnailMap = ({ item }) => {
           </div>
         </>
       ) : (
-        <></>
+        <>
+        <div className="thumbnail__wrapper--skeleton skeleton"></div>
+        <div className="thumbnail__title--skeleton skeleton"></div>
+        <div className="thumbnail__price--skeleton skeleton"></div>
+        </>
       )}
     </div>
     // <div className="thumbnail" onClick={() => navigateTo(`/fleet/${item.id}`)}>
