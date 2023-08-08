@@ -77,10 +77,10 @@ const Nav = ({ translation, setEnglish, setSpanish }) => {
             test={test}
           />
         </div>
-        <TranslateBtns setEnglish={setEnglish} setSpanish={setSpanish} />
         <figure className="nav__car--desktop">
           <img src={car} alt="" />
         </figure>
+        <TranslateBtns setEnglish={setEnglish} setSpanish={setSpanish} />
     </nav>
   );
 };

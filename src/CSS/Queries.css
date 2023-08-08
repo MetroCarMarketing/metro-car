@@ -32,6 +32,10 @@
         display: flex !important;
     }
 
+  .translate__btns > button {
+    padding: 0em 1em;
+  }
+
     .landing__row{
         margin-bottom: 5em;
     }

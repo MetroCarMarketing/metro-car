@@ -17,6 +17,7 @@ nav {
   display: flex;
   gap: 2em;
   align-items: center;
+  justify-content: center;
   background-color: transparent;
   height: 6em;
   overflow: hidden;
@@ -25,6 +26,7 @@ nav {
 
 nav > .MuiSvgIcon-root {
   color: white;
+  margin-right: 1em;
 }
 
 .nav__logo--wrapper {
