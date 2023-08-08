@@ -16,10 +16,11 @@
   overflow: hidden;
   border-radius: 1em;
   background-color: white;
+  width: 100%;
 }
 
 .thumbnail__wrapper > img {
-  scale: 1.2;
+  /* scale: 1.2; */
   aspect-ratio: 16 / 10;
   object-fit: contain;
 }

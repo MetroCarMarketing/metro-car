@@ -1,3 +1,5 @@
+import show from './Assets/Carrousel/carr1.JPG'
+
 export const cars = [
   {
     id: 1,
