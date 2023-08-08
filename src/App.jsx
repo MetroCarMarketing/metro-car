@@ -32,9 +32,9 @@ function App() {
   return (
     <div className="App">
       <Router>
-        <Nav translation={translation} setEnglish={() => setLanguage('english')} />
+        <Nav translation={translation} setEnglish={() => setLanguage('english')} setSpanish={() => setLanguage('spanish')} />
         <Burger translation={translation}/>
-        <div className="translate__btns">
+        {/* <div className="translate__btns">
           <IconButton className="translate__btns--phone" onClick={() => setLanguage("spanish")}>
             <p>🇪🇸</p>
           </IconButton>
@@ -47,7 +47,7 @@ function App() {
           <Button  className="translate__btns--desktop" onClick={() => setLanguage("english")}>
             English
           </Button>
-        </div>
+        </div> */}
         <Routes>
           <Route path="/" element={<Home translation={translation} />} />
           <Route path="/services" element={<Services translation={translation} />} />

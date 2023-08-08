@@ -5,6 +5,7 @@ import "../CSS/Nav.css";
 import car from "../Assets/metrocar regency.jpg";
 import { MenuOutlined } from "@mui/icons-material";
 import NavBtn from "./NavBtn";
+import TranslateBtns from "./TranslateBtns";
 
 const Nav = ({ translation, setEnglish, setSpanish }) => {
 
@@ -76,6 +77,7 @@ const Nav = ({ translation, setEnglish, setSpanish }) => {
             test={test}
           />
         </div>
+        <TranslateBtns setEnglish={setEnglish} setSpanish={setSpanish} />
         <figure className="nav__car--desktop">
           <img src={car} alt="" />
         </figure>
