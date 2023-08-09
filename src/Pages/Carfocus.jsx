@@ -21,7 +21,7 @@ const Carfocus = ({ cars, language }) => {
           <Button
             className="carfocus__backBtn"
             startIcon={<ChevronLeft />}
-            onClick={() => navigateto("/coverage")}
+            onClick={() => navigateto("/fleet")}
           >
             <p>Fleet</p>
           </Button>
@@ -29,7 +29,7 @@ const Carfocus = ({ cars, language }) => {
           <Button
             className="carfocus__backBtn"
             startIcon={<ChevronLeft />}
-            onClick={() => navigateto("/coverage")}
+            onClick={() => navigateto("/fleet")}
           >
             <p>Flota</p>
           </Button>

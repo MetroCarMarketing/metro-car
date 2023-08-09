@@ -36,15 +36,7 @@ body::-webkit-scrollbar {
   overflow: hidden;
 }
 
-select {
-  z-index: 10;
-  position: fixed;
-  top: 3em;
-  left: 3em;
-}
-
 .container {
-  /* background-color: #242424ab; */
   height: 100%;
 }
 
