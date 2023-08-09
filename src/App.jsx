@@ -34,24 +34,10 @@ function App() {
       <Router>
         <Nav translation={translation} setEnglish={() => setLanguage('english')} setSpanish={() => setLanguage('spanish')} />
         <Burger translation={translation}/>
-        {/* <div className="translate__btns">
-          <IconButton className="translate__btns--phone" onClick={() => setLanguage("spanish")}>
-            <p>🇪🇸</p>
-          </IconButton>
-          <IconButton className="translate__btns--phone" onClick={() => setLanguage("english")}>
-            <p>🇺🇸</p>
-          </IconButton>
-          <Button  className="translate__btns--desktop" onClick={() => setLanguage("spanish")}>
-            Español
-          </Button>
-          <Button  className="translate__btns--desktop" onClick={() => setLanguage("english")}>
-            English
-          </Button>
-        </div> */}
         <Routes>
           <Route path="/" element={<Home translation={translation} />} />
           <Route path="/services" element={<Services translation={translation} />} />
-          <Route path="/fleet" element={<Fleet translation={translation} />} />
+          <Route path="/fleet" element={<Fleet translation={translation} cars={cars} />} />
           <Route path="/fleet/:id" element={<Carfocus  language={language} cars={cars}/>} />
           <Route path="/coverage" element={<Coverage translation={translation} cars={cars} />} />
           <Route path="/contact" element={<Contact translation={translation} />} />
