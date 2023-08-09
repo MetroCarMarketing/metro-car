@@ -21,11 +21,11 @@ nav {
   background-color: transparent;
   height: 6em;
   overflow: hidden;
-  background-color: #242424ab;
+  background-color: black;
 }
 
 nav > .MuiSvgIcon-root {
-  color: white;
+  color: var(--main-color);
   margin-right: 1em;
 }
 
