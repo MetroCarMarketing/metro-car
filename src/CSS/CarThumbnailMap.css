@@ -1,3 +1,7 @@
+#thumbnail__container{
+  width: 100%;
+}
+
 .thumbnail__map {
   display: flex;
   justify-content: center;

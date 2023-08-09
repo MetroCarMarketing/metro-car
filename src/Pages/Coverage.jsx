@@ -6,7 +6,7 @@ const Coverage = ({ translation, cars }) => {
     <div className="container top__container">
       <div className="row">
         <div className="coverage">
-          <div className="thumbnail__map">
+          {/* <div className="thumbnail__map">
             {cars.map((item) => (
               <CarThumbnailMap
                 translation={translation}
@@ -15,7 +15,7 @@ const Coverage = ({ translation, cars }) => {
                 key={item.id}
               />
             ))}
-          </div>
+          </div> */}
         </div>
       </div>
     </div>

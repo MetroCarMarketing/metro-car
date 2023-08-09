@@ -10,7 +10,8 @@ const Fleet = ({ translation, cars }) => {
         <section id="slideshow">
           <Slideshow />
         </section>
-        <div className="thumbnail__map">
+        <section id="thumbnail__container">
+          <div className="thumbnail__map">
             {cars.map((item) => (
               <CarThumbnailMap
                 translation={translation}
@@ -20,6 +21,7 @@ const Fleet = ({ translation, cars }) => {
               />
             ))}
           </div>
+        </section>
       </div>
     </div>
   );
