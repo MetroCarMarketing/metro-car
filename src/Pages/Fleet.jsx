@@ -1,12 +1,26 @@
-import React from "react";
+import React, { useState } from "react";
 import Slideshow from "../Components/Slideshow";
 import "../CSS/Slideshow.css";
 import CarThumbnailMap from "../Components/CarThumbnailMap";
 
-const Fleet = ({ language, translation, cars }) => {
+const Fleet = ({ language, translation, cars: initialCars }) => {
 
-  const filterCars = () => {
-    
+  const [products, setProducts] = useState(initialCars);
+
+
+  const suv = initialCars.filter((item) => item.type === 'SUV')
+  const car = initialCars.filter((item) => item.type === 'Luxury Car')
+
+  const filterCars = ( filter ) => {
+    if (filter === 'SUV'){
+      setProducts(suv)
+    }
+    if (filter == 'CAR'){
+      setProducts(car)
+    }
+    if(filter === "ALL"){
+      setProducts(initialCars)
+    }
   }
 
   return (
@@ -18,13 +32,13 @@ const Fleet = ({ language, translation, cars }) => {
           </section>
           <section id="thumbnail__container">
             {language === "english" ? (
-              <select id="filter" onChange={(e) => filterCars(e.target.value)}>
+              <select id="filter" onChange={(e) => filterCars(e.target.value)} defaultValue='ALL'>
                 <option value="ALL">All</option>
                 <option value="SUV">Suv</option>
                 <option value="CAR">Car</option>
               </select>
             ) : (
-              <select id="filter" onChange={(e) => }>
+              <select id="filter" onChange={(e) => filterCars(e.target.value)} defaultValue='ALL'>
                 <option value="ALL">Todos</option>
                 <option value="SUV">Camioneta</option>
                 <option value="CAR">Carro</option>
@@ -32,10 +46,10 @@ const Fleet = ({ language, translation, cars }) => {
             )}
 
             <div className="thumbnail__map">
-              {cars.map((item) => (
+              {products.map((item) => (
                 <CarThumbnailMap
                   translation={translation}
-                  cars={cars}
+                  cars={products}
                   item={item}
                   key={item.id}
                 />
