@@ -11,10 +11,7 @@ const Landing = ({ translation }) => {
   return (
     <section id="Landing">
       <div className="container landing__container top__container">
-        <div className="row landing__row">
-          {/* <header>
-            <h1>MetroCar Regency</h1>
-          </header> */}
+        <div className="row top__row landing__row">
           <div className="landing__text--container">
             <Button onClick={() => navigateTo('/coverage')} className="landing__btn">
               {translation.landingBtn}

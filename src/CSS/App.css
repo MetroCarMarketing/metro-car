@@ -52,7 +52,6 @@ select {
   padding-top: 6em;
   min-height: 100vh;
   display: flex;
-  align-items: center;
 }
 .row {
   display: flex;
@@ -61,6 +60,10 @@ select {
   max-width: 1400px;
   width: 100%;
   margin: 0 auto;
+}
+
+.top__row{
+  padding-top: 2em;
 }
 
 figure {
