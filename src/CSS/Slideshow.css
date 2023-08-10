@@ -68,3 +68,9 @@
 .right > path {
   filter: drop-shadow(-2px 0 0 #000);
 }
+
+.slideshow__container--skeleton{
+  width: 57em;
+  aspect-ratio: 16 / 9;
+  margin-bottom: 0 !important;
+}

@@ -11,6 +11,18 @@ const Slideshow = () => {
   const slideshow = useRef(null);
   const [autoplayPaused, setAutoplayPaused] = useState(false);
 
+  const [img, setImg] = useState();
+
+  useEffect(() => {
+    const image = new Image();
+    image.src = img1;
+    image.onload = () => {
+      setTimeout(() => {
+        setImg(image);
+      }, 1000);
+    };
+  });
+
   const next = () => {
     if (slideshow.current.children.length > 0) {
       const firstSlide = slideshow.current.children[0];
@@ -52,24 +64,57 @@ const Slideshow = () => {
   };
 
   useEffect(() => {
-    let timer
-    if(autoplayPaused === false) {
+    let timer;
+    if (autoplayPaused === false) {
       timer = setInterval(next, 2000);
     }
-    return () => clearInterval(timer)
-  }, [autoplayPaused])
+    return () => clearInterval(timer);
+  }, [autoplayPaused]);
 
   const pause = () => {
-    setAutoplayPaused(true)
-  }
-  
+    setAutoplayPaused(true);
+  };
+
   const play = () => {
-    setAutoplayPaused(false)
-  }
+    setAutoplayPaused(false);
+  };
 
   return (
-    <div onMouseEnter={pause} onMouseLeave={play} className="slideshow__container">
-      <div ref={slideshow} className="slideshow">
+    <div
+      onMouseEnter={pause}
+      onMouseLeave={play}
+      className="slideshow__container"
+    >
+      {img ? (
+        <>
+          <div ref={slideshow} className="slideshow">
+            <div className="slide">
+              <img src={img.src} alt="" />
+            </div>
+            <div className="slide">
+              <img src={img2} alt="" />
+            </div>
+            <div className="slide">
+              <img src={img3} alt="" />
+            </div>
+            <div className="slide">
+              <img src={img4} alt="" />
+            </div>
+          </div>
+
+          <div className="arrows">
+            <Button onClick={prev}>
+              <ChevronLeft className="left" />
+            </Button>
+            <Button onClick={next}>
+              <ChevronRight className="right" />
+            </Button>
+          </div>
+        </>
+      ) : (
+        <><div className="slideshow__container--skeleton skeleton"></div></>
+      )}
+      {/* <div ref={slideshow} className="slideshow">
         <div className="slide">
           <img src={img1} alt="" />
         </div>
@@ -91,7 +136,7 @@ const Slideshow = () => {
         <Button onClick={next}>
           <ChevronRight className="right" />
         </Button>
-      </div>
+      </div> */}
     </div>
   );
 };

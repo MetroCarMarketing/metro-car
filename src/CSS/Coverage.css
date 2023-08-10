@@ -17,7 +17,8 @@
     letter-spacing: .05em;
 }
 .coverage__organizer > p{
-    font-size: 1.3em;
+    font-size: 1.2em;
     letter-spacing: .05em;
-    line-height: 1.25em;
+    line-height: 1.5em;
+    text-align: justify;
 }

@@ -1,59 +1,60 @@
-@media screen and (min-width: 1000px){
+@media screen and (min-width: 1000px) {
+  #root {
+    font-size: 14px;
+  }
 
-    #root{
-        font-size: 14px;
-    }
+  .nav__car--desktop {
+    display: flex;
+  }
 
-    .nav__car--desktop{
-        display: flex;
-    }
+  .car__background--desktop {
+    display: flex;
+  }
 
-    .car__background--desktop{
-        display: flex;
-    }
+  .car__background--phone {
+    display: none;
+  }
 
-    .car__background--phone{
-        display: none;
-    }
-    
-    nav > .MuiSvgIcon-root{
-        display: none;
-    }
-    
-    .nav__desktop{
-        display: flex;
-    }
+  nav > .MuiSvgIcon-root {
+    display: none;
+  }
 
-    .translate__btns--phone{
-        display: none !important;
-    }
+  .nav__desktop {
+    display: flex;
+  }
 
-    .translate__btns--desktop{
-        display: flex !important;
-    }
+  .translate__btns--phone {
+    display: none !important;
+  }
+
+  .translate__btns--desktop {
+    display: flex !important;
+  }
 
   .translate__btns > button {
     padding: 0em 1em;
   }
 
-    .landing__row{
-        margin-bottom: 5em;
-    }
+  .landing__row {
+    margin-bottom: 5em;
+    justify-content: center;
+  }
 
-    .landing__text--container{
-        flex-direction: column;
-        max-width: 45%;
-        margin-left: auto;
-    }
+  .landing__text--container {
+    flex-direction: column;
+    max-width: 45%;
+    margin-left: auto;
+  }
 
+  .coverage__map--wrapper > iframe {
+    aspect-ratio: 16 / 9;
+  }
 
+  .carfocus__row {
+    flex-direction: row;
+  }
 
-    .carfocus__row{
-        flex-direction: row;
-    }
-
-    .thumbnail{
-        width: 25%;
-    }
-
+  .thumbnail {
+    width: 25%;
+  }
 }
