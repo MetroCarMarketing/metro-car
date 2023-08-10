@@ -1,102 +1,107 @@
-.carfocus__row{
-    align-items: flex-start;
-    gap: .5em;
+.carfocus__row {
+  align-items: flex-start;
+  gap: 0.5em;
 }
 
-.carfocus__backBtn{
-    margin-top: 1.6em !important;
-    color: white !important;
-    font-size: 1.5em !important;
-    font-weight: 700 !important;
-    text-transform: inherit !important;
+.carfocus__backBtn {
+  margin-top: 1.6em !important;
+  color: white !important;
+  font-size: 1.5em !important;
+  font-weight: 700 !important;
+  text-transform: inherit !important;
 }
 .carfocus__backBtn > p {
-    line-height: .8em ;
-    margin-bottom: .1em;
+  line-height: 0.8em;
+  margin-bottom: 0.1em;
 }
 
 .MuiButton-startIcon {
-    margin-right: .2em !important;
+  margin-right: 0.2em !important;
 }
 
-.carfocus__backBtn:hover{
-    background-color: var(--main-hover) !important;
+.carfocus__backBtn:hover {
+  background-color: var(--main-hover) !important;
 }
 
-.carfocus__backBtn > span > .MuiSvgIcon-root{
-    font-size: 1.5em;
+.carfocus__backBtn > span > .MuiSvgIcon-root {
+  font-size: 1.5em;
 }
 
-.carfocus__imgs--wrapper{
-    background-color: white;
-    display: flex;
-    flex: .55;
-    flex-direction: column;
-    gap: 1em;
+.carfocus__imgs--wrapper {
+  background-color: white;
+  display: flex;
+  flex: 0.55;
+  flex-direction: column;
+  gap: 1em;
 }
 
 .carfocus__imgs--wrapper,
-.carfocus__text--wrapper{
-    font-size: 1.2em;
-    margin: 2em 0;
+.carfocus__text--wrapper {
+  font-size: 1.2em;
+  margin: 2em 0;
 }
 
-.carfocus__mainImage{
-    width: 100%;
+.carfocus__mainImage {
+  width: 100%;
 }
 
 .carfocus__mainImage > img,
 .carfocus__slide > img {
-    aspect-ratio: 16 / 9;
-    object-fit: cover;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
 }
 
-.carfocus__slideshow{
-    display: flex;
-    flex-wrap: nowrap;
-    overflow-x: scroll;
-    gap: .5em;
-    width: 100%;
+.carfocus__slideshow {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: scroll;
+  gap: 0.5em;
+  width: 100%;
 }
 
 .carfocus__slide {
-    min-width: calc(100% / 3);
-    cursor: pointer;
+  min-width: calc(100% / 3);
+  cursor: pointer;
 }
 
-
-
-.carfocus__text--wrapper{
-    color: white;
-    position: relative;
-    margin-left:  1.5em;
-    flex: .45;
+.carfocus__text--wrapper {
+  color: white;
+  position: relative;
+  margin-left: 1.5em;
+  flex: 0.45;
 }
 
 .carfocus__text--wrapper > p {
-    font-size: 1em;
-    margin-top: 2em;
-    text-align: justify;
-    line-height: 1.75em;
+  font-size: 1em;
+  margin-top: 2em;
+  text-align: justify;
+  line-height: 1.75em;
 }
 
-.carfocus__btn{
-    width: fit-content;
-    margin: 0 auto;
-    margin-top: 2em;
+.carfocus__btn {
+  width: fit-content;
+  margin: 0 auto;
+  margin-top: 2em;
 }
 
 .carfocus__btn > a {
-    white-space: nowrap;
-    font-size: 2em;
-    padding: .8em;
-    text-transform: inherit !important;
-    color: white;
-    background-color: var(--main-hover) ;
-    transition: all 300ms ease;
+  white-space: nowrap;
+  font-size: 2em;
+  padding: 0.8em;
+  text-transform: inherit !important;
+  color: white;
+  background-color: var(--main-hover);
+  transition: all 300ms ease;
 }
 
 .carfocus__btn > a:hover {
-    background-color: var(--main-alter);
-    color: white;
+  background-color: var(--main-alter);
+  color: white;
+}
+
+.carfocus__mainImage--skeleton,
+.carfocus__slide--skeleton {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  margin-bottom: 0 !important;
 }

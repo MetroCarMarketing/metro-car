@@ -13,7 +13,7 @@ const Landing = ({ translation }) => {
       <div className="container landing__container top__container">
         <div className="row top__row landing__row">
           <div className="landing__text--container">
-            <Button onClick={() => navigateTo('/coverage')} className="landing__btn">
+            <Button onClick={() => navigateTo('/fleet')} className="landing__btn">
               {translation.landingBtn}
               <figure>
                 <img src={icon} alt="" className="landing__btn--icon" />

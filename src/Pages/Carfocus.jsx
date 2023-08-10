@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { useNavigate, useParams } from "react-router-dom";
 import "../CSS/Carfocus.css";
 import { Button } from "@mui/material";
@@ -12,11 +12,53 @@ const Carfocus = ({ cars, language }) => {
 
   const currentLang = language;
 
-  const [displayImage, setDisplayImage] = useState(car.imageMain);
+  const [displayImg, setDisplayImg] = useState();
+
+  const [mainImg, setMainImg] = useState();
+  const [secondImg, setSecondImg] = useState();
+  const [thirdImg, setThirdImg] = useState();
+
+  useEffect(() => {
+    const display = new Image();
+    display.src = car.imageMain;
+
+    const main = new Image();
+    main.src = car.imageMain;
+
+    const second = new Image();
+    second.src = car.image2;
+
+    const third = new Image();
+    third.src = car.image3;
+
+    display.onload = () => {
+      setTimeout(() => {
+        setDisplayImg(display);
+      }, 600);
+    };
+
+    main.onload = () => {
+      setTimeout(() => {
+        setMainImg(main);
+      }, 600);
+    };
+
+    second.onload = () => {
+      setTimeout(() => {
+        setSecondImg(second);
+      }, 600);
+    };
+
+    third.onload = () => {
+      setTimeout(() => {
+        setThirdImg(third);
+      }, 600);
+    };
+  });
 
   return (
     <div className="container top__container carfocus__container">
-      <div className="row carfocus__row">
+      <div className="row top__row carfocus__row">
         {currentLang === "english" ? (
           <Button
             className="carfocus__backBtn"
@@ -36,37 +78,61 @@ const Carfocus = ({ cars, language }) => {
         )}
         <div className="carfocus__imgs--wrapper">
           <figure className="carfocus__mainImage">
-            <img src={displayImage} alt="" />
+            {displayImg ? (
+              <img src={displayImg.src} alt="" />
+            ) : (
+              <>
+                <div className="carfocus__mainImage--skeleton skeleton"></div>
+              </>
+            )}
           </figure>
           <div className="carfocus__slideshow">
             <figure className="carfocus__slide">
-              <img
-                src={car.imageMain}
-                onClick={() => setDisplayImage(car.imageMain)}
-                alt=""
-                className="carfocus__img"
-              />
+              {mainImg ? (
+                <img
+                  src={mainImg.src}
+                  onClick={() => setDisplayImg(car.imageMain)}
+                  alt=""
+                  className="carfocus__img"
+                />
+              ) : (
+                <>
+                  <div className="carfocus__slide--skeleton skeleton"></div>
+                </>
+              )}
             </figure>
             <figure className="carfocus__slide">
-              <img
-                src={car.image2}
-                onClick={() => setDisplayImage(car.image2)}
-                alt=""
-                className="carfocus__img"
-              />
+              {secondImg ? (
+                <img
+                  src={secondImg.src}
+                  onClick={() => setDisplayImg(car.image2)}
+                  alt=""
+                  className="carfocus__img"
+                />
+              ) : (
+                <>
+                  <div className="carfocus__slide--skeleton skeleton"></div>
+                </>
+              )}
             </figure>
             <figure className="carfocus__slide">
-              <img
-                src={car.image3}
-                onClick={() => setDisplayImage(car.image3)}
-                alt=""
-                className="carfocus__img"
-              />
+              {thirdImg ? (
+                <img
+                  src={thirdImg.src}
+                  onClick={() => setDisplayImg(car.image2)}
+                  alt=""
+                  className="carfocus__img"
+                />
+              ) : (
+                <>
+                  <div className="carfocus__slide--skeleton skeleton"></div>
+                </>
+              )}
             </figure>
             <figure className="carfocus__slide">
               <img
                 src={car.image4}
-                onClick={() => setDisplayImage(car.image4)}
+                onClick={() => setDisplayImg(car.image4)}
                 alt=""
                 className="carfocus__img"
               />
@@ -74,7 +140,7 @@ const Carfocus = ({ cars, language }) => {
             <figure className="carfocus__slide">
               <img
                 src={car.image5}
-                onClick={() => setDisplayImage(car.image5)}
+                onClick={() => setDisplayImg(car.image5)}
                 alt=""
                 className="carfocus__img"
               />
@@ -82,7 +148,7 @@ const Carfocus = ({ cars, language }) => {
             <figure className="carfocus__slide">
               <img
                 src={car.image6}
-                onClick={() => setDisplayImage(car.image6)}
+                onClick={() => setDisplayImg(car.image6)}
                 alt=""
                 className="carfocus__img"
               />
@@ -107,7 +173,9 @@ const Carfocus = ({ cars, language }) => {
                 rel="noreferrer"
                 href={`https://wa.me/573026005730?text=Hola%20buenas%20tardes%2C%20estoy%20interesado%20en%20adquirir%20informacion%20sobre%20su%20servicio%20de%20transporte%20quiero%20mas%20informacion%20sobre%20${
                   car.type === "SUV" ? "la" : "el"
-                }%20${car.typeEsp}%20${car.name}%20${car.model}.%20en%20ingles%20si%20es%20posible`}
+                }%20${car.typeEsp}%20${car.name}%20${
+                  car.model
+                }.%20en%20ingles%20si%20es%20posible`}
               >
                 Book this Ride!
               </Button>
@@ -123,7 +191,6 @@ const Carfocus = ({ cars, language }) => {
               >
                 Reserva este vehiculo!
               </Button>
-              
             </div>
           )}
         </div>
