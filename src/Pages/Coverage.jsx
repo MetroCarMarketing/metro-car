@@ -1,22 +1,12 @@
 import React from "react";
 import CarThumbnailMap from "../Components/CarThumbnailMap";
+import CoverageMap from "../Components/CoverageMap";
 
 const Coverage = ({ translation, cars }) => {
   return (
     <div className="container top__container">
       <div className="row">
-        <div className="coverage">
-          {/* <div className="thumbnail__map">
-            {cars.map((item) => (
-              <CarThumbnailMap
-                translation={translation}
-                cars={cars}
-                item={item}
-                key={item.id}
-              />
-            ))}
-          </div> */}
-        </div>
+        <CoverageMap/>
       </div>
     </div>
   );

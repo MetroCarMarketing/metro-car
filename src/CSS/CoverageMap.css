@@ -1,0 +1,4 @@
+.coverage__map--wrapper > iframe{
+    width: 60em;
+    aspect-ratio: 16 / 9;
+}
