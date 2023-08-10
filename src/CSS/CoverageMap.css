@@ -1,4 +1,8 @@
+.coverage__map--wrapper{
+    width: 80%;
+}
+
 .coverage__map--wrapper > iframe{
-    width: 60em;
+    width: 100%;
     aspect-ratio: 16 / 9;
 }
