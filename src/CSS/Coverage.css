@@ -1,3 +1,14 @@
 .coverage__row{
     align-items: center;
 }
+
+.coverage__organizer{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    width: 80%;
+}
+
+.coverage__organizer{
+    color: white;
+}
