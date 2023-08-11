@@ -14,6 +14,7 @@ import Contact from "./Pages/Contact";
 import About from "./Pages/About";
 import Services from "./Pages/Services";
 import "./CSS/Queries.css";
+import Footer from "./Components/Footer";
 
 function App() {
   const [active, setActive] = useState(null);
@@ -82,6 +83,7 @@ function App() {
             alt=""
           />
         </figure>
+        <Footer translation={translation}/>
       </Router>
     </div>
   );
