@@ -1,17 +1,5 @@
-
-/* header {
-  color: white;
-  text-align: center;
-} */
-
-/* header > h1 {
-  font-size: 3.5em;
-  letter-spacing: 0.5em;
-  color: var(--main-color);
-} */
-
 .landing__row{
-  margin-bottom: 10em;
+  padding-bottom: 6em;
 }
 
 .landing__text--container {
@@ -64,7 +52,7 @@
 
 .scroll__container {
   position: absolute;
-  bottom: 4em;
+  bottom: 2em;
   left: 50%;
   transform: translateX(-50%);
   font-size: 1.1em;

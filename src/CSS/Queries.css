@@ -35,13 +35,17 @@
     padding: 0em 1em;
   }
 
+  .landing__container{
+    align-items: center;
+  }
+
   .landing__row {
     margin-bottom: 5em;
     justify-content: center;
   }
 
   .landing__text--container {
-    flex-direction: column;
+    /* flex-direction: column; */
     max-width: 45%;
     margin-left: auto;
   }

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import logo from "../Assets/2.png";
 import { useNavigate } from "react-router-dom";
 import "../CSS/Nav.css";
@@ -59,13 +59,13 @@ const Nav = ({ translation, setEnglish, setSpanish, active, setActive }) => {
             text={translation.navLink3}
             navTo={() => activateBtn("fleet", "button 3")}
             isActive={active === "button 3"}
-          />
+            />
           <NavBtn
             label="button 4"
             translation={translation}
             text={translation.navLink4}
+            navTo={() => activateBtn("contact", "button 4")}
             isActive={active === "button 4"}
-            test={test}
           />
           <NavBtn
             label="button 5"

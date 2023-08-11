@@ -48,14 +48,18 @@ body::-webkit-scrollbar {
 .row {
   display: flex;
   flex-direction: column;
-  padding: 0 2em;
+  padding: 2em;
   max-width: 1200px;
   width: 100%;
+  height: fit-content;
   margin: 0 auto;
+  background-color: #4b4b4b8d;
+  border-radius: 2em;
+  position: relative;
 }
 
 .top__row{
-  padding-top: 2em;
+  margin-top: 2em;
 }
 
 figure {
