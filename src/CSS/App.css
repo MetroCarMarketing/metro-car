@@ -48,7 +48,7 @@ body::-webkit-scrollbar {
 .row {
   display: flex;
   flex-direction: column;
-  padding: 2em;
+  padding: 3em 2em;
   max-width: 1200px;
   width: 100%;
   height: fit-content;
@@ -69,6 +69,15 @@ figure {
 
 img {
   width: 100%;
+}
+
+.title{
+  font-size: 2em;
+    letter-spacing: .05em;
+}
+
+button{
+  text-transform: inherit !important;
 }
 
 .car__background--desktop {

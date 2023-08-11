@@ -13,9 +13,6 @@
     color: white;
 }
 
-.coverage__organizer > h1{
-    letter-spacing: .05em;
-}
 .coverage__organizer > p{
     font-size: 1.2em;
     letter-spacing: .05em;

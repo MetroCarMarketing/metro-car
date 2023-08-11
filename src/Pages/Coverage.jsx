@@ -7,7 +7,7 @@ const Coverage = ({ translation, cars }) => {
     <div className="container top__container coverage__container">
       <div className="row top__row coverage__row">
         <div className="coverage__organizer">
-          <h1>{translation.coverageTitle} :</h1>
+          <h1 className="title">{translation.coverageTitle} :</h1>
           <CoverageMap />
           <p>{translation.coverageText}</p>
         </div>
