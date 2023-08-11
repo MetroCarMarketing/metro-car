@@ -13,7 +13,6 @@
   align-items: center;
   font-size: 2em;
   color: white;
-  /* border: .1em solid black; */
   transition: all 300ms ease;
 }
 
@@ -21,41 +20,28 @@
   box-shadow: 0 0 0 0.1em rgb(255, 255, 255);
 }
 
-.contact__list > button > .MuiSvgIcon-root {
-  margin-right: 0.2em;
-  margin-top: 0.1em;
+.instaBtn {
+  position: relative;
+  background: linear-gradient(to right, #4856f2, #d62976);
+  z-index: 1;
 }
 
-/* .instaBtn {
-  background: linear-gradient(to right, #4856f2, #d62976);
-} */
+.instaBtn::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: linear-gradient(to right, #d62976, #4856f2);
+  z-index: -1;
+  transition: opacity 0.3s linear;
+  opacity: 0;
+}
 
-.instaBtn {
-    position: relative;
-    background: linear-gradient(to right, #4856f2, #d62976);
-    z-index: 1;
-  }
-  
-  .instaBtn::before {
-    position: absolute;
-    content: "";
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    background: linear-gradient(to right, #d62976, #4856f2 );
-    z-index: -1;
-    transition: opacity 0.3s linear;
-    opacity: 0;
-  }
-  
-  .instaBtn:hover::before {
-    opacity: 1;
-  }
-
-/* .contact__list > .tiktokBtn {
-    background: linear-gradient(to right, #07c0ba, #fe2858);
-} */
+.instaBtn:hover::before {
+  opacity: 1;
+}
 
 .tiktokBtn {
   position: relative;
@@ -83,7 +69,6 @@
 .tiktokBtn > figure {
   filter: invert(1);
   width: 1em;
-  margin-right: 0.2em;
 }
 
 .facebookBtn {
@@ -100,4 +85,12 @@
 
 .mailBtn:hover {
   background-color: #c03f33 !important;
+}
+
+.whatsappBtn {
+  background-color: #128C7E !important;
+}
+
+.whatsappBtn:hover {
+  background-color: #21bd5a !important;
 }

@@ -1,7 +1,7 @@
 import React from "react";
 import "../CSS/Contact.css";
 import { Button } from "@mui/material";
-import { Facebook, Instagram, Mail } from "@mui/icons-material";
+import { Facebook, Instagram, Mail, WhatsApp } from "@mui/icons-material";
 import tiktok from "../Assets/logo-tiktok.svg";
 
 const Contact = ({ translation }) => {
@@ -13,21 +13,20 @@ const Contact = ({ translation }) => {
           <ul className="contact__list">
             <Button className="instaBtn">
               <Instagram />
-              MetroCar
             </Button>
             <Button className="facebookBtn">
               <Facebook />
-              MetroCar
             </Button>
             <Button className="tiktokBtn gradient">
               <figure>
                 <img src={tiktok} alt="" />
               </figure>
-              MetroCar
             </Button>
             <Button className="mailBtn">
               <Mail />
-              MetroCar
+            </Button>
+            <Button className="whatsappBtn">
+              <WhatsApp />
             </Button>
           </ul>
         </div>
