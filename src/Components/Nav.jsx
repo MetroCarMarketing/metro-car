@@ -7,7 +7,7 @@ import { MenuOutlined } from "@mui/icons-material";
 import NavBtn from "./NavBtn";
 import TranslateBtns from "./TranslateBtns";
 
-const Nav = ({ translation, setEnglish, setSpanish }) => {
+const Nav = ({ translation, setEnglish, setSpanish, active, setActive }) => {
 
   const test = () => {
     alert(
@@ -21,8 +21,6 @@ const Nav = ({ translation, setEnglish, setSpanish }) => {
     navigateTo("/");
     setActive(null);
   };
-
-  const [active, setActive] = useState(null);
 
   const activateBtn = (value, buttonLabel) => {
     navigateTo(value);

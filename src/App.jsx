@@ -18,6 +18,9 @@ import Services from "./Pages/Services";
 
 function App() {
 
+  const [active, setActive] = useState(null);
+
+
   const [language, setLanguage] = useState("spanish");
   const [translation, setTranslation] = useState({});
 
@@ -32,10 +35,10 @@ function App() {
   return (
     <div className="App">
       <Router>
-        <Nav translation={translation} setEnglish={() => setLanguage('english')} setSpanish={() => setLanguage('spanish')} />
+        <Nav translation={translation} setEnglish={() => setLanguage('english')} setSpanish={() => setLanguage('spanish')} active={active} setActive={setActive} />
         <Burger translation={translation}/>
         <Routes>
-          <Route path="/" element={<Home translation={translation} />} />
+          <Route path="/" element={<Home translation={translation} setActive={setActive} />} />
           <Route path="/services" element={<Services translation={translation} />} />
           <Route path="/fleet" element={<Fleet translation={translation} language={language} cars={cars} />} />
           <Route path="/fleet/:id" element={<Carfocus  language={language} cars={cars}/>} />
