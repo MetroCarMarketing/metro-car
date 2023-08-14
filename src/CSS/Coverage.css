@@ -14,8 +14,8 @@
 }
 
 .coverage__organizer > p{
+    margin-top: 0;
     font-size: 1.2em;
     letter-spacing: .05em;
     line-height: 1.5em;
-    text-align: justify;
 }
