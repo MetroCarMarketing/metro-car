@@ -3,14 +3,19 @@
   gap: 2em;
 }
 
+.services__body--text{
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+}
+
 .services__text {
   font-size: 1.1em;
-  margin: 1.5em 0;
 }
 
 .services__body--list {
   display: flex;
-  flex: 1;
+  height: 4em;
   gap: 2em;
 }
 
@@ -36,6 +41,16 @@
 .services__body--list > div:hover .list__item--deco{
     background-color: var(--main-color);
     width: 45%;
+}
+
+.services__type--list > div{
+    display: flex;
+    align-items: center;
+    font-size: 1.2em;
+}
+.services__type--list > div > .MuiSvgIcon-root{
+    margin-top: .2em;
+    color: var(--main-color);
 }
 
 .services__body--imgWrapper {
