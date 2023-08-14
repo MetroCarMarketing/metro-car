@@ -9,11 +9,11 @@ import TranslateBtns from "./TranslateBtns";
 
 const Nav = ({ translation, setEnglish, setSpanish, active, setActive }) => {
 
-  const test = () => {
-    alert(
-      "Esta pagina esta en desarrollo. This page is currently being developed"
-    );
-  };
+  // const test = () => {
+  //   alert(
+  //     "Esta pagina esta en desarrollo. This page is currently being developed"
+  //   );
+  // };
 
   const navigateTo = useNavigate();
 
@@ -43,8 +43,8 @@ const Nav = ({ translation, setEnglish, setSpanish, active, setActive }) => {
             label="button 1"
             translation={translation}
             text={translation.navLink1}
+            navTo={() => activateBtn("services", "button 1")}
             isActive={active === "button 1"}
-            test={test}
           />
           <NavBtn
             label="button 2"
@@ -66,13 +66,13 @@ const Nav = ({ translation, setEnglish, setSpanish, active, setActive }) => {
             text={translation.navLink4}
             navTo={() => activateBtn("contact", "button 4")}
             isActive={active === "button 4"}
-          />
+            />
           <NavBtn
             label="button 5"
             translation={translation}
             text={translation.navLink5}
+            navTo={() => activateBtn("about", "button 5")}
             isActive={active === "button 5"}
-            test={test}
           />
         </div>
         <figure className="nav__car--desktop">

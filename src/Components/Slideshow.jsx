@@ -11,14 +11,22 @@ const Slideshow = () => {
   const slideshow = useRef(null);
   const [autoplayPaused, setAutoplayPaused] = useState(false);
 
-  const [img, setImg] = useState();
+  const [slide1, setSlide1] = useState();
+  const [slide2, setSlide2] = useState();
 
   useEffect(() => {
     const image = new Image();
     image.src = img1;
     image.onload = () => {
       setTimeout(() => {
-        setImg(image);
+        setSlide1(image);
+      }, 1000);
+    };
+    const image2 = new Image();
+    image2.src = img2;
+    image2.onload = () => {
+      setTimeout(() => {
+        setSlide2(image2);
       }, 1000);
     };
   });
@@ -85,7 +93,43 @@ const Slideshow = () => {
       onMouseLeave={play}
       className="slideshow__container"
     >
-      {img ? (
+      {slide1 ? (
+        <>
+          <div ref={slideshow} className="slideshow">
+            <div className="slide">
+              <img src={slide1.src} alt="" />
+            </div>
+            {slide2 ? (
+              <>
+                <div className="slide">
+                  <img src={slide2.src} alt="" />
+                </div>
+                <div className="slide">
+                  <img src={img3} alt="" />
+                </div>
+                <div className="slide">
+                  <img src={img4} alt="" />
+                </div>
+              </>
+            ) : (
+              <></>
+            )}
+          </div>
+          <div className="arrows">
+            <Button onClick={prev}>
+              <ChevronLeft className="left" />
+            </Button>
+            <Button onClick={next}>
+              <ChevronRight className="right" />
+            </Button>
+          </div>
+        </>
+      ) : (
+        <>
+          <div className="slideshow__container--skeleton skeleton"></div>
+        </>
+      )}
+      {/* {slide1 ? (
         <>
           <div ref={slideshow} className="slideshow">
             <div className="slide">
@@ -113,30 +157,7 @@ const Slideshow = () => {
         </>
       ) : (
         <><div className="slideshow__container--skeleton skeleton"></div></>
-      )}
-      {/* <div ref={slideshow} className="slideshow">
-        <div className="slide">
-          <img src={img1} alt="" />
-        </div>
-        <div className="slide">
-          <img src={img2} alt="" />
-        </div>
-        <div className="slide">
-          <img src={img3} alt="" />
-        </div>
-        <div className="slide">
-          <img src={img4} alt="" />
-        </div>
-      </div>
-
-      <div className="arrows">
-        <Button onClick={prev}>
-          <ChevronLeft className="left" />
-        </Button>
-        <Button onClick={next}>
-          <ChevronRight className="right" />
-        </Button>
-      </div> */}
+      )} */}
     </div>
   );
 };

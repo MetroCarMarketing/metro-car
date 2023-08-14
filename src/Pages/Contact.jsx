@@ -11,21 +11,21 @@ const Contact = ({ translation }) => {
         <div className="row top__row contact__row">
           <h1 className="title">{translation.contactTitle}</h1>
           <ul className="contact__list">
-            <Button className="instaBtn">
+            <Button href="https://google.com" className="instaBtn">
               <Instagram />
             </Button>
-            <Button className="facebookBtn">
+            <Button href="https://google.com" className="facebookBtn">
               <Facebook />
             </Button>
-            <Button className="tiktokBtn gradient">
+            <Button href="https://google.com" className="tiktokBtn gradient">
               <figure>
                 <img src={tiktok} alt="" />
               </figure>
             </Button>
-            <Button className="mailBtn">
+            <Button href="https://google.com" className="mailBtn">
               <Mail />
             </Button>
-            <Button className="whatsappBtn">
+            <Button href="https://wa.me/573026005730" className="whatsappBtn">
               <WhatsApp />
             </Button>
           </ul>

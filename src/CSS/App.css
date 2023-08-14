@@ -7,31 +7,27 @@
   font-family: "Playfair Display", serif !important;
 }
 
-
 body {
-  background-color: #202020;
-  /* --main-color: #3b66d3;
-  --main-alter: #3f5dd698;
-  --main-hover: #4164e10e; */
   --main-color: #e1ba66;
   --main-alter: #ba995298;
-  /* --main-hover: #e1ba660e; */
   --main-hover: #4234163f;
   --secondary-color: #202020;
+
   scrollbar-width: 0;
   -ms-overflow-style: none;
+  background-color: #202020;
 }
 
 body::-webkit-scrollbar {
   display: none;
 }
 
-#root{
+#root {
   font-size: 10px;
   /* height: 300vh; */
 }
 
-.menuOpen #root{
+.menuOpen #root {
   max-height: 100vh;
   overflow: hidden;
 }
@@ -58,7 +54,7 @@ body::-webkit-scrollbar {
   position: relative;
 }
 
-.top__row{
+.top__row {
   margin-top: 2em;
 }
 
@@ -71,12 +67,13 @@ img {
   width: 100%;
 }
 
-.title{
+.title {
+  color: white;
   font-size: 2em;
-    letter-spacing: .05em;
+  letter-spacing: 0.05em;
 }
 
-button{
+button {
   text-transform: inherit !important;
 }
 
@@ -91,7 +88,7 @@ button{
   z-index: -1;
 }
 
-.car__background--phone{
+.car__background--phone {
   position: fixed;
   align-items: normal;
   top: 0;
@@ -101,8 +98,6 @@ button{
   z-index: -1;
 }
 
-
-
-.number{
-    font-family: "Noto Serif Vithkuqi", serif !important;
+.number {
+  font-family: "Noto Serif Vithkuqi", serif !important;
 }

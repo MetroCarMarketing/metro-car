@@ -5,6 +5,7 @@ import { Button } from "@mui/material";
 import { ChevronLeft } from "@mui/icons-material";
 
 const Carfocus = ({ cars, language }) => {
+
   const { id } = useParams();
   const car = cars.find((car) => car.id === +id);
 
@@ -12,13 +13,14 @@ const Carfocus = ({ cars, language }) => {
 
   const currentLang = language;
 
-  const [displayImg, setDisplayImg] = useState();
+  const [displayImg, setDisplayImg] = useState(car.imageMain);
 
   const [mainImg, setMainImg] = useState();
   const [secondImg, setSecondImg] = useState();
   const [thirdImg, setThirdImg] = useState();
 
   useEffect(() => {
+
     const display = new Image();
     display.src = car.imageMain;
 
@@ -31,11 +33,11 @@ const Carfocus = ({ cars, language }) => {
     const third = new Image();
     third.src = car.image3;
 
-    display.onload = () => {
-      setTimeout(() => {
-        setDisplayImg(display);
-      }, 600);
-    };
+    // display.onload = () => {
+    //   setTimeout(() => {
+    //     setDisplayImg(display);
+    //   }, 600);
+    // };
 
     main.onload = () => {
       setTimeout(() => {
@@ -78,20 +80,21 @@ const Carfocus = ({ cars, language }) => {
         )}
         <div className="carfocus__imgs--wrapper">
           <figure className="carfocus__mainImage">
-            {displayImg ? (
+            <img src={displayImg} alt="" />
+            {/* {displayImg ? (
               <img src={displayImg.src} alt="" />
             ) : (
               <>
                 <div className="carfocus__mainImage--skeleton skeleton"></div>
               </>
-            )}
+            )} */}
           </figure>
           <div className="carfocus__slideshow">
             <figure className="carfocus__slide">
               {mainImg ? (
                 <img
                   src={mainImg.src}
-                  onClick={() => setDisplayImg(car.imageMain)}
+                  onClick={() => setDisplayImg(mainImg.src)}
                   alt=""
                   className="carfocus__img"
                 />
@@ -105,7 +108,7 @@ const Carfocus = ({ cars, language }) => {
               {secondImg ? (
                 <img
                   src={secondImg.src}
-                  onClick={() => setDisplayImg(car.image2)}
+                  onClick={() => setDisplayImg(secondImg.src)}
                   alt=""
                   className="carfocus__img"
                 />
@@ -119,7 +122,7 @@ const Carfocus = ({ cars, language }) => {
               {thirdImg ? (
                 <img
                   src={thirdImg.src}
-                  onClick={() => setDisplayImg(car.image2)}
+                  onClick={() => setDisplayImg(thirdImg.src)}
                   alt=""
                   className="carfocus__img"
                 />

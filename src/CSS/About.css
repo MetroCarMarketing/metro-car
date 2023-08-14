@@ -1,0 +1,50 @@
+.about__selector--list {
+  display: flex;
+  gap: 1em;
+  height: 4em;
+  margin-bottom: 2em;
+  flex: .5;
+}
+
+.about__selector--list > button {
+  color: white;
+  font-size: 1.4em;
+  flex: .25;
+  white-space: nowrap;
+}
+
+.about__selector--list > button:hover {
+  background-color: var(--main-hover);
+  color: var(--main-color);
+}
+
+.about--selected {
+  color: var(--main-color) !important;
+  border: .1em solid var(--main-color) !important;
+}
+
+.about__wrapper,
+.faq__wrapper ,
+.reviews__wrapper{
+  display: none;
+}
+
+.about .about__wrapper,
+.faq .faq__wrapper ,
+.reviews .reviews__wrapper{
+  display: flex;
+  color: white;
+}
+
+.about__text--wrapperLeft, 
+.faq__text--wrapperLeft ,
+.reviews__text--wrapperLeft{
+  width: calc(50% - 1em);
+}
+
+.about__text--info,
+.faq__text--info ,
+.reviews__text--info{
+  margin-top: 0.5em;
+  text-align: justify;
+}
