@@ -8,10 +8,16 @@
 }
 
 body {
-  --main-color: #e1ba66;
+  --main-color: #008dd3;
+  --main-alter: #004c72;
+  --main-hover: #01155832;
+  --secondary-color: #202020;
+  --cold-white: #e2e7eb;
+  --accent-color: #FB9040;
+  /* --main-color: #e1ba66;
   --main-alter: #ba995298;
   --main-hover: #4234163f;
-  --secondary-color: #202020;
+  --secondary-color: #202020; */
 
   scrollbar-width: 0;
   -ms-overflow-style: none;
@@ -49,7 +55,7 @@ body::-webkit-scrollbar {
   width: 100%;
   height: fit-content;
   margin: 0 auto;
-  color: white;
+  color: var(--cold-white);
   background-color: #242424e9;
   /* background-color: #4b4b4b8d; */
   border-radius: 2em;
@@ -71,15 +77,15 @@ img {
 }
 
 .title {
-  color: white;
+  color: var(--cold-white);
   font-size: 2em;
   letter-spacing: 0.05em;
 }
 
-p{
-  margin-top: .5em;
+p {
+  margin-top: 0.5em;
   text-align: justify;
-  letter-spacing: .05em;
+  letter-spacing: 0.05em;
   line-height: 1.5em;
 }
 

@@ -38,9 +38,8 @@ nav > h1 {
   font-size: 1.5em;
   color: var(--main-color);
   text-align: center;
-  margin-bottom: .2em;
+  margin-bottom: 0.2em;
 }
-
 
 .nav__list {
   flex: 1;
@@ -48,15 +47,15 @@ nav > h1 {
   align-items: center;
   justify-content: space-evenly;
   height: 80%;
-  gap: .25em;
+  gap: 0.25em;
 }
 
-.nav__desktop{
+.nav__desktop {
   display: none;
 }
 
 .nav__list > button {
-  color: white;
+  color: var(--cold-white);
   height: 100%;
   flex: 1;
   font-size: 1.3em;
@@ -68,10 +67,10 @@ nav > h1 {
 .nav__btn-active {
   color: var(--main-color) !important;
   background-color: var(--main-hover) !important;
-} 
+}
 
-.nav__btn-active{
-  border: .1em solid var(--main-color) !important;
+.nav__btn-active {
+  border: 0.1em solid var(--accent-color) !important;
 }
 
 .nav__car--desktop {

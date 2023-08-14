@@ -1,13 +1,13 @@
 footer {
   margin-top: 1em;
   display: flex;
-  color: white;
+  color: var(--cold-white);
   background-color: #242424;
 }
 
-.footer__row{
-    padding: 1em 2em;
-    background-color: transparent;
-    justify-content: center;
-    align-items: center;
+.footer__row {
+  padding: 1em 2em;
+  background-color: transparent;
+  justify-content: center;
+  align-items: center;
 }

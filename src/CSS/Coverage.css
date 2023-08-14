@@ -1,21 +1,21 @@
-.coverage__row{
-    align-items: center;
+.coverage__row {
+  align-items: center;
 }
 
-.coverage__organizer{
-    display: flex;
-    flex-direction: column;
-    gap: 1em;
-    width: 80%;
+.coverage__organizer {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  width: 80%;
 }
 
-.coverage__organizer{
-    color: white;
+.coverage__organizer {
+  color: var(--cold-white);
 }
 
-.coverage__organizer > p{
-    margin-top: 0;
-    font-size: 1.2em;
-    /* letter-spacing: .05em;
+.coverage__organizer > p {
+  margin-top: 0;
+  font-size: 1.2em;
+  /* letter-spacing: .05em;
     line-height: 1.5em; */
 }

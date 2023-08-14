@@ -7,9 +7,9 @@ import { ChevronRight } from "@mui/icons-material";
 const Services = ({ translation, setActive }) => {
   const navigateTo = useNavigate();
 
-  const navTo = (value, nav) => {
-    navigateTo(value);
-    setActive(nav);
+  const navTo = (nav, value) => {
+    navigateTo(nav);
+    setActive(value);
   };
 
   return (

@@ -11,21 +11,21 @@ const Contact = ({ translation }) => {
         <div className="row top__row contact__row">
           <h1 className="title">{translation.contactTitle}</h1>
           <ul className="contact__list">
-            <Button href="https://google.com" className="instaBtn">
+            <Button target="_blank" rel="noreferrer" href="https://google.com" className="instaBtn">
               <Instagram />
             </Button>
-            <Button href="https://google.com" className="facebookBtn">
+            <Button target="_blank" rel="noreferrer" href="https://google.com" className="facebookBtn">
               <Facebook />
             </Button>
-            <Button href="https://google.com" className="tiktokBtn gradient">
+            <Button target="_blank" rel="noreferrer" href="https://google.com" className="tiktokBtn gradient">
               <figure>
                 <img src={tiktok} alt="" />
               </figure>
             </Button>
-            <Button href="https://google.com" className="mailBtn">
+            <Button target="_blank" rel="noreferrer" href="https://google.com" className="mailBtn">
               <Mail />
             </Button>
-            <Button href="https://wa.me/573026005730" className="whatsappBtn">
+            <Button target="_blank" rel="noreferrer" href="https://wa.me/573026005730" className="whatsappBtn">
               <WhatsApp />
             </Button>
           </ul>

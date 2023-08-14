@@ -1,4 +1,4 @@
-.landing__row{
+.landing__row {
   padding-bottom: 6em;
 }
 
@@ -7,7 +7,7 @@
   flex-direction: column-reverse;
   gap: 4em;
   flex: 0.5;
-  color: white;
+  color: var(--cold-white);
 }
 
 .landing__text--container > .landing__btn {
@@ -19,7 +19,7 @@
   line-height: 1.3em;
   background-color: var(--main-hover);
   text-align: center;
-  color: white;
+  color: var(--cold-white);
 }
 .landing__btn > figure {
   width: 2.8em;
@@ -81,9 +81,9 @@
 
 @keyframes scrolldown {
   0% {
-    transform: translate(-50%, .5em);
+    transform: translate(-50%, 0.5em);
   }
   100% {
-    transform: translate(-50%, -.8em);
+    transform: translate(-50%, -0.8em);
   }
 }
