@@ -5,10 +5,10 @@
 
 .services__text {
   font-size: 1.1em;
+  margin: 1.5em 0;
 }
 
 .services__body--list {
-    margin-top: 1em;
   display: flex;
   flex: 1;
   gap: 2em;
