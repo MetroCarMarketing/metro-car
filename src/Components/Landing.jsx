@@ -5,6 +5,7 @@ import "../CSS/Landing.css";
 import { useNavigate } from "react-router-dom";
 
 const Landing = ({ translation, setActive }) => {
+
   const navigateTo = useNavigate();
 
   const navTo = (value, buttonLabel) => {
@@ -22,9 +23,9 @@ const Landing = ({ translation, setActive }) => {
               className="landing__btn"
             >
               {translation.landingBtn}
-              <figure>
+              {/* <figure>
                 <img src={icon} alt="" className="landing__btn--icon" />
-              </figure>
+              </figure> */}
             </Button>
             <div className="landing__text">
               <h2>{translation.landingTitle}</h2>

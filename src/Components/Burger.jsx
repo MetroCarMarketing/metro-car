@@ -6,10 +6,6 @@ import { Home, MenuOpenOutlined } from "@mui/icons-material";
 
 const Burger = ({ translation }) => {
 
-  const test = () => {
-    alert('Esta pagina esta en desarrollo. This page is currently being developed')
-  }
-
 
   const navigateTo = useNavigate();
 
@@ -32,7 +28,7 @@ const Burger = ({ translation }) => {
         >
           <Home />
         </IconButton>
-        <Button onClick={test}>
+        <Button onClick={() => navigateClose("/services")}>
           {translation.navLink1}
         </Button>
 
@@ -44,11 +40,11 @@ const Burger = ({ translation }) => {
           {translation.navLink3}
         </Button>
 
-        <Button onClick={test}>
+        <Button onClick={() => navigateClose("/contact")}>
           {translation.navLink4}
         </Button>
 
-        <Button onClick={test}>
+        <Button onClick={() => navigateClose("/about")}>
           {translation.navLink5}
         </Button>
       </div>

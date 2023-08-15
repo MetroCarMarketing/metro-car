@@ -1,16 +1,29 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "../CSS/Services.css";
-import img from "../Assets/vertPic.jpg";
+import img1 from "../Assets/vertPic.jpg";
 import { useNavigate } from "react-router-dom";
 import { ChevronRight } from "@mui/icons-material";
 
 const Services = ({ translation, setActive }) => {
+  const [img, setImg] = useState();
+
   const navigateTo = useNavigate();
 
   const navTo = (nav, value) => {
     navigateTo(nav);
     setActive(value);
   };
+
+  useEffect(() => {
+    const image = new Image();
+    image.src = img1;
+
+    image.onload = () => {
+      setTimeout(() => {
+        setImg(image);
+      }, 600);
+    };
+  });
 
   return (
     <section id="Services">
@@ -55,9 +68,13 @@ const Services = ({ translation, setActive }) => {
                 </div>
               </ul>
             </div>
-            <figure className="services__body--imgWrapper">
-              <img src={img} alt="" />
-            </figure>
+            {img ? (
+              <figure className="services__body--imgWrapper">
+                <img src={img.src} alt="" />
+              </figure>
+            ) : (
+              <><div className="services__skeleton skeleton"></div></>
+            )}
           </div>
         </div>
       </div>

@@ -55,7 +55,7 @@
 
 .arrows > button:hover {
   background-color: var(--main-hover);
-  color: var(--cold-white);
+  /* color: var(--cold-white); */
 }
 
 .arrows > button > .MuiSvgIcon-root {
@@ -63,11 +63,21 @@
 }
 
 .left > path {
-  filter: drop-shadow(2px 0 0 #000);
+  filter: drop-shadow(2px 0 0 var(--accent-color));
+  transition: all 300ms ease;
 }
 
 .right > path {
-  filter: drop-shadow(-2px 0 0 #000);
+  filter: drop-shadow(-2px 0 0 var(--accent-color));
+  transition: all 300ms ease;
+}
+
+.arrows > button:hover .left > path {
+  filter: drop-shadow(2px 0 0 var(--cold-white));
+}
+
+.arrows > button:hover .right > path {
+  filter: drop-shadow(-2px 0 0 var(--cold-white));
 }
 
 .slideshow__container--skeleton {

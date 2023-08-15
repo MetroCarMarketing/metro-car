@@ -35,7 +35,7 @@
     padding: 0em 1em;
   }
 
-  .landing__container{
+  .landing__container {
     align-items: center;
   }
 
@@ -48,6 +48,28 @@
     /* flex-direction: column; */
     max-width: 45%;
     margin-left: auto;
+  }
+
+  .services__body--text {
+    max-width: 60%;
+  }
+
+  .list__item--deco{
+    width: 45%;
+}
+.services__body--list > div:hover .list__item--deco{
+    width: 70%;
+}
+
+  .services__body--imgWrapper {
+    display: flex;
+    max-width: 40%;
+    border-radius: 1em;
+    box-shadow: 0 0 0.5em 0.5em var(--main-alter);
+  }
+
+  .services__skeleton{
+    display: flex;
   }
 
   .coverage__map--wrapper > iframe {

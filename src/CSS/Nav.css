@@ -65,12 +65,12 @@ nav > h1 {
 
 .nav__list > button:hover,
 .nav__btn-active {
-  color: var(--main-color) !important;
+  color: var(--accent-color) !important;
   background-color: var(--main-hover) !important;
 }
 
 .nav__btn-active {
-  border: 0.1em solid var(--accent-color) !important;
+  border: 0.1em solid var(--main-color) !important;
 }
 
 .nav__car--desktop {

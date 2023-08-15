@@ -65,8 +65,8 @@
 
 .scroll__icon {
   position: relative;
-  width: 1.25em;
-  height: 2.5em;
+  width: 1.5em;
+  height: 3em;
 }
 
 .scroll__dot {
@@ -75,13 +75,13 @@
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  /* transform: translate(-50%, -50%); */
   animation: scrolldown 2.5s ease infinite alternate-reverse;
 }
 
 @keyframes scrolldown {
   0% {
-    transform: translate(-50%, 0.5em);
+    transform: translate(-50%, 0.4em);
   }
   100% {
     transform: translate(-50%, -0.8em);
