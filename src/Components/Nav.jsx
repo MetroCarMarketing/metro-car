@@ -9,12 +9,6 @@ import TranslateBtns from "./TranslateBtns";
 
 const Nav = ({ translation, setEnglish, setSpanish, active, setActive }) => {
 
-  // const test = () => {
-  //   alert(
-  //     "Esta pagina esta en desarrollo. This page is currently being developed"
-  //   );
-  // };
-
   const navigateTo = useNavigate();
 
   const homeBtn = () => {

@@ -52,7 +52,7 @@
 
 .scroll__container {
   position: absolute;
-  bottom: 2em;
+  bottom: -8em;
   left: 50%;
   transform: translateX(-50%);
   font-size: 1.1em;
