@@ -3,10 +3,10 @@
   gap: 2em;
 }
 
-.services__body--text{
-    display: flex;
-    flex-direction: column;
-    gap: 2em;
+.services__body--text {
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
 }
 
 .services__text {
@@ -20,7 +20,7 @@
 }
 
 .services__body--list > div {
-    position: relative;
+  position: relative;
   flex: 1;
   display: flex;
   align-items: center;
@@ -29,38 +29,41 @@
   cursor: pointer;
 }
 
-.list__item--deco{
-    position: absolute;
-    bottom: 0;
-    width: 60%;
-    background-color: var(--main-alter);
-    height: .2em;
-    border-radius: .5em;
-    transition: all 300ms ease;
+.list__item--deco {
+  position: absolute;
+  bottom: 0;
+  width: 60%;
+  background-color: var(--main-alter);
+  height: 0.2em;
+  border-radius: 0.5em;
+  transition: all 300ms ease;
 }
-.services__body--list > div:hover .list__item--deco{
-    background-color: var(--accent-color);
-    width: 90%;
+.services__body--list > div:hover .list__item--deco {
+  background-color: var(--accent-color);
+  width: 90%;
 }
 
-.services__type--list > div{
-    display: flex;
-    align-items: center;
-    font-size: 1.2em;
+.services__type--list > div {
+  display: flex;
+  align-items: center;
+  font-size: 1.2em;
 }
-.services__type--list > div > .MuiSvgIcon-root{
-    margin-top: .2em;
-    color: var(--main-color);
+.services__type--list > div > .MuiSvgIcon-root {
+  margin-top: 0.2em;
+  color: var(--main-color);
 }
 
 .services__body--imgWrapper {
-    display: none;
-  }
-  
+  display: none;
+}
 
-.services__skeleton{
-    display: none;
-    width: 40%;
-    aspect-ratio: 9 / 16;
-    border-radius: 1em;
+.services__body--imgWrapper > img {
+  height: 100%;
+}
+
+.services__skeleton {
+  display: none;
+  width: 40%;
+  aspect-ratio: 9 / 16;
+  border-radius: 1em;
 }
