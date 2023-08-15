@@ -46,10 +46,14 @@
   .landing__row {
     margin-bottom: 5em;
     justify-content: center;
+    background-color: transparent;
   }
 
   .landing__text--container {
     /* flex-direction: column; */
+    background-color: #242424e9;
+    padding: 2em;
+    border-radius: 1em;
     max-width: 45%;
     margin-left: auto;
   }

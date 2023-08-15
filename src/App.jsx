@@ -30,6 +30,11 @@ function App() {
     }
   }, [language]);
 
+  useEffect(() => {
+    const activeNav = window.location.pathname;
+    setActive(activeNav);
+  })
+
   return (
     <div className="App">
       <Router>

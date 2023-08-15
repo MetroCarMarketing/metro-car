@@ -22,9 +22,9 @@ const Nav = ({ translation, setEnglish, setSpanish, active, setActive }) => {
     setActive(null);
   };
 
-  const activateBtn = (value, buttonLabel) => {
+  const activateBtn = (value) => {
     navigateTo(value);
-    setActive(buttonLabel);
+    setActive(value);
   };
 
   const openMenu = () => {
@@ -40,39 +40,34 @@ const Nav = ({ translation, setEnglish, setSpanish, active, setActive }) => {
         <h1>MetroCar</h1>
         <div className="nav__list nav__desktop">
           <NavBtn
-            label="button 1"
             translation={translation}
             text={translation.navLink1}
-            navTo={() => activateBtn("services", "button 1")}
-            isActive={active === "button 1"}
+            navTo={() => activateBtn("/services")}
+            isActive={active === "/services"}
           />
           <NavBtn
-            label="button 2"
             translation={translation}
             text={translation.navLink2}
-            navTo={() => activateBtn("coverage", "button 2")}
-            isActive={active === "button 2"}
+            navTo={() => activateBtn("/coverage")}
+            isActive={active === "/coverage"}
           />
           <NavBtn
-            label="button 3"
             translation={translation}
             text={translation.navLink3}
-            navTo={() => activateBtn("fleet", "button 3")}
-            isActive={active === "button 3"}
+            navTo={() => activateBtn("/fleet")}
+            isActive={active === "/fleet"}
             />
           <NavBtn
-            label="button 4"
             translation={translation}
             text={translation.navLink4}
-            navTo={() => activateBtn("contact", "button 4")}
-            isActive={active === "button 4"}
+            navTo={() => activateBtn("/contact")}
+            isActive={active === "/contact"}
             />
           <NavBtn
-            label="button 5"
             translation={translation}
             text={translation.navLink5}
-            navTo={() => activateBtn("about", "button 5")}
-            isActive={active === "button 5"}
+            navTo={() => activateBtn("/about")}
+            isActive={active === "/about"}
           />
         </div>
         <figure className="nav__car--desktop">
