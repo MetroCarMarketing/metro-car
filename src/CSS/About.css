@@ -1,15 +1,13 @@
 .about__selector--list {
   display: flex;
-  gap: 1em;
-  height: 4em;
+  gap: .5em;
   margin-bottom: 2em;
-  flex: 0.5;
+  flex-wrap: nowrap;
 }
 
 .about__selector--list > button {
   color: var(--cold-white);
   font-size: 1.4em;
-  flex: 0.25;
   white-space: nowrap;
 }
 
@@ -36,10 +34,10 @@
   color: var(--cold-white);
 }
 
-.about__text--wrapperLeft,
-.faq__text--wrapperLeft,
-.reviews__text--wrapperLeft {
-  width: calc(50% - 1em);
+.about__text--title,
+.faq__text--title,
+.reviews__text--title{
+  font-size: 1.3em;
 }
 
 .about__text--info,

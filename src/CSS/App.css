@@ -96,6 +96,7 @@ p {
   text-align: justify;
   letter-spacing: 0.05em;
   line-height: 1.5em;
+  font-size: .75rem;
 }
 
 button {

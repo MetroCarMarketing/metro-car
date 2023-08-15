@@ -9,10 +9,6 @@
   gap: 2em;
 }
 
-.services__text {
-  font-size: 1.1em;
-}
-
 .services__body--list {
   display: flex;
   height: 4em;

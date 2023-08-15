@@ -3,6 +3,10 @@
     font-size: 14px;
   }
 
+  p{
+    font-size: 1.1rem;
+  }
+
   .nav__car--desktop {
     display: flex;
   }
@@ -54,12 +58,12 @@
     max-width: 60%;
   }
 
-  .list__item--deco{
+  .list__item--deco {
     width: 45%;
-}
-.services__body--list > div:hover .list__item--deco{
+  }
+  .services__body--list > div:hover .list__item--deco {
     width: 70%;
-}
+  }
 
   .services__body--imgWrapper {
     display: flex;
@@ -68,7 +72,7 @@
     box-shadow: 0 0 0.5em 0.5em var(--main-alter);
   }
 
-  .services__skeleton{
+  .services__skeleton {
     display: flex;
   }
 
@@ -80,7 +84,25 @@
     flex-direction: row;
   }
 
+  .carfocus__backBtn > p {
+    margin-top: 0;
+  }
+
   .thumbnail {
     width: 25%;
+  }
+
+  .about__selector--list{
+  gap: 1em;
+  }
+  
+  .about__selector--list > button {
+    font-size: 1.4em;
+    flex: 0.25;
+  }
+  .about__text--wrapperLeft,
+  .faq__text--wrapperLeft,
+  .reviews__text--wrapperLeft {
+    width: calc(50% - 1em);
   }
 }
