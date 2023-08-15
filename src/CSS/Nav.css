@@ -34,6 +34,10 @@ nav > .MuiSvgIcon-root {
   cursor: pointer;
 }
 
+/* .nav__logo--wrapper > img{
+  filter: drop-shadow( 2px 2px var(--accent-color));
+} */
+
 nav > h1 {
   font-size: 1.5em;
   color: var(--main-color);
