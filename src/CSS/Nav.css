@@ -42,7 +42,7 @@ nav > h1 {
   font-size: 1.5em;
   color: var(--main-color);
   text-align: center;
-  margin-bottom: 0.2em;
+
 }
 
 .nav__list {
@@ -59,10 +59,12 @@ nav > h1 {
 }
 
 .nav__list > button {
+  
+  font-family: 'Cinzel Decorative', cursive !important;
   color: var(--cold-white);
   height: 100%;
   flex: 1;
-  font-size: 1.3em;
+  font-size: 1.2em;
   font-weight: 600;
   transition: all 300ms ease !important;
 }
