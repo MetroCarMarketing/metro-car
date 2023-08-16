@@ -17,6 +17,11 @@ import "./CSS/Queries.css";
 import Footer from "./Components/Footer";
 
 function App() {
+
+  useEffect(() => {
+    window.scrollTo({top: 0})
+  })
+
   const [active, setActive] = useState(null);
 
   const [language, setLanguage] = useState("spanish");
