@@ -33,7 +33,7 @@ function App() {
   useEffect(() => {
     const activeNav = window.location.pathname;
     setActive(activeNav);
-  })
+  }, [active])
 
   return (
     <div className="App">
