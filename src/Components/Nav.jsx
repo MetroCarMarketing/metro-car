@@ -8,7 +8,6 @@ import NavBtn from "./NavBtn";
 import TranslateBtns from "./TranslateBtns";
 
 const Nav = ({ translation, setEnglish, setSpanish, active, setActive }) => {
-
   const navigateTo = useNavigate();
 
   const homeBtn = () => {
@@ -27,47 +26,49 @@ const Nav = ({ translation, setEnglish, setSpanish, active, setActive }) => {
 
   return (
     <nav>
-        <MenuOutlined onClick={openMenu} />
-        <figure onClick={homeBtn} className="nav__logo--wrapper">
-          <img src={logo} alt="" />
-        </figure>
-        <h1>MetroCar</h1>
-        <div className="nav__list nav__desktop">
-          <NavBtn
-            translation={translation}
-            text={translation.navLink1}
-            navTo={() => activateBtn("/services")}
-            isActive={active === "/services"}
-          />
-          <NavBtn
-            translation={translation}
-            text={translation.navLink2}
-            navTo={() => activateBtn("/coverage")}
-            isActive={active === "/coverage"}
-          />
-          <NavBtn
-            translation={translation}
-            text={translation.navLink3}
-            navTo={() => activateBtn("/fleet")}
-            isActive={active === "/fleet"}
-            />
-          <NavBtn
-            translation={translation}
-            text={translation.navLink4}
-            navTo={() => activateBtn("/contact")}
-            isActive={active === "/contact"}
-            />
-          <NavBtn
-            translation={translation}
-            text={translation.navLink5}
-            navTo={() => activateBtn("/about")}
-            isActive={active === "/about"}
-          />
-        </div>
-        <figure className="nav__car--desktop">
-          <img src={car} alt="" />
-        </figure>
-        <TranslateBtns setEnglish={setEnglish} setSpanish={setSpanish} />
+      <MenuOutlined onClick={openMenu} />
+      <figure onClick={homeBtn} className="nav__logo--wrapper">
+        <img src={logo} alt="" />
+      </figure>
+      <h1>
+        <span className="upper">M</span>etro<span className="upper">C</span>ar
+      </h1>
+      <div className="nav__list nav__desktop">
+        <NavBtn
+          translation={translation}
+          text={translation.navLink1}
+          navTo={() => activateBtn("/services")}
+          isActive={active === "/services"}
+        />
+        <NavBtn
+          translation={translation}
+          text={translation.navLink2}
+          navTo={() => activateBtn("/coverage")}
+          isActive={active === "/coverage"}
+        />
+        <NavBtn
+          translation={translation}
+          text={translation.navLink3}
+          navTo={() => activateBtn("/fleet")}
+          isActive={active === "/fleet"}
+        />
+        <NavBtn
+          translation={translation}
+          text={translation.navLink4}
+          navTo={() => activateBtn("/contact")}
+          isActive={active === "/contact"}
+        />
+        <NavBtn
+          translation={translation}
+          text={translation.navLink5}
+          navTo={() => activateBtn("/about")}
+          isActive={active === "/about"}
+        />
+      </div>
+      <figure className="nav__car--desktop">
+        <img src={car} alt="" />
+      </figure>
+      <TranslateBtns setEnglish={setEnglish} setSpanish={setSpanish} />
     </nav>
   );
 };
