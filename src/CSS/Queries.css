@@ -27,6 +27,11 @@
     display: flex;
   }
 
+  .nav__list > button > h1,
+  .translate__btns > button > h1{
+    font-size: 1em;
+  }
+
   .translate__btns--phone {
     display: none !important;
   }
@@ -113,4 +118,13 @@
   .reviews__text--wrapperLeft {
     width: calc(50% - 1em);
   }
+}
+
+@media screen and (min-width: 1400px) {
+
+  .nav__list > button > h1,
+  .translate__btns > button > h1{
+    font-size: 1.2em;
+  }
+
 }
