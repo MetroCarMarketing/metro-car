@@ -12,10 +12,10 @@ const TranslateBtns = ({ setEnglish, setSpanish }) => {
         <p>🇺🇸</p>
       </IconButton>
       <Button className="translate__btns--desktop" onClick={setSpanish}>
-        <h1>Español</h1>
+        <h1>Esp</h1>
       </Button>
       <Button className="translate__btns--desktop" onClick={setEnglish}>
-        <h1>English</h1>
+        <h1>Eng</h1>
       </Button>
     </div>
   );

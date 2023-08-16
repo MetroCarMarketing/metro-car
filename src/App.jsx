@@ -33,7 +33,7 @@ function App() {
   useEffect(() => {
     const activeNav = window.location.pathname;
     setActive(activeNav);
-  }, [active])
+  }, [active]);
 
   return (
     <div className="App">
@@ -53,7 +53,9 @@ function App() {
           />
           <Route
             path="/services"
-            element={<Services translation={translation} setActive={setActive} />}
+            element={
+              <Services translation={translation} setActive={setActive} />
+            }
           />
           <Route
             path="/fleet"
@@ -88,7 +90,7 @@ function App() {
             alt=""
           />
         </figure>
-        <Footer translation={translation}/>
+        <Footer translation={translation} />
       </Router>
     </div>
   );
