@@ -13,7 +13,7 @@ body {
   --main-hover: #01155832;
   --secondary-color: #010617;
   --cold-white: #e2e7eb;
-  --accent-color: #FB9040;
+  --accent-color: #fb9040;
   /* --main-color: #e1ba66;
   --main-alter: #ba995298;
   --main-hover: #4234163f;
@@ -86,8 +86,8 @@ h1,
 h2,
 h3,
 h4,
-h5{
-  font-family: 'Cinzel Decorative', cursive !important;
+h5 {
+  font-family: "Cinzel Decorative", cursive !important;
   font-weight: 400;
 }
 
@@ -96,7 +96,7 @@ p {
   text-align: justify;
   letter-spacing: 0.05em;
   line-height: 1.5em;
-  font-size: .75rem;
+  font-size: 0.75rem;
 }
 
 button {
@@ -126,4 +126,23 @@ button {
 
 .number {
   font-family: "Noto Serif Vithkuqi", serif !important;
+}
+
+.skeleton {
+  margin-bottom: 0.5em;
+  animation: pulse 3s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    background-color: #efefef;
+  }
+
+  50% {
+    background-color: #dbdbdb;
+  }
+
+  100% {
+    background-color: #efefef;
+  }
 }
