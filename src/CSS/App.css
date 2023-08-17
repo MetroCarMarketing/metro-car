@@ -12,7 +12,8 @@ body {
   --main-alter: #004c72;
   --main-hover: #0115586c;
   --secondary-color: #000518;
-  --secondary-fade: #0314556c;
+  /* --secondary-fade: #031355f0; */
+  --secondary-fade: #08123be0;
   --cold-white: #e2e7eb;
   --accent-color: #fb9040;
   /* --main-color: #e1ba66;
