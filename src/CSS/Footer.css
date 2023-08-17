@@ -2,7 +2,7 @@ footer {
   margin-top: 1em;
   display: flex;
   color: var(--cold-white);
-  background-color: #242424;
+  background-color: var(--secondary-fade);
 }
 
 .footer__row {

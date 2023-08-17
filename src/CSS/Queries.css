@@ -76,7 +76,7 @@
   }
 
   .landing__text--container {
-    background-color: #242424e9;
+    background-color: var(--secondary-fade);
     padding: 2em;
     border-radius: 1em;
     max-width: 45%;
