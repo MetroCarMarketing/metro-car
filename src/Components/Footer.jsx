@@ -1,6 +1,6 @@
 import React from "react";
 import "../CSS/Footer.css";
-import { Instagram, LocationOnOutlined, Mail } from "@mui/icons-material";
+import { Instagram, LocationOnOutlined, Mail, PhoneOutlined } from "@mui/icons-material";
 
 const Footer = ({ translation }) => {
   return (
@@ -20,6 +20,10 @@ const Footer = ({ translation }) => {
               </li>
               <li className="footer__contact--item">
                 <LocationOnOutlined/>
+                <p>Calle 99 #9a-29 Bogota, Colombia</p>
+              </li>
+              <li className="footer__contact--item">
+                <PhoneOutlined/>
                 <p>Calle 99 #9a-29 Bogota, Colombia</p>
               </li>
             </ul>

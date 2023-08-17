@@ -12,6 +12,20 @@ footer {
   align-items: center;
 }
 
+.footer__contact--list{
+  display: flex;
+  flex-direction: column;
+}
+
+.footer__contact--item{
+  display: flex;
+  align-items: center;
+}
+
+.footer__contact--item > p{
+  margin: 0 0 .1em .5em;
+}
+
 .footer__row > p{
   margin: 0;
   text-align: center;
