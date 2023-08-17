@@ -1,5 +1,6 @@
 import React from "react";
 import "../CSS/Footer.css";
+import { Instagram, LocationOnOutlined, Mail } from "@mui/icons-material";
 
 const Footer = ({ translation }) => {
   return (
@@ -9,7 +10,18 @@ const Footer = ({ translation }) => {
           <div className="footer__contact--container">
             <h1>Informacion de Contacto</h1>
             <ul className="footer__contact--list">
-              
+              <li className="footer__contact--item">
+                <Instagram/>
+                <p>@MetroCar</p>
+              </li>
+              <li className="footer__contact--item">
+                <Mail/>
+                <p>probando@gmail.com</p>
+              </li>
+              <li className="footer__contact--item">
+                <LocationOnOutlined/>
+                <p>Calle 99 #9a-29 Bogota, Colombia</p>
+              </li>
             </ul>
           </div>
         </div>
