@@ -10,8 +10,9 @@
 body {
   --main-color: #008dd3;
   --main-alter: #004c72;
-  --main-hover: #01155832;
-  --secondary-color: #010617;
+  --main-hover: #0115586c;
+  --secondary-color: #000518;
+  --secondary-fade: #0314556c;
   --cold-white: #e2e7eb;
   --accent-color: #fb9040;
   /* --main-color: #e1ba66;
@@ -21,7 +22,7 @@ body {
 
   scrollbar-width: 0;
   -ms-overflow-style: none;
-  background-color: #202020;
+  background-color: var(--secondary-color);
 }
 
 body::-webkit-scrollbar {
@@ -56,7 +57,7 @@ body::-webkit-scrollbar {
   height: fit-content;
   margin: 0 auto;
   color: var(--cold-white);
-  background-color: #242424e9;
+  background-color: var(--secondary-fade);
   /* background-color: #4b4b4b8d; */
   border-radius: 2em;
   position: relative;

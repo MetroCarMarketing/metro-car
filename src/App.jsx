@@ -3,7 +3,7 @@ import "./CSS/App.css";
 import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
 import Home from "./Pages/Home";
 import Nav from "./Components/Nav";
-import car from "./Assets/metrocar regency.jpg";
+// import car from "./Assets/metrocar regency.jpg";
 import Translation from "./Translation/Languages.json";
 import Fleet from "./Pages/Fleet";
 import Coverage from "./Pages/Coverage";
@@ -86,7 +86,7 @@ function App() {
           />
           <Route path="/about" element={<About translation={translation} />} />
         </Routes>
-        <figure className="car__background--desktop">
+        {/* <figure className="car__background--desktop">
           <img src={car} alt="" />
         </figure>
         <figure className="car__background--phone">
@@ -94,7 +94,7 @@ function App() {
             src="https://lh3.googleusercontent.com/-525huazOQu4/YtbKYzB9fNI/AAAAAAAASPI/CKI_QvFEHCAjvd5lGSCgj0iTtgM1lIyxACNcBGAsYHQ/s1600/1658243679408851-0.png"
             alt=""
           />
-        </figure>
+        </figure> */}
         <Footer translation={translation} />
       </Router>
     </div>
