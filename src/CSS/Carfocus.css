@@ -11,7 +11,9 @@
 }
 .carfocus__backBtn > p {
   line-height: 0.8em;
-  /* margin-bottom: 0.1em; */
+  font-size: 1em;
+  margin-bottom: 0.1em;
+  margin-top: 0;
 }
 
 .MuiButton-startIcon {
