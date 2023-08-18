@@ -14,8 +14,10 @@ footer {
 
 .footer__text--container {
   display: flex;
+  flex-direction: column;
   justify-content: center;
-  gap: 4em;
+  align-items: center;
+  gap: 2em;
   margin-bottom: 2em;
 }
 
@@ -27,16 +29,14 @@ footer {
   gap: 1em;
 }
 
-.footer__info--container{
-  max-width: 40%;
-}
-
 .footer__info--container > p{
   margin: 0;
 }
 
 .footer__title {
+  width: 100%;
   font-size: 1.4em;
+  text-align: center;
 }
 
 .footer__contact--list {

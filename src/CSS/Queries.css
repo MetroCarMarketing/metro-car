@@ -1,13 +1,11 @@
 @media screen and (max-width: 350px) {
-
-  .landing__row{
+  .landing__row {
     margin-top: 4em;
   }
 
-  .landing__text--container > .landing__btn{
+  .landing__text--container > .landing__btn {
     font-size: 2.5em;
   }
-
 }
 
 @media screen and (min-width: 1000px) {
@@ -15,19 +13,19 @@
     font-size: 14px;
   }
 
-  p{
+  p {
     font-size: 1.1rem;
   }
 
   .car__background--desktop {
     display: flex;
   }
-  
+
   .car__background--phone {
     display: none;
   }
 
-  nav{
+  nav {
     gap: 1em;
   }
 
@@ -43,12 +41,12 @@
     display: flex;
   }
 
-  nav > h1{
+  nav > h1 {
     font-size: 1.2em;
   }
 
   .nav__list > button > h1,
-  .translate__btns > button > h1{
+  .translate__btns > button > h1 {
     font-size: 1em;
   }
 
@@ -126,11 +124,11 @@
     width: 25%;
   }
 
-  .about__selector--list{
-  gap: 1em;
-  flex-direction: row;
+  .about__selector--list {
+    gap: 1em;
+    flex-direction: row;
   }
-  
+
   .about__selector--list > button {
     font-size: 1.4em;
     flex: 1;
@@ -140,17 +138,29 @@
   .reviews__text--wrapperLeft {
     width: calc(50% - 1em);
   }
+
+  .footer__text--container {
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 4em;
+  }
+
+  .footer__info--container {
+    max-width: 40%;
+  }
+
+  .footer__title {
+    text-align: start;
+  }
 }
 
 @media screen and (min-width: 1400px) {
-
-  nav{
+  nav {
     gap: 2em;
   }
 
   .nav__list > button > h1,
-  .translate__btns > button > h1{
+  .translate__btns > button > h1 {
     font-size: 1.2em;
   }
-
 }

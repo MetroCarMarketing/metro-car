@@ -14,8 +14,8 @@ import Burger from "./Components/Burger";
 import Contact from "./Pages/Contact";
 import About from "./Pages/About";
 import Services from "./Pages/Services";
-import "./CSS/Queries.css";
 import Footer from "./Components/Footer";
+import "./CSS/Queries.css";
 
 function App() {
 
