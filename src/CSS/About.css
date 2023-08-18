@@ -1,5 +1,6 @@
 .about__selector--list {
   display: flex;
+  flex-direction: column;
   gap: .5em;
   margin-bottom: 2em;
   flex-wrap: nowrap;

@@ -128,11 +128,12 @@
 
   .about__selector--list{
   gap: 1em;
+  flex-direction: row;
   }
   
   .about__selector--list > button {
     font-size: 1.4em;
-    flex: 0.25;
+    flex: 1;
   }
   .about__text--wrapperLeft,
   .faq__text--wrapperLeft,
