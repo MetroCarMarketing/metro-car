@@ -4,7 +4,7 @@ import React from 'react';
 const AboutSelector = ({ name, active, activateBtn }) => {
 
     return (
-        <Button className={active && 'about--selected'} onClick={activateBtn}>
+        <Button className={active ? 'about--selected' : ''} onClick={activateBtn}>
             {name}
         </Button>
     );

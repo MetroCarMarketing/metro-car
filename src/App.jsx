@@ -19,15 +19,13 @@ import Footer from "./Components/Footer";
 
 function App() {
 
-  useEffect(() => {
-    window.scrollTo({top: 0})
-  })
-
+  
+  const [currentPage, setCurrentPage] = useState(null);
   const [active, setActive] = useState(null);
-
+  
   const [language, setLanguage] = useState("spanish");
   const [translation, setTranslation] = useState({});
-
+  
   useEffect(() => {
     if (language === "english") {
       setTranslation(Translation.english);
@@ -35,11 +33,21 @@ function App() {
       setTranslation(Translation.spanish);
     }
   }, [language]);
-
+  
   useEffect(() => {
     const activeNav = window.location.pathname;
     setActive(activeNav);
   }, [active]);
+
+  // eslint-disable-next-line
+  useEffect(() => {
+    const activePage = window.location.pathname;
+    setCurrentPage(activePage)
+  })
+
+  useEffect(() => {
+    window.scrollTo({top: 0})
+  }, [currentPage])
 
   return (
     <div className="App">

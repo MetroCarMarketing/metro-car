@@ -5,6 +5,7 @@ import { Facebook, Instagram, Mail, WhatsApp } from "@mui/icons-material";
 import tiktok from "../Assets/logo-tiktok.svg";
 
 const Contact = ({ translation }) => {
+
   return (
     <section id="Contact">
       <div className="container top__container contact__container">

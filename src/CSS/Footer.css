@@ -6,7 +6,7 @@ footer {
 }
 
 .footer__row {
-  padding: 1em 2em;
+  padding: 2em 2em 1em;
   background-color: transparent;
   justify-content: center;
   align-items: center;
@@ -16,7 +16,7 @@ footer {
   display: flex;
   justify-content: center;
   gap: 4em;
-  margin-bottom: 1em;
+  margin-bottom: 2em;
 }
 
 .footer__info--container,
@@ -59,6 +59,19 @@ footer {
   margin: 0;
   text-align: center;
   align-items: center;
+}
+
+.terms{
+  display: flex;
+  align-items: center;
+  gap: 2em;
+  margin-bottom: .5em;
+}
+
+.terms > a{
+  letter-spacing: .2em;
+  font-size: .85em;
+  color: var(--cold-white);
 }
 
 .footer__credits > a {

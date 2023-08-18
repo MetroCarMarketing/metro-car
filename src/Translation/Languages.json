@@ -22,11 +22,12 @@
     "aboutSelector2" : "Frequently Asked Questions",
     "aboutSelector3" : "Reviews",
     "aboutTextTitle1" : "Who Are We:",
-    "aboutText1" : " is a Colombian company founded by two French entrepreneurs with the objective of creating in Colombia and Latin America a chauffeured car service with international standards for high executives and luxury tourism. We offer our clients high standard car service, in Colombia and the rest of the world with permanent highlight on service quality constantly anticipating or adapting us to the market requirements. All our processes are established and updated searching for the most innovative, safe, competitive and sustainable solutions.",
+    "aboutText1" : " is a Colombian company founded by two Colombian entrepreneurs with the objective of creating a chauffeured car service with international standards for high executives and luxury tourism. We offer our clients high standard car service, in Colombia and the rest of the world with permanent highlight on service quality constantly anticipating or adapting us to the market requirements. All our processes are established and updated searching for the most innovative, safe, competitive and sustainable solutions.",
     "faqTextTitle1" : "How many hours before a booking can the service be effective?",
     "faqText1" : "Booking must be made at least 24 hours before the desired service time",
     "reviewsTextTitle1" : "Some of our recent reviews ",
     "reviewsText1" : "A great service, arrived on time and very respectful the whole ride. The vehicle was very clean and with good commodities such as water or a guest phone ready to use.",
+    "footerText" : "MetroCar is an up and coming Colombian company that dedicates to offer a luxury service to their pasengers, the founders have 10 years of experience in the industry and even though its still growing as a company, that allows us to provide the clients with the attention and care they deserve.",
     "footerCredits" : "This webpage was designed and developed by"
   },
 
@@ -53,11 +54,12 @@
     "aboutSelector2" : "Preguntas Frequentes",
     "aboutSelector3" : "Reseñas",
     "aboutTextTitle1" : "Quienes Somos:",
-    "aboutText1" : ", es una compañía de Car Service fundada por dos empresarios franceses que quisieron traer a Colombia, un servicio exclusivo de venta de tiempo en vehículos de lujo con conductor, al nivel de las grandes ciudades en el mundo, para ejecutivos y turistas en Colombia y el resto del mundo.    Nuestra compañía maneja un enfoque permanente en la calidad de nuestro servicio, por eso trabajamos cada día para que todos nuestros procesos sean los más innovadores, seguros, sostenibles y competitivos y así adaptarnos a las necesidades de nuestro mercado.",
+    "aboutText1" : ", es una compañía de Car Service fundada por empresarios Colombianos que ofrecen un servicio exclusivo de venta de tiempo en vehículos de lujo con conductor, al nivel de las grandes ciudades en el mundo, para ejecutivos y turistas en Colombia y el resto del mundo.    Nuestra compañía maneja un enfoque permanente en la calidad de nuestro servicio, por eso trabajamos cada día para que todos nuestros procesos sean los más innovadores, seguros, sostenibles y competitivos y así adaptarnos a las necesidades de nuestro mercado.",
     "faqTextTitle1" : "Con que tanta antelacion toca hacer una reserva para que sea efectiva?",
     "faqText1" : "La reserva se debe hacer por lo menos 24 horas previas al servico",
     "reviewsTextTitle1" : "Unas de nuestras reseñas recientes",
     "reviewsText1" : "un gran servicio, puntal y respetuoso. El vehiculo muy aseado y con comodidades como agua y celular a la disposicion",
+    "footerText" : "MetroCar es una empresa prometedora Colombiana que se dedica a ofrecer un servico de lujo a sus pasajeros, los fundadores tienen una experiencia de 10 años en la industria y aunque aun es un empresa en crecimiento eso le permite darle la atencion y cuidado a todos sus clientes tal y como lo merecen.",
     "footerCredits" : "Esta pagina web fue diseñada y desarrollada por "
   }
 }
