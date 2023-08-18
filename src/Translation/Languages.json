@@ -27,7 +27,7 @@
     "faqText1" : "Booking must be made at least 24 hours before the desired service time",
     "reviewsTextTitle1" : "Some of our recent reviews ",
     "reviewsText1" : "A great service, arrived on time and very respectful the whole ride. The vehicle was very clean and with good commodities such as water or a guest phone ready to use.",
-    "footerCredits" : "This webpage was designed and developed by A&D"
+    "footerCredits" : "This webpage was designed and developed by"
   },
 
   "spanish": {
@@ -35,7 +35,7 @@
     "navLink2": "Cobertura",
     "navLink3": "Flota",
     "navLink4": "Contactenos",
-    "navLink5": "Nosotros",
+    "navLink5": "nosotros",
     "landingBtn": "Reserva ya tu transporte",
     "landingTitle": "MetroCar",
     "landingText": "Vehículos con conductor para traslados, por horas o días, y toures en Colombia y otros 29 países; Disponibles las 24 horas del día en ciudades como Bogotá, Cartagena, Medellín y sus alrededores. También llamados Remises, la experiencia que ofrecemos se ejecuta con vehículos de lujo último modelo y conductores bilingües, profesionales, y certificados por 'PAX' el Official Training Partner de la National Limousine Association.",
@@ -58,6 +58,6 @@
     "faqText1" : "La reserva se debe hacer por lo menos 24 horas previas al servico",
     "reviewsTextTitle1" : "Unas de nuestras reseñas recientes",
     "reviewsText1" : "un gran servicio, puntal y respetuoso. El vehiculo muy aseado y con comodidades como agua y celular a la disposicion",
-    "footerCredits" : "Esta pagina web fue diseñada y desarrollada por A&D"
+    "footerCredits" : "Esta pagina web fue diseñada y desarrollada por "
   }
 }

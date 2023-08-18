@@ -24,12 +24,12 @@ const Footer = ({ translation }) => {
               </li>
               <li className="footer__contact--item">
                 <PhoneOutlined/>
-                <p>Calle 99 #9a-29 Bogota, Colombia</p>
+                <p>+57 (302) 600 5730</p>
               </li>
             </ul>
           </div>
         </div>
-        <p>{translation.footerCredits}</p>
+        <p className="footer__credits">{translation.footerCredits}<a className="title">A & D</a></p>
       </div>
     </footer>
   );

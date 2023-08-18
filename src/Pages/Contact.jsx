@@ -31,6 +31,7 @@ const Contact = ({ translation }) => {
             </Button>
             <Button target="_blank" rel="noreferrer" href="https://wa.me/573026005730" className="whatsappBtn">
               <WhatsApp />
+              <h1 className="number">+57 (302) 600 5730</h1>
             </Button>
           </ul>
         </div>

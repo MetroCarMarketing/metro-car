@@ -7,6 +7,7 @@
   flex-direction: column;
   margin-top: 2em;
   gap: 1em;
+  width: 50%;
 }
 
 .contact__list > a {
@@ -19,6 +20,11 @@
 
 .contact__list > a:hover {
   box-shadow: 0 0 0 0.1em rgb(255, 255, 255);
+}
+
+.contact__list > a > h1 {
+  font-size: .75em;
+  margin: 0 0 .1em .5em;
 }
 
 .instaBtn {
