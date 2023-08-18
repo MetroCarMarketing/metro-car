@@ -124,6 +124,10 @@
     width: 25%;
   }
 
+  .contact__list{
+    width: 50%;
+  }
+
   .about__selector--list {
     gap: 1em;
     flex-direction: row;

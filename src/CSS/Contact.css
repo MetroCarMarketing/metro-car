@@ -7,12 +7,13 @@
   flex-direction: column;
   margin-top: 2em;
   gap: 1em;
-  width: 50%;
+  width: 100%;
 }
 
 .contact__list > a {
   display: flex;
   align-items: center;
+  white-space: nowrap;
   font-size: 2em;
   color: var(--cold-white);
   transition: all 300ms ease;
