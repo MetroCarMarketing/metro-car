@@ -28,7 +28,8 @@
     "reviewsTextTitle1" : "Some of our recent reviews ",
     "reviewsText1" : "A great service, arrived on time and very respectful the whole ride. The vehicle was very clean and with good commodities such as water or a guest phone ready to use.",
     "footerText" : "MetroCar is an up and coming Colombian company that dedicates to offer a luxury service to their pasengers, the founders have 10 years of experience in the industry and even though its still growing as a company, that allows us to provide the clients with the attention and care they deserve.",
-    "footerCredits" : "This webpage was designed and developed by"
+    "footerCredits" : "This webpage was designed and developed by",
+    "watermark" : "This webpage is still under development"
   },
 
   "spanish": {
@@ -60,6 +61,7 @@
     "reviewsTextTitle1" : "Unas de nuestras reseñas recientes",
     "reviewsText1" : "un gran servicio, puntal y respetuoso. El vehiculo muy aseado y con comodidades como agua y celular a la disposicion",
     "footerText" : "MetroCar es una empresa prometedora Colombiana que se dedica a ofrecer un servico de lujo a sus pasajeros, los fundadores tienen una experiencia de 10 años en la industria y aunque aun es un empresa en crecimiento eso le permite darle la atencion y cuidado a todos sus clientes tal y como lo merecen.",
-    "footerCredits" : "Esta pagina web fue diseñada y desarrollada por "
+    "footerCredits" : "Esta pagina web fue diseñada y desarrollada por ",
+    "watermark" : "Esta pagina web esta en construccion"
   }
 }
