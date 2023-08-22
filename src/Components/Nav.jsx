@@ -43,15 +43,15 @@ const Nav = ({ translation, setEnglish, setSpanish, active, setActive }) => {
         />
         <NavBtn
           translation={translation}
-          text={translation.navLink2}
-          navTo={() => activateBtn("/coverage")}
-          isActive={active === "/coverage"}
-        />
-        <NavBtn
-          translation={translation}
           text={translation.navLink3}
           navTo={() => activateBtn("/fleet")}
           isActive={active === "/fleet"}
+        />
+        <NavBtn
+          translation={translation}
+          text={translation.navLink2}
+          navTo={() => activateBtn("/coverage")}
+          isActive={active === "/coverage"}
         />
         <NavBtn
           translation={translation}

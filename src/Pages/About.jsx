@@ -58,6 +58,22 @@ const About = ({ translation }) => {
                   {translation.faqTextTitle1}
                 </h3>
                 <p className="faq__text--info">{translation.faqText1}</p>
+                <h3 className="faq__text--title">
+                  {translation.faqTextTitle2}
+                </h3>
+                <p className="faq__text--info">{translation.faqText2}</p>
+                <h3 className="faq__text--title">
+                  {translation.faqTextTitle3}
+                </h3>
+                <p className="faq__text--info">{translation.faqText3}</p>
+                <h3 className="faq__text--title">
+                  {translation.faqTextTitle4}
+                </h3>
+                <p className="faq__text--info">{translation.faqText4}</p>
+                <h3 className="faq__text--title">
+                  {translation.faqTextTitle5}
+                </h3>
+                <p className="faq__text--info">{translation.faqText5}</p>
               </div>
             </div>
             <div className="faq__text--wrapperRight"></div>

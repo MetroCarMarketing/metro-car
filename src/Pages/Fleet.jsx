@@ -33,15 +33,21 @@ const Fleet = ({ language, translation, cars: initialCars }) => {
           <section id="thumbnail__container">
             {language === "english" ? (
               <select id="filter" onChange={(e) => filterCars(e.target.value)} defaultValue='ALL'>
-                <option value="ALL">All</option>
-                <option value="SUV">Suv</option>
+                <option value="ALL">Vehicles</option>
                 <option value="CAR">Car</option>
+                <option value="SUV">Suv</option>
+                <option value="SUV">Coach</option>
               </select>
             ) : (
               <select id="filter" onChange={(e) => filterCars(e.target.value)} defaultValue='ALL'>
-                <option value="ALL">Todos</option>
-                <option value="SUV">Camioneta</option>
-                <option value="CAR">Carro</option>
+                <option value="ALL">Vehiculos</option>
+                <option value="CAR">Sedan Gama Media</option>
+                <option value="CAR">Sedan Gama Alta</option>
+                <option value="SUV">Camioneta Convencional</option>
+                <option value="SUV">Camioneta Blindada N.3</option>
+                <option value="SUV">Minivans</option>
+                <option value="SUV">Vans</option>
+                <option value="SUV">Buses</option>
               </select>
             )}
 

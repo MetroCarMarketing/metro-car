@@ -12,10 +12,10 @@ const Footer = ({ translation }) => {
     <footer>
       <div className="row footer__row">
         <div className="footer__text--container">
-          <div className="footer__info--container">
+          {/* <div className="footer__info--container">
             <h1 className="footer__title">{translation.aboutTextTitle1}</h1>
             <p>{translation.footerText}</p>
-          </div>
+          </div> */}
           <div className="footer__contact--container">
             <h1 className="footer__title">Informacion de Contacto</h1>
             <ul className="footer__contact--list">

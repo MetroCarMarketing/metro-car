@@ -35,21 +35,6 @@ const Services = ({ translation, setActive }) => {
               <p className="services__text">{translation.servicesText1}</p>
               <p className="services__text">{translation.servicesText2}</p>
               <p className="services__text">{translation.servicesText3}</p>
-              <ul className="services__body--list">
-                <div onClick={() => navTo("/coverage", "button 2")}>
-                  <h2>{translation.navLink2}</h2>
-                  <div className="list__item--deco"></div>
-                </div>
-                <div onClick={() => navTo("/fleet", "button 3")}>
-                  <h2>{translation.navLink3}</h2>
-                  <div className="list__item--deco"></div>
-                </div>
-                <div onClick={() => navTo("/contact", "button 4")}>
-                  <h2>{translation.navLink4}</h2>
-                  <div className="list__item--deco"></div>
-                </div>
-              </ul>
-              <p className="services__text">{translation.servicesText1}</p>
               <h1 className="title">{translation.servicesTitle2}</h1>
               <ul className="services__type--list">
                 <div>
@@ -67,6 +52,52 @@ const Services = ({ translation, setActive }) => {
                 <div>
                   <ChevronRight />
                   {translation.servicesList4}
+                </div>
+                <div>
+                  <ChevronRight />
+                  {translation.servicesList5}
+                </div>
+                <div>
+                  <ChevronRight />
+                  {translation.servicesList6}
+                </div>
+              </ul>
+              <ul className="services__body--list">
+                <div onClick={() => navTo("/fleet", "button 3")}>
+                  <h2>{translation.navLink3}</h2>
+                  <div className="list__item--deco"></div>
+                </div>
+                <div onClick={() => navTo("/coverage", "button 2")}>
+                  <h2>{translation.navLink2}</h2>
+                  <div className="list__item--deco"></div>
+                </div>
+                <div onClick={() => navTo("/contact", "button 4")}>
+                  <h2>{translation.navLink4}</h2>
+                  <div className="list__item--deco"></div>
+                </div>
+              </ul>
+              <h1 className="title">{translation.servicesTitle3}</h1>
+              <p className="services__text">{translation.servicesText4}</p>
+              <ul className="services__type--list">
+                <div>
+                  <ChevronRight />
+                  {translation.servicesList7}
+                </div>
+                <div>
+                  <ChevronRight />
+                  {translation.servicesList8}
+                </div>
+                <div>
+                  <ChevronRight />
+                  {translation.servicesList9}
+                </div>
+                <div>
+                  <ChevronRight />
+                  {translation.servicesList10}
+                </div>
+                <div>
+                  <ChevronRight />
+                  {translation.servicesList11}
                 </div>
               </ul>
             </div>

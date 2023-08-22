@@ -3,11 +3,16 @@
   gap: 2em;
 }
 
-.services__body--text {
-  display: flex;
-  flex-direction: column;
-  gap: 2em;
-}
+ .services__body--text {
+   display: flex;
+   flex-direction: column;
+   gap: 2em;
+  }
+  
+  .services__body--text > h1 {
+    text-align: center;
+  }
+
 
 .services__body--list {
   display: flex;

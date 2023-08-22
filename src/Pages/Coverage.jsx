@@ -11,6 +11,7 @@ const Coverage = ({ translation, cars }) => {
           <CoverageMap />
           <p>{translation.coverageText}</p>
         </div>
+        {/* Segundo Mapa */}
       </div>
     </div>
   );
