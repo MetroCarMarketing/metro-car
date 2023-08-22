@@ -29,7 +29,7 @@ const Footer = ({ translation }) => {
               </li>
               <li className="footer__contact--item">
                 <LocationOnOutlined />
-                <p>Calle 99 #9a-29 Bogota, Colombia</p>
+                <p>Calle 79 # 27A - 21 Bogota, Colombia</p>
               </li>
               <li className="footer__contact--item">
                 <PhoneOutlined />
