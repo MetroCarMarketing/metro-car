@@ -148,3 +148,15 @@ button {
     background-color: #efefef;
   }
 }
+
+.watermark{
+  display: flex;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.watermark > h1{
+  color: var(--cold-white);
+}

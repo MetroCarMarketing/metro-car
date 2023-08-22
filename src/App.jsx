@@ -16,6 +16,7 @@ import About from "./Pages/About";
 import Services from "./Pages/Services";
 import Footer from "./Components/Footer";
 import "./CSS/Queries.css";
+import Watermark from "./Components/Watermark";
 
 function App() {
 
@@ -105,6 +106,7 @@ function App() {
           />
         </figure> */}
         <Footer translation={translation} />
+        <Watermark translation={translation} />
       </Router>
     </div>
   );
