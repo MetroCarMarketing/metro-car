@@ -33,6 +33,8 @@ const Services = ({ translation, setActive }) => {
             <div className="services__body--text">
               <h1 className="title">{translation.servicesTitle1}</h1>
               <p className="services__text">{translation.servicesText1}</p>
+              <p className="services__text">{translation.servicesText2}</p>
+              <p className="services__text">{translation.servicesText3}</p>
               <ul className="services__body--list">
                 <div onClick={() => navTo("/coverage", "button 2")}>
                   <h2>{translation.navLink2}</h2>
