@@ -121,7 +121,7 @@
   }
 
   .thumbnail {
-    width: 25%;
+    width: calc((100% - 3em) / 4);
   }
 
   .contact__list{
