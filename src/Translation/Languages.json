@@ -16,6 +16,13 @@
     "servicesList3": "Photoshoots",
     "servicesList4": "Luxury Ride",
     "bags": "bags",
+    "faresImg": "Image",
+    "faresName": "Vehicle",
+    "faresHour": "Hourly fare",
+    "faresHourText": "At least 3 hours",
+    "faresDay": "Daily fare",
+    "faresDayText": "Our daily coverage includes 12 hrs but you get charged only 8",
+    "faresTrip": "Trip fare",
     "coverageTitle":"Our Coverage",
     "coverageText": "We are present with in house operation and local dispatching team in Bogota, Medellin and Cartagena, we cover other Colombian cities from those bases of operation. We can operate in 29 countries with our rigorously selected network of affiliates. When using MetroCar for all your international ground transportation needs you benefit a central point of contact, our 24H dispatch service, and you have the guarantee that our quality process are imposed to every affiliate.",
     "contactTitle" : "Reach out to us on our social media!",
@@ -32,7 +39,7 @@
     "footerCredits" : "This webpage was designed and developed by",
     "watermark" : "Webpage is still under development"
   },
-
+  
   "spanish": {
     "navLink1": "Servicios",
     "navLink2": "Cobertura",
@@ -61,6 +68,13 @@
     "servicesList10": "Personal de protocolos (Aeropuerto)",
     "servicesList11": "Marcacion corporativa de Vehiculos",
     "bags": "maletas",
+    "faresImg": "Imagen",
+    "faresName": "Vehiculo",
+    "faresHour": "Tarifa por Hora",
+    "faresHourText": "Minimo de 3 horas",
+    "faresDay": "Tarifa por Dia",
+    "faresDayText": "La cobertura incluye 12 horas de servicio sin embargo el cliente solo paga 8",
+    "faresTrip": "Tarifa por Trayecto",
     "coverageTitle":"Nuestra Cobertura",
     "coverageText": "Somos una empresa con base en Bogota y a traves de afiliados podemos ofrecer servicios en las ciudades de Medellin, Cali, Cartagena,  y Barranquilla.  ",
     "contactTitle": "Encuentranos en nuestras redes sociales!",

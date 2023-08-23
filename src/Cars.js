@@ -2,6 +2,7 @@ export const cars = [
   {
     id: 1,
     name: "Prado",
+    nameEsp: "Prado",
     type: "SUV",
     typeEsp: "Camioneta",
     brand: "Toyota",
@@ -30,6 +31,7 @@ export const cars = [
   {
     id: 2,
     name: "CLA Coupe",
+    nameEsp: "CLA Coupe",
     type: "Luxury Sedan",
     typeEsp: "Sedan Gama Alta",
     brand: "Mercedes",
@@ -57,6 +59,7 @@ export const cars = [
   {
     id: 3,
     name: "Cruze",
+    nameEsp: "Cruze",
     type: "Mid Size Sedan",
     typeEsp: "Sedan Gama Media",
     brand: "Chevrolet",
@@ -84,6 +87,7 @@ export const cars = [
   {
     id: 4,
     name: "i35",
+    nameEsp: "i35",
     type: "Mid Size Sedan",
     typeEsp: "Sedan Gama Media",
     brand: "Hyundai",
@@ -111,6 +115,7 @@ export const cars = [
   {
     id: 5,
     name: "Mazda 3",
+    nameEsp: "Mazda 3",
     type: "Mid Size Sedan",
     typeEsp: "Sedan Gama Media",
     brand: "Mazda",
@@ -138,6 +143,7 @@ export const cars = [
   {
     id: 6,
     name: "Expedition",
+    nameEsp: "Expedition",
     type: "SUV",
     typeEsp: "Camioneta Convencional",
     brand: "Ford",
@@ -165,6 +171,7 @@ export const cars = [
   {
     id: 7,
     name: "Fortuner",
+    nameEsp: "Fortuner",
     type: "SUV",
     typeEsp: "Camioneta Convencional",
     brand: "Toyota",
@@ -191,7 +198,9 @@ export const cars = [
   },
   {
     id: 8,
-    name: "4Runner",
+    name: "Armored 4Runner",
+    nameEsp: "Armored 4Runner",
+    nameEsp: "4Runner Blindada",
     type: "Armored SUV",
     typeEsp: "Camioneta Blindada",
     brand: "Toyota",
@@ -218,7 +227,9 @@ export const cars = [
   },
   {
     id: 9,
-    name: "Prado",
+    name: "Armored Prado",
+    nameEsp: "Armored Prado",
+    nameEsp: "Prado Blindada",
     type: "Armored SUV",
     typeEsp: "Camioneta Blindada",
     brand: "Toyota",
@@ -245,7 +256,9 @@ export const cars = [
   },
   {
     id: 10,
-    name: "Fortuner",
+    name: "Armored Fortuner",
+    nameEsp: "Armored Fortuner",
+    nameEsp: "Fortuner Blindada",
     type: "Armored SUV",
     typeEsp: "Camioneta Blindada",
     brand: "Toyota",
@@ -273,6 +286,7 @@ export const cars = [
   {
     id: 11,
     name: "Vito",
+    nameEsp: "Vito",
     type: "Minivan",
     typeEsp: "Minivan",
     brand: "Mercedes",
@@ -300,6 +314,7 @@ export const cars = [
   {
     id: 12,
     name: "H1 Starex",
+    nameEsp: "H1 Starex",
     type: "Minivan",
     typeEsp: "Minivan",
     brand: "Hyundai",
@@ -327,6 +342,7 @@ export const cars = [
   {
     id: 13,
     name: "Sprinter",
+    nameEsp: "Sprinter",
     type: "Van",
     typeEsp: "Van",
     brand: "Mercedes",
@@ -354,6 +370,7 @@ export const cars = [
   {
     id: 14,
     name: "Crafter",
+    nameEsp: "Crafter",
     type: "Van",
     typeEsp: "Van",
     brand: "Volkswagen",
@@ -381,6 +398,7 @@ export const cars = [
   {
     id: 15,
     name: "Hino",
+    nameEsp: "Hino",
     type: "Coach",
     typeEsp: "Bus",
     brand: "Mercedes",
@@ -408,6 +426,7 @@ export const cars = [
   {
     id: 16,
     name: "A6",
+    nameEsp: "A6",
     type: "Luxury Sedan",
     typeEsp: "Sedan Gama Alta",
     brand: "Audi",
@@ -435,6 +454,7 @@ export const cars = [
   {
     id: 17,
     name: "Series 5",
+    nameEsp: "Series 5",
     type: "Luxury Sedan",
     typeEsp: "Sedan Gama Alta",
     brand: "BMW",

@@ -1,0 +1,87 @@
+.fares__row > h1{
+    text-align: center;
+    margin-bottom: 2em;
+}
+
+.fares__organizer {
+  display: flex;
+  flex-direction: column;
+}
+
+.fares__organizer--top {
+  display: flex;
+  border: 0.2em solid var(--main-color);
+}
+
+.fares__organizer--start {
+  flex: 0.16;
+  border-right: 0.2em solid var(--main-color);
+  padding: 0.25em;
+}
+
+.fares__organizer--name,
+.fares__organizer--hour,
+.fares__organizer--day,
+.fares__organizer--trip {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  flex: 0.2;
+  border-right: 0.2em solid var(--main-color);
+  padding: 1em 0.2em;
+}
+
+.fares__organizer--hour > p,
+.fares__organizer--day > p {
+  margin: 0;
+  font-size: 1em;
+  text-align: center;
+}
+
+.fares__organizer--day {
+  flex: 0.275;
+}
+
+.fares__organizer--trip {
+  border: none;
+}
+
+.faresmap__container {
+  display: flex;
+  border: 0.2em solid var(--main-color);
+  border-top: none;
+}
+
+.faresmap__container > figure {
+  flex: 0.16;
+  padding: 0.25em;
+  border-right: 0.2em solid var(--main-color);
+}
+
+.faresmap__container > figure > img {
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+}
+
+.faresmap__container > div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 0.2;
+    border-right: 0.2em solid var(--main-color);
+    min-height: 100%;
+    padding: 1em 0.2em;
+}
+
+.faresmap__day {
+    flex: 0.275 !important;
+}
+
+.faresmap__trip {
+    border-right: none !important;
+}
+
+.faresmap__container > div > span{
+    font-size: 1.25em;
+}

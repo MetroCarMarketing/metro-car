@@ -96,7 +96,7 @@ function App() {
             element={<Contact translation={translation} />}
           />
           <Route path="/about" element={<About translation={translation} />} />
-          <Route path="/fares" element={<Fares translation={translation} />} />
+          <Route path="/fares" element={<Fares translation={translation} cars={cars} language={language} />} />
         </Routes>
         {/* <figure className="car__background--desktop">
           <img src={car} alt="" />
