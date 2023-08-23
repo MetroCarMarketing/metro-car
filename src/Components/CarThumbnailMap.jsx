@@ -32,13 +32,13 @@ const CarThumbnailMap = ({ item, translation }) => {
             </h3>
             <div className="thumbnail__organizer">
               <h4>
-                pax: <span className="number">{item.pax}</span>
+                pax : <span className="number">{item.pax}</span>
               </h4>
               <Check />
             </div>
             <div className="thumbnail__organizer">
               <h4>
-                {translation.bags}: <span className="number">{item.bags}</span>
+                {translation.bags} : <span className="number">{item.bags}</span>
               </h4>
               <Check/>
             </div>
