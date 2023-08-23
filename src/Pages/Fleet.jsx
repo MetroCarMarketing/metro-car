@@ -98,9 +98,9 @@ const Fleet = ({ language, translation, cars: initialCars }) => {
             </div>
           </section>
             {language === "english" ? (
-              <Button onClick={() => navigateTo('/services')}>Fares</Button>
+              <Button onClick={() => navigateTo('/fares')}>Fares</Button>
             ) : (
-              <Button onClick={() => navigateTo('/services')}>Tarifas</Button>
+              <Button onClick={() => navigateTo('/fares')}>Tarifas</Button>
             )}
         </div>
       </div>

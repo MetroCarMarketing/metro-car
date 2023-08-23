@@ -17,6 +17,7 @@ import Services from "./Pages/Services";
 import Footer from "./Components/Footer";
 import "./CSS/Queries.css";
 import Watermark from "./Components/Watermark";
+import Fares from "./Pages/Fares";
 
 function App() {
 
@@ -95,6 +96,7 @@ function App() {
             element={<Contact translation={translation} />}
           />
           <Route path="/about" element={<About translation={translation} />} />
+          <Route path="/fares" element={<Fares translation={translation} />} />
         </Routes>
         {/* <figure className="car__background--desktop">
           <img src={car} alt="" />
