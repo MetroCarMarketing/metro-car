@@ -1,5 +1,3 @@
-import show from "./Assets/Carrousel/carr1.JPG";
-
 export const cars = [
   {
     id: 1,
@@ -12,7 +10,9 @@ export const cars = [
     descriptionEsp:
       "El Toyota Land Cruiser Prado cuenta con un fuerte carácter y un atractivo y robusto diseño basado en líneas agresivas y estilo compacto de gran elegancia con una mezcla de texturas de forma armónica para brindar un diseño que otorga distinción. Este potente todo terreno se ha reinventado y superado a sí mismo.",
     model: 2019,
-    price: 68.99,
+    priceHour: 68.99,
+    priceDay: 68.99,
+    priceTrip: 68.99,
     imageMain:
       "https://www.toyota.com.co/wp-content/uploads/2020/08/PLATA-METALICO-14.jpg",
     image2:
@@ -34,7 +34,9 @@ export const cars = [
     description: "description test",
     descriptionEsp: "description espanol",
     model: 2019,
-    price: 58.99,
+    priceHour: 58.99,
+    priceDay: 58.99,
+    priceTrip: 58.99,
     imageMain:
       "https://www.mbusa.com/content/dam/mb-nafta/us/myco/my23/cla/class-page/series/2023-CLA-COUPE-CT-1-3-01-DR.jpg",
     image2:
@@ -57,7 +59,9 @@ export const cars = [
     description: "description test",
     descriptionEsp: "description espanol",
     model: 2019,
-    price: 58.99,
+    priceHour: 58.99,
+    priceDay: 58.99,
+    priceTrip: 58.99,
     imageMain:
       "https://www.mbusa.com/content/dam/mb-nafta/us/myco/my23/cla/class-page/series/2023-CLA-COUPE-CT-1-3-01-DR.jpg",
     image2:
@@ -80,7 +84,9 @@ export const cars = [
     description: "description test",
     descriptionEsp: "description espanol",
     model: 2019,
-    price: 58.99,
+    priceHour: 58.99,
+    priceDay: 58.99,
+    priceTrip: 58.99,
     imageMain:
       "https://www.mbusa.com/content/dam/mb-nafta/us/myco/my23/cla/class-page/series/2023-CLA-COUPE-CT-1-3-01-DR.jpg",
     image2:
@@ -103,7 +109,9 @@ export const cars = [
     description: "description test",
     descriptionEsp: "description espanol",
     model: 2019,
-    price: 58.99,
+    priceHour: 58.99,
+    priceDay: 58.99,
+    priceTrip: 58.99,
     imageMain:
       "https://www.mbusa.com/content/dam/mb-nafta/us/myco/my23/cla/class-page/series/2023-CLA-COUPE-CT-1-3-01-DR.jpg",
     image2:
@@ -126,7 +134,9 @@ export const cars = [
     description: "description test",
     descriptionEsp: "description espanol",
     model: 2019,
-    price: 58.99,
+    priceHour: 58.99,
+    priceDay: 58.99,
+    priceTrip: 58.99,
     imageMain:
       "https://www.mbusa.com/content/dam/mb-nafta/us/myco/my23/cla/class-page/series/2023-CLA-COUPE-CT-1-3-01-DR.jpg",
     image2:
@@ -149,7 +159,9 @@ export const cars = [
     description: "description test",
     descriptionEsp: "description espanol",
     model: 2019,
-    price: 58.99,
+    priceHour: 58.99,
+    priceDay: 58.99,
+    priceTrip: 58.99,
     imageMain:
       "https://www.mbusa.com/content/dam/mb-nafta/us/myco/my23/cla/class-page/series/2023-CLA-COUPE-CT-1-3-01-DR.jpg",
     image2:
@@ -172,7 +184,9 @@ export const cars = [
     description: "description test",
     descriptionEsp: "description espanol",
     model: 2019,
-    price: 58.99,
+    priceHour: 58.99,
+    priceDay: 58.99,
+    priceTrip: 58.99,
     imageMain:
       "https://www.mbusa.com/content/dam/mb-nafta/us/myco/my23/cla/class-page/series/2023-CLA-COUPE-CT-1-3-01-DR.jpg",
     image2:
@@ -195,7 +209,9 @@ export const cars = [
     description: "description test",
     descriptionEsp: "description espanol",
     model: 2019,
-    price: 58.99,
+    priceHour: 58.99,
+    priceDay: 58.99,
+    priceTrip: 58.99,
     imageMain:
       "https://www.mbusa.com/content/dam/mb-nafta/us/myco/my23/cla/class-page/series/2023-CLA-COUPE-CT-1-3-01-DR.jpg",
     image2:
@@ -218,7 +234,9 @@ export const cars = [
     description: "description test",
     descriptionEsp: "description espanol",
     model: 2019,
-    price: 58.99,
+    priceHour: 58.99,
+    priceDay: 58.99,
+    priceTrip: 58.99,
     imageMain:
       "https://www.mbusa.com/content/dam/mb-nafta/us/myco/my23/cla/class-page/series/2023-CLA-COUPE-CT-1-3-01-DR.jpg",
     image2:
@@ -241,7 +259,9 @@ export const cars = [
     description: "description test",
     descriptionEsp: "description espanol",
     model: 2019,
-    price: 58.99,
+    priceHour: 58.99,
+    priceDay: 58.99,
+    priceTrip: 58.99,
     imageMain:
       "https://www.mbusa.com/content/dam/mb-nafta/us/myco/my23/cla/class-page/series/2023-CLA-COUPE-CT-1-3-01-DR.jpg",
     image2:
@@ -264,7 +284,9 @@ export const cars = [
     description: "description test",
     descriptionEsp: "description espanol",
     model: 2019,
-    price: 58.99,
+    priceHour: 58.99,
+    priceDay: 58.99,
+    priceTrip: 58.99,
     imageMain:
       "https://www.mbusa.com/content/dam/mb-nafta/us/myco/my23/cla/class-page/series/2023-CLA-COUPE-CT-1-3-01-DR.jpg",
     image2:
@@ -287,7 +309,9 @@ export const cars = [
     description: "description test",
     descriptionEsp: "description espanol",
     model: 2019,
-    price: 58.99,
+    priceHour: 58.99,
+    priceDay: 58.99,
+    priceTrip: 58.99,
     imageMain:
       "https://www.mbusa.com/content/dam/mb-nafta/us/myco/my23/cla/class-page/series/2023-CLA-COUPE-CT-1-3-01-DR.jpg",
     image2:
@@ -310,7 +334,9 @@ export const cars = [
     description: "description test",
     descriptionEsp: "description espanol",
     model: 2019,
-    price: 58.99,
+    priceHour: 58.99,
+    priceDay: 58.99,
+    priceTrip: 58.99,
     imageMain:
       "https://www.mbusa.com/content/dam/mb-nafta/us/myco/my23/cla/class-page/series/2023-CLA-COUPE-CT-1-3-01-DR.jpg",
     image2:
@@ -333,7 +359,9 @@ export const cars = [
     description: "description test",
     descriptionEsp: "description espanol",
     model: 2019,
-    price: 58.99,
+    priceHour: 58.99,
+    priceDay: 58.99,
+    priceTrip: 58.99,
     imageMain:
       "https://www.mbusa.com/content/dam/mb-nafta/us/myco/my23/cla/class-page/series/2023-CLA-COUPE-CT-1-3-01-DR.jpg",
     image2:
@@ -356,7 +384,9 @@ export const cars = [
     description: "description test",
     descriptionEsp: "description espanol",
     model: 2019,
-    price: 58.99,
+    priceHour: 58.99,
+    priceDay: 58.99,
+    priceTrip: 58.99,
     imageMain:
       "https://www.mbusa.com/content/dam/mb-nafta/us/myco/my23/cla/class-page/series/2023-CLA-COUPE-CT-1-3-01-DR.jpg",
     image2:
@@ -379,7 +409,9 @@ export const cars = [
     description: "description test",
     descriptionEsp: "description espanol",
     model: 2019,
-    price: 58.99,
+    priceHour: 58.99,
+    priceDay: 58.99,
+    priceTrip: 58.99,
     imageMain:
       "https://www.mbusa.com/content/dam/mb-nafta/us/myco/my23/cla/class-page/series/2023-CLA-COUPE-CT-1-3-01-DR.jpg",
     image2:

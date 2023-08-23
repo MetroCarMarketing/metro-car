@@ -21,19 +21,19 @@ const Fleet = ({ language, translation, cars: initialCars }) => {
     if (filter === "SUVA") {
       setProducts(suvA);
     }
-    if (filter == "CAR") {
+    if (filter === "CAR") {
       setProducts(sedanHigh);
     }
-    if (filter == "MIDS") {
+    if (filter === "MIDS") {
       setProducts(sedanMid);
     }
-    if (filter == "MINI") {
+    if (filter === "MINI") {
       setProducts(mini);
     }
-    if (filter == "VAN") {
+    if (filter === "VAN") {
       setProducts(vans);
     }
-    if (filter == "COACH") {
+    if (filter === "COACH") {
       setProducts(coach);
     }
     if (filter === "ALL") {
