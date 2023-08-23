@@ -2,8 +2,13 @@ import React, { useState } from "react";
 import Slideshow from "../Components/Slideshow";
 import "../CSS/Slideshow.css";
 import CarThumbnailMap from "../Components/CarThumbnailMap";
+import { Button } from "@mui/material";
+import { useNavigate } from "react-router-dom";
 
 const Fleet = ({ language, translation, cars: initialCars }) => {
+
+  const navigateTo = useNavigate()
+
   const [products, setProducts] = useState(initialCars);
 
   const suv = initialCars.filter((item) => item.type === "SUV");
@@ -92,6 +97,11 @@ const Fleet = ({ language, translation, cars: initialCars }) => {
               ))}
             </div>
           </section>
+            {language === "english" ? (
+              <Button onClick={() => navigateTo('/services')}>Fares</Button>
+            ) : (
+              <Button onClick={() => navigateTo('/services')}>Tarifas</Button>
+            )}
         </div>
       </div>
     </section>

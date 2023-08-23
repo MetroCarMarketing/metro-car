@@ -73,3 +73,18 @@
   width: 45%;
   border-radius: 0.3em;
 }
+
+.fleet__row > button{
+  margin-top: 2em;
+  font-size: 2em;
+  color: var(--cold-white);
+  background-color: transparent;
+  padding: .5em 1em;
+  border: .1em solid var(--main-color);
+  transition: all 300ms ease;
+}
+
+.fleet__row > button:hover{
+  border-color: var(--accent-color);
+  background-color: var(--main-hover);
+}
