@@ -90,27 +90,10 @@ height: 100%;
 .nav__list > a:hover .navLink{
   color: var(--main-color);
 }
+
 .active{
   border: 0.1em solid var(--main-color) !important;
 }
-
-/* .nav__list > button {
-  font-family: 'Cinzel Decorative', cursive !important;
-  color: var(--cold-white);
-  height: 100%;
-  flex: 1;
-  transition: all 300ms ease !important;
-}
-.nav__list > button > h1{
-  margin-top: .2em;
-  font-size: 1.2em;
-}
-
-.nav__list > button:hover,
-.nav__btn-active {
-  color: var(--main-color) !important;
-  background-color: var(--main-hover) !important;
-} */
 
 .nav__car--desktop {
   display: none;

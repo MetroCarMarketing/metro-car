@@ -39,8 +39,11 @@
   text-align: center;
 }
 
+.fares__organizer--name{
+  flex: .15;
+}
 .fares__organizer--day {
-  flex: 0.275;
+  flex: 0.325;
 }
 
 .fares__organizer--trip {
@@ -74,8 +77,12 @@
     padding: 1em 0.2em;
 }
 
+.faresmap__name{
+  flex: .15 !important;
+}
+
 .faresmap__day {
-    flex: 0.275 !important;
+    flex: 0.325 !important;
 }
 
 .faresmap__trip {
@@ -84,4 +91,5 @@
 
 .faresmap__container > div > span{
     font-size: 1.25em;
+    text-align: center;
 }
