@@ -35,36 +35,11 @@ const Nav = ({ translation, setEnglish, setSpanish, active, setActive }) => {
         <span className="upper">M</span>etro<span className="upper">C</span>ar
       </h1>
       <div className="nav__list nav__desktop">
-        <NavBtn
-          translation={translation}
-          text={translation.navLink1}
-          navTo={() => activateBtn("/services")}
-          isActive={active === "/services"}
-        />
-        <NavBtn
-          translation={translation}
-          text={translation.navLink3}
-          navTo={() => activateBtn("/fleet")}
-          isActive={active === "/fleet"}
-        />
-        <NavBtn
-          translation={translation}
-          text={translation.navLink2}
-          navTo={() => activateBtn("/coverage")}
-          isActive={active === "/coverage"}
-        />
-        <NavBtn
-          translation={translation}
-          text={translation.navLink4}
-          navTo={() => activateBtn("/contact")}
-          isActive={active === "/contact"}
-        />
-        <NavBtn
-          translation={translation}
-          text={translation.navLink5}
-          navTo={() => activateBtn("/about")}
-          isActive={active === "/about"}
-        />
+        <NavBtn text={translation.navLink1} link="/services" />
+        <NavBtn text={translation.navLink3} link="/fleet" />
+        <NavBtn text={translation.navLink2} link="/coverage" />
+        <NavBtn text={translation.navLink4} link="/contact" />
+        <NavBtn text={translation.navLink5} link="/about" />
       </div>
       {/* <figure className="nav__car--desktop">
         <img src={car} alt="" />

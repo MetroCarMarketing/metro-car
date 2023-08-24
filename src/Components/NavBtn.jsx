@@ -1,14 +1,14 @@
 import { Button } from "@mui/material";
 import React from "react";
+import { NavLink } from "react-router-dom";
 
-const NavBtn = ({ text, isActive, navTo, test }) => {
+const NavBtn = ({ text, link }) => {
   return (
-    <Button
-      className={isActive ? `nav__btn-active` : ""}
-      onClick={navTo ? navTo : test}
-    >
-      <h1>{text}</h1>
-    </Button>
+    <NavLink to={link}>
+      <Button>
+        <h1 className="navLink">{text}</h1>
+      </Button>
+    </NavLink>
   );
 };
 

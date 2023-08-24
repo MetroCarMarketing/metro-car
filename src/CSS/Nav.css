@@ -59,7 +59,42 @@ nav > h1 {
   display: none;
 }
 
-.nav__list > button {
+.nav__list > a {
+  font-family: 'Cinzel Decorative', cursive !important;
+  color: var(--cold-white);
+  height: 100%;
+  flex: 1;
+  border-radius: .5em;
+  transition: all 300ms ease !important;
+}
+
+.nav__list > a > button {
+width: 100%;
+height: 100%;
+}
+
+.navLink{
+  margin-top: .2em;
+  font-size: 1.2em;
+  color: var(--cold-white);
+  transition: all 300ms ease;
+}
+
+.nav__list > a:hover,
+.active{
+  color: var(--main-color) !important;
+  background-color: var(--main-hover) !important;
+}
+
+.active .navLink,
+.nav__list > a:hover .navLink{
+  color: var(--main-color);
+}
+.active{
+  border: 0.1em solid var(--main-color) !important;
+}
+
+/* .nav__list > button {
   font-family: 'Cinzel Decorative', cursive !important;
   color: var(--cold-white);
   height: 100%;
@@ -75,11 +110,7 @@ nav > h1 {
 .nav__btn-active {
   color: var(--main-color) !important;
   background-color: var(--main-hover) !important;
-}
-
-.nav__btn-active {
-  border: 0.1em solid var(--main-color) !important;
-}
+} */
 
 .nav__car--desktop {
   display: none;
