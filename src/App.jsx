@@ -1,6 +1,10 @@
 import React, { useEffect, useState } from "react";
 import "./CSS/App.css";
-import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
+import {
+  Route,
+  BrowserRouter as Router,
+  Routes,
+} from "react-router-dom";
 import Home from "./Pages/Home";
 import Nav from "./Components/Nav";
 // import car from "./Assets/metrocar regency.jpg";
@@ -18,16 +22,13 @@ import Footer from "./Components/Footer";
 import "./CSS/Queries.css";
 import Watermark from "./Components/Watermark";
 import Fares from "./Pages/Fares";
+import ScrollToTop from "./Components/ScrollToTop";
 
 function App() {
 
-  
-  const [currentPage, setCurrentPage] = useState(null);
-  const [active, setActive] = useState(null);
-  
   const [language, setLanguage] = useState("spanish");
   const [translation, setTranslation] = useState({});
-  
+
   useEffect(() => {
     if (language === "english") {
       setTranslation(Translation.english);
@@ -35,43 +36,22 @@ function App() {
       setTranslation(Translation.spanish);
     }
   }, [language]);
-  
-  useEffect(() => {
-    const activeNav = window.location.pathname;
-    setActive(activeNav);
-  }, [active]);
-
-  // eslint-disable-next-line
-  useEffect(() => {
-    const activePage = window.location.pathname;
-    setCurrentPage(activePage)
-  })
-
-  useEffect(() => {
-    window.scrollTo({top: 0})
-  }, [currentPage])
 
   return (
     <div className="App">
       <Router>
+        <ScrollToTop/>
         <Nav
           translation={translation}
           setEnglish={() => setLanguage("english")}
           setSpanish={() => setLanguage("spanish")}
-          active={active}
-          setActive={setActive}
         />
         <Burger translation={translation} />
         <Routes>
-          <Route
-            path="/"
-            element={<Home translation={translation} setActive={setActive} />}
-          />
+          <Route path="/" element={<Home translation={translation} />} />
           <Route
             path="/services"
-            element={
-              <Services translation={translation} setActive={setActive} />
-            }
+            element={<Services translation={translation} />}
           />
           <Route
             path="/fleet"
@@ -96,7 +76,16 @@ function App() {
             element={<Contact translation={translation} />}
           />
           <Route path="/about" element={<About translation={translation} />} />
-          <Route path="/fares" element={<Fares translation={translation} cars={cars} language={language} />} />
+          <Route
+            path="/fares"
+            element={
+              <Fares
+                translation={translation}
+                cars={cars}
+                language={language}
+              />
+            }
+          />
         </Routes>
         {/* <figure className="car__background--desktop">
           <img src={car} alt="" />

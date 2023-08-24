@@ -255,7 +255,6 @@ export const cars = [
   {
     id: 8,
     name: "Armored 4Runner",
-    nameEsp: "Armored 4Runner",
     nameEsp: "4Runner Blindada",
     type: "Armored SUV",
     typeEsp: "Camioneta Blindada",
@@ -284,7 +283,6 @@ export const cars = [
   {
     id: 9,
     name: "Armored Prado",
-    nameEsp: "Armored Prado",
     nameEsp: "Prado Blindada",
     type: "Armored SUV",
     typeEsp: "Camioneta Blindada",
@@ -312,7 +310,6 @@ export const cars = [
   {
     id: 10,
     name: "Armored Fortuner",
-    nameEsp: "Armored Fortuner",
     nameEsp: "Fortuner Blindada",
     type: "Armored SUV",
     typeEsp: "Camioneta Blindada",
