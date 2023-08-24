@@ -12,12 +12,21 @@ const Contact = ({ translation }) => {
           <h1 className="title">{translation.contactTitle}</h1>
           <div className="contact__body">
             <form action="">
-              <label htmlFor="">{translation.contactFormName}</label>
-              <input type="text" />
-              <label htmlFor="">Email</label>
-              <input type="email" />
-              <label htmlFor="">{translation.contactFormMessage}</label>
-              <textarea name="" id="" cols="30" rows="10"></textarea>
+              <div className="form__header">
+                <div className="form__item">
+                  <label htmlFor="">{translation.contactFormName}</label>
+                  <input type="text" />
+                </div>
+                <div className="form__item">
+                  <label htmlFor="">Email</label>
+                  <input type="email" />
+                </div>
+              </div>
+              <div className="form__message">
+                <label htmlFor="">{translation.contactFormMessage}</label>
+                <textarea name="" id="" cols="30" rows="10"></textarea>
+              </div>
+              <Button>Enviar</Button>
             </form>
             <ul className="contact__list">
               <Button
