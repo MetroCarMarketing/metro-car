@@ -2,10 +2,15 @@
   color: var(--cold-white);
 }
 
+.contact__body{
+  display: flex;
+  align-items: flex-start;
+  margin-top: 2em;
+}
+
 .contact__list {
   display: flex;
   flex-direction: column;
-  margin-top: 2em;
   gap: 1em;
   width: 100%;
 }
@@ -16,11 +21,13 @@
   white-space: nowrap;
   font-size: 2em;
   color: var(--cold-white);
+  border: .1em solid transparent;
   transition: all 300ms ease;
 }
 
 .contact__list > a:hover {
-  box-shadow: 0 0 0 0.1em rgb(255, 255, 255);
+  border: .1em solid var(--main-color);
+  background-color: var(--main-hover);
 }
 
 .contact__list > a > h1 {
@@ -28,7 +35,7 @@
   margin: 0 0 .1em .5em;
 }
 
-.instaBtn {
+/* .instaBtn {
   position: relative;
   background: linear-gradient(to right, #4856f2, #d62976);
   z-index: 1;
@@ -49,9 +56,9 @@
 
 .instaBtn:hover::before {
   opacity: 1;
-}
+} */
 
-.tiktokBtn {
+/* .tiktokBtn {
   position: relative;
   background-image: linear-gradient(to right, #07c0ba, #fe2858);
   z-index: 1;
@@ -72,7 +79,7 @@
 
 .tiktokBtn:hover::before {
   opacity: 1;
-}
+} */
 
 .tiktokBtn > figure {
   scale: 0.8;
@@ -80,7 +87,7 @@
   width: 1em;
 }
 
-.facebookBtn {
+/* .facebookBtn {
   background-color: #4267b2 !important;
 }
 
@@ -102,4 +109,4 @@
 
 .whatsappBtn:hover {
   background-color: #21bd5a !important;
-}
+} */

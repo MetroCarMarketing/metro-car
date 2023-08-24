@@ -5,36 +5,78 @@ import { Facebook, Instagram, Mail, WhatsApp } from "@mui/icons-material";
 import tiktok from "../Assets/logo-tiktok.svg";
 
 const Contact = ({ translation }) => {
-
   return (
     <section id="Contact">
       <div className="container top__container contact__container">
         <div className="row top__row contact__row">
           <h1 className="title">{translation.contactTitle}</h1>
-          <ul className="contact__list">
-            <Button target="_blank" rel="noreferrer" href="https://google.com" className="instaBtn">
-              <Instagram />
-              <h1><span>@</span>MetroCar</h1>
-            </Button>
-            <Button target="_blank" rel="noreferrer" href="https://google.com" className="facebookBtn">
-              <Facebook />
-              <h1><span>@</span>MetroCar</h1>
-            </Button>
-            <Button target="_blank" rel="noreferrer" href="https://google.com" className="tiktokBtn gradient">
-              <figure>
-                <img src={tiktok} alt="" />
-              </figure>
-              <h1><span>@</span>MetroCar</h1>
-            </Button>
-            <Button target="_blank" rel="noreferrer" href="https://google.com" className="mailBtn">
-              <Mail />
-              <h1><span>@</span>MetroCar</h1>
-            </Button>
-            <Button target="_blank" rel="noreferrer" href="https://wa.me/573026005730" className="whatsappBtn">
-              <WhatsApp />
-              <h1 className="number">+57 (302) 600 5730</h1>
-            </Button>
-          </ul>
+          <div className="contact__body">
+            <form action="">
+              <label htmlFor="">{translation.contactFormName}</label>
+              <input type="text" />
+              <label htmlFor="">Email</label>
+              <input type="email" />
+              <label htmlFor="">{translation.contactFormMessage}</label>
+              <textarea name="" id="" cols="30" rows="10"></textarea>
+            </form>
+            <ul className="contact__list">
+              <Button
+                target="_blank"
+                rel="noreferrer"
+                href="https://google.com"
+                className="instaBtn"
+              >
+                <Instagram />
+                <h1>
+                  <span>@</span>MetroCar
+                </h1>
+              </Button>
+              <Button
+                target="_blank"
+                rel="noreferrer"
+                href="https://google.com"
+                className="facebookBtn"
+              >
+                <Facebook />
+                <h1>
+                  <span>@</span>MetroCar
+                </h1>
+              </Button>
+              <Button
+                target="_blank"
+                rel="noreferrer"
+                href="https://google.com"
+                className="tiktokBtn gradient"
+              >
+                <figure>
+                  <img src={tiktok} alt="" />
+                </figure>
+                <h1>
+                  <span>@</span>MetroCar
+                </h1>
+              </Button>
+              <Button
+                target="_blank"
+                rel="noreferrer"
+                href="https://google.com"
+                className="mailBtn"
+              >
+                <Mail />
+                <h1>
+                  <span>@</span>MetroCar
+                </h1>
+              </Button>
+              <Button
+                target="_blank"
+                rel="noreferrer"
+                href="https://wa.me/573026005730"
+                className="whatsappBtn"
+              >
+                <WhatsApp />
+                <h1 className="number">+57 (302) 600 5730</h1>
+              </Button>
+            </ul>
+          </div>
         </div>
       </div>
     </section>
