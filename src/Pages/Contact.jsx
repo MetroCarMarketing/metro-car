@@ -28,63 +28,66 @@ const Contact = ({ translation }) => {
               </div>
               <Button>Enviar</Button>
             </form>
-            <ul className="contact__list">
-              <Button
-                target="_blank"
-                rel="noreferrer"
-                href="https://google.com"
-                className="instaBtn"
-              >
-                <Instagram />
-                <h1>
-                  <span>@</span>MetroCar
-                </h1>
-              </Button>
-              <Button
-                target="_blank"
-                rel="noreferrer"
-                href="https://google.com"
-                className="facebookBtn"
-              >
-                <Facebook />
-                <h1>
-                  <span>@</span>MetroCar
-                </h1>
-              </Button>
-              <Button
-                target="_blank"
-                rel="noreferrer"
-                href="https://google.com"
-                className="tiktokBtn gradient"
-              >
-                <figure>
-                  <img src={tiktok} alt="" />
-                </figure>
-                <h1>
-                  <span>@</span>MetroCar
-                </h1>
-              </Button>
-              <Button
-                target="_blank"
-                rel="noreferrer"
-                href="https://google.com"
-                className="mailBtn"
-              >
-                <Mail />
-                <h1>
-                  <span>@</span>MetroCar
-                </h1>
-              </Button>
-              <Button
-                target="_blank"
-                rel="noreferrer"
-                href="https://wa.me/573026005730"
-                className="whatsappBtn"
-              >
-                <WhatsApp />
-                <h1 className="number">+57 (302) 600 5730</h1>
-              </Button>
-            </ul>
+            <div className="contact__right">
+              <ul className="contact__list">
+                <Button
+                  target="_blank"
+                  rel="noreferrer"
+                  href="https://google.com"
+                  className="instaBtn"
+                >
+                  <Instagram />
+                  <h1>
+                    <span>@</span>MetroCar
+                  </h1>
+                </Button>
+                <Button
+                  target="_blank"
+                  rel="noreferrer"
+                  href="https://google.com"
+                  className="facebookBtn"
+                >
+                  <Facebook />
+                  <h1>
+                    <span>@</span>MetroCar
+                  </h1>
+                </Button>
+                <Button
+                  target="_blank"
+                  rel="noreferrer"
+                  href="https://google.com"
+                  className="tiktokBtn gradient"
+                >
+                  <figure>
+                    <img src={tiktok} alt="" />
+                  </figure>
+                  <h1>
+                    <span>@</span>MetroCar
+                  </h1>
+                </Button>
+                <Button
+                  target="_blank"
+                  rel="noreferrer"
+                  href="https://google.com"
+                  className="mailBtn"
+                >
+                  <Mail />
+                  <h1>
+                    <span>@</span>MetroCar
+                  </h1>
+                </Button>
+                <Button
+                  target="_blank"
+                  rel="noreferrer"
+                  href="https://wa.me/573026005730"
+                  className="whatsappBtn"
+                >
+                  <WhatsApp />
+                  <h1 className="number">+57 (302) 600 5730</h1>
+                </Button>
+              </ul>
+              <p>{translation.contactText}</p>
+            </div>
           </div>
         </div>
       </div>
