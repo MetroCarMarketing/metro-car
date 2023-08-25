@@ -37,7 +37,7 @@ label {
   color: var(--cold-white);
 }
 
-input,
+input,                                            
 textarea {
   font-size: 1.25em;
   color: var(--cold-white);
