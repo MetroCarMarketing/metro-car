@@ -125,78 +125,21 @@ form > button:hover {
   max-width: 80%;
 }
 
-/* .instaBtn {
-  position: relative;
-  background: linear-gradient(to right, #4856f2, #d62976);
-  z-index: 1;
+.instaBtn > .MuiSvgIcon-root {
+  color: #ec438f;
 }
-
-.instaBtn::before {
-  position: absolute;
-  content: "";
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  background: linear-gradient(to right, #d62976, #4856f2);
-  z-index: -1;
-  transition: opacity 0.3s linear;
-  opacity: 0;
+.facebookBtn > .MuiSvgIcon-root {
+  color: #4267b2;
 }
-
-.instaBtn:hover::before {
-  opacity: 1;
-} */
-
-/* .tiktokBtn {
-  position: relative;
-  background-image: linear-gradient(to right, #07c0ba, #fe2858);
-  z-index: 1;
+.mailBtn > .MuiSvgIcon-root {
+  color: #db4437;
 }
-
-.tiktokBtn::before {
-  position: absolute;
-  content: "";
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  background-image: linear-gradient(to right, #fe2858, #07c0ba);
-  z-index: -1;
-  transition: opacity 0.3s linear;
-  opacity: 0;
+.whatsappBtn > .MuiSvgIcon-root {
+  color:  #21bd5a;
 }
-
-.tiktokBtn:hover::before {
-  opacity: 1;
-} */
 
 .tiktokBtn > figure {
   scale: 0.8;
   filter: invert(1);
   width: 1em;
 }
-
-/* .facebookBtn {
-  background-color: #4267b2 !important;
-}
-
-.facebookBtn:hover {
-  background-color: #3861b4 !important;
-}
-
-.mailBtn {
-  background-color: #db4437 !important;
-}
-
-.mailBtn:hover {
-  background-color: #c03f33 !important;
-}
-
-.whatsappBtn {
-  background-color: #128c7e !important;
-}
-
-.whatsappBtn:hover {
-  background-color: #21bd5a !important;
-} */
