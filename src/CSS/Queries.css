@@ -87,7 +87,7 @@
   }
 
   .services__body--text {
-    max-width: 60%;
+    flex: 0.7;
   }
 
   .list__item--deco {
@@ -97,11 +97,9 @@
     width: 70%;
   }
 
-  .services__body--imgWrapper {
+  .services__body--imgs {
     display: flex;
-    max-width: 40%;
-    border-radius: 1em;
-    box-shadow: 0 0 0.5em 0.5em var(--main-alter);
+    min-height: 1220px;
   }
 
   .services__skeleton {
@@ -124,6 +122,14 @@
     width: calc((100% - 3em) / 4);
   }
 
+.contact__body {
+  flex-direction: row;
+}
+
+  .contact__body > form {
+    flex: 1;
+  }
+
   .about__selector--list {
     gap: 1em;
     flex-direction: row;
@@ -138,6 +144,50 @@
   .reviews__text--wrapperLeft {
     width: calc(50% - 1em);
   }
+
+  .fares__organizer--top,
+  .faresmap__container {
+    border: 0.2em solid var(--main-color);
+  }
+
+  .fares__organizer--name,
+  .fares__organizer--hour,
+  .fares__organizer--day,
+  .fares__organizer--trip {
+    border-right: 0.2em solid var(--main-color);
+    flex: .2;
+  }
+
+  .fares__organizer--name{
+    flex: .15;
+  }
+  .fares__organizer--day {
+    flex: 0.325;
+  }
+  
+
+  .fares__organizer--start,
+  .faresmap__container > figure {
+    display: flex;
+  }
+
+  .faresmap__container > div {
+    flex: 0.2;
+    border-right: 0.2em solid var(--main-color);
+    padding: 1em 0.2em;
+  }
+
+  .faresmap__name{
+    flex: .15 !important;
+  }
+  
+  .faresmap__day {
+      flex: 0.325 !important;
+  }
+
+  .faresmap__container > div > span{
+    font-size: 1.25em;
+}
 
   .footer__text--container {
     flex-direction: row;

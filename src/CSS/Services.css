@@ -1,9 +1,11 @@
 .services__body {
   display: flex;
+  justify-content: space-between;
   gap: 2em;
 }
 
  .services__body--text {
+  flex: 1;
    display: flex;
    flex-direction: column;
    gap: 2em;
@@ -54,8 +56,18 @@
   color: var(--main-color);
 }
 
-.services__body--imgWrapper {
+.services__body--imgs{
   display: none;
+  flex: .3;
+  flex-direction: column;
+  gap: 2em;
+}
+
+.services__body--imgWrapper {
+  display: flex;
+  height: 50%;
+  border-radius: 1em;
+  box-shadow: 0 0 0.5em 0.5em var(--main-alter);
 }
 
 .services__body--imgWrapper > img {
@@ -63,8 +75,9 @@
 }
 
 .services__skeleton {
+  margin: 0;
   display: none;
-  width: 40%;
+  height: 50%;
   aspect-ratio: 9 / 16;
   border-radius: 1em;
 }

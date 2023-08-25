@@ -10,13 +10,19 @@
 
 .fares__organizer--top {
   display: flex;
-  border: 0.2em solid var(--main-color);
+  border: 0.1em solid var(--main-color);
+}
+
+.fares__organizer--top > div > h3{
+  text-align: center;
+  margin-bottom: 1em;
 }
 
 .fares__organizer--start {
+  display: none;
   flex: 0.16;
   border-right: 0.2em solid var(--main-color);
-  padding: 0.25em;
+  padding: 0.2em;
 }
 
 .fares__organizer--name,
@@ -25,10 +31,10 @@
 .fares__organizer--trip {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   flex-direction: column;
-  flex: 0.2;
-  border-right: 0.2em solid var(--main-color);
+  flex: 0.25;
+  border-right: 0.1em solid var(--main-color);
   padding: 1em 0.2em;
 }
 
@@ -39,27 +45,22 @@
   text-align: center;
 }
 
-.fares__organizer--name{
-  flex: .15;
-}
-.fares__organizer--day {
-  flex: 0.325;
-}
-
 .fares__organizer--trip {
   border: none;
 }
 
 .faresmap__container {
   display: flex;
-  border: 0.2em solid var(--main-color);
+  border: 0.1em solid var(--main-color);
   border-top: none;
 }
 
 .faresmap__container > figure {
+  display: none;
   flex: 0.16;
   padding: 0.25em;
   border-right: 0.2em solid var(--main-color);
+  background-color: white;
 }
 
 .faresmap__container > figure > img {
@@ -71,18 +72,10 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    flex: 0.2;
-    border-right: 0.2em solid var(--main-color);
+    flex: 0.25;
+    border-right: 0.1em solid var(--main-color);
     min-height: 100%;
-    padding: 1em 0.2em;
-}
-
-.faresmap__name{
-  flex: .15 !important;
-}
-
-.faresmap__day {
-    flex: 0.325 !important;
+    padding: 1em 0.5em;
 }
 
 .faresmap__trip {
@@ -90,6 +83,6 @@
 }
 
 .faresmap__container > div > span{
-    font-size: 1.25em;
+    font-size: 1em;
     text-align: center;
 }

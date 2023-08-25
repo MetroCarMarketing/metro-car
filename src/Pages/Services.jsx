@@ -1,11 +1,14 @@
 import React, { useEffect, useState } from "react";
 import "../CSS/Services.css";
-import img1 from "../Assets/vertPic.jpg";
+import vert1 from "../Assets/vertPic.jpg";
+import vert2 from "../Assets/vert2.jpg";
 import { useNavigate } from "react-router-dom";
 import { ChevronRight } from "@mui/icons-material";
 
 const Services = ({ translation, setActive }) => {
+  
   const [img, setImg] = useState();
+  const [img2, setImg2] = useState();
 
   const navigateTo = useNavigate();
 
@@ -16,11 +19,18 @@ const Services = ({ translation, setActive }) => {
 
   useEffect(() => {
     const image = new Image();
-    image.src = img1;
+    image.src = vert1;
+    const image2 = new Image();
+    image2.src = vert2;
 
     image.onload = () => {
       setTimeout(() => {
         setImg(image);
+      }, 600);
+    };
+    image2.onload = () => {
+      setTimeout(() => {
+        setImg2(image2);
       }, 600);
     };
   });
@@ -101,13 +111,26 @@ const Services = ({ translation, setActive }) => {
                 </div>
               </ul>
             </div>
-            {img ? (
-              <figure className="services__body--imgWrapper">
-                <img src={img.src} alt="" />
-              </figure>
-            ) : (
-              <><div className="services__skeleton skeleton"></div></>
-            )}
+            <div className="services__body--imgs">
+              {img ? (
+                <figure className="services__body--imgWrapper">
+                  <img src={img.src} alt="" />
+                </figure>
+              ) : (
+                <>
+                  <div className="services__skeleton skeleton"></div>
+                </>
+              )}
+              {img2 ? (
+                <figure className="services__body--imgWrapper">
+                  <img src={img2.src} alt="" />
+                </figure>
+              ) : (
+                <>
+                  <div className="services__skeleton skeleton"></div>
+                </>
+              )}
+            </div>
           </div>
         </div>
       </div>

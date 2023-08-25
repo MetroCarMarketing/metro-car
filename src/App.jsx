@@ -19,10 +19,10 @@ import Contact from "./Pages/Contact";
 import About from "./Pages/About";
 import Services from "./Pages/Services";
 import Footer from "./Components/Footer";
-import "./CSS/Queries.css";
 import Watermark from "./Components/Watermark";
 import Fares from "./Pages/Fares";
 import ScrollToTop from "./Components/ScrollToTop";
+import "./CSS/Queries.css";
 
 function App() {
 

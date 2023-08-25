@@ -81,7 +81,7 @@ img {
 .title {
   color: var(--cold-white);
   font-size: 1.8em;
-  letter-spacing: 0.05em;
+  letter-spacing: 0.1em;
 }
 
 h1,

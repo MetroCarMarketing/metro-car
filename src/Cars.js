@@ -1,3 +1,5 @@
+
+
 export const cars = [
   {
     id: 2,
@@ -8,7 +10,6 @@ export const cars = [
     brand: "Mercedes",
     description: "description test",
     descriptionEsp: "description espanol",
-    model: 2019,
     priceHour: 53.0,
     priceDay: 428.0,
     priceTrip: 80.0,
@@ -36,14 +37,13 @@ export const cars = [
     brand: "Audi",
     description: "description test",
     descriptionEsp: "description espanol",
-    model: 2019,
     priceHour: 53.0,
     priceDay: 428.0,
     priceTrip: 80.0,
     pax: 3,
     bags: 3,
     imageMain:
-      "https://www.mbusa.com/content/dam/mb-nafta/us/myco/my23/cla/class-page/series/2023-CLA-COUPE-CT-1-3-01-DR.jpg",
+      "https://images.91wheels.com/assets/b_images/main/models/profile/profile1661236986.jpg",
     image2:
       "https://www.mbusa.com/content/dam/mb-nafta/us/myco/my23/cla/class-page/series/2023-CLA-COUPE-CT-1-3-02-DR.jpg",
     image3:
@@ -64,14 +64,13 @@ export const cars = [
     brand: "BMW",
     description: "description test",
     descriptionEsp: "description espanol",
-    model: 2019,
     priceHour: 53.0,
     priceDay: 428.0,
     priceTrip: 80.0,
     pax: 3,
     bags: 3,
     imageMain:
-      "https://www.mbusa.com/content/dam/mb-nafta/us/myco/my23/cla/class-page/series/2023-CLA-COUPE-CT-1-3-01-DR.jpg",
+      "https://discover.bmw.ie/wp-content/uploads/2023/03/520i-M-Sport-Sophisto-Grey-3quarter.png",
     image2:
       "https://www.mbusa.com/content/dam/mb-nafta/us/myco/my23/cla/class-page/series/2023-CLA-COUPE-CT-1-3-02-DR.jpg",
     image3:
@@ -92,14 +91,13 @@ export const cars = [
     brand: "Chevrolet",
     description: "description test",
     descriptionEsp: "description espanol",
-    model: 2019,
     priceHour: 41.0,
     priceDay: 328.0,
     priceTrip: 61.0,
     pax: 3,
     bags: 3,
     imageMain:
-      "https://www.mbusa.com/content/dam/mb-nafta/us/myco/my23/cla/class-page/series/2023-CLA-COUPE-CT-1-3-01-DR.jpg",
+      "https://www.chevrolet.com.ar/content/dam/chevrolet/mercosur/argentina/espanol/index/cars/cruze-5-premier/colorizer-1/02-images-2021/colorizer-azul-eclipse.jpg?imwidth=960",
     image2:
       "https://www.mbusa.com/content/dam/mb-nafta/us/myco/my23/cla/class-page/series/2023-CLA-COUPE-CT-1-3-02-DR.jpg",
     image3:
@@ -120,14 +118,13 @@ export const cars = [
     brand: "Hyundai",
     description: "description test",
     descriptionEsp: "description espanol",
-    model: 2019,
     priceHour: 41.0,
     priceDay: 328.0,
     priceTrip: 61.0,
     pax: 3,
     bags: 3,
     imageMain:
-      "https://www.mbusa.com/content/dam/mb-nafta/us/myco/my23/cla/class-page/series/2023-CLA-COUPE-CT-1-3-01-DR.jpg",
+      "https://credivehiculos.com/images/stories/fruit/Hyundai%20i35.png",
     image2:
       "https://www.mbusa.com/content/dam/mb-nafta/us/myco/my23/cla/class-page/series/2023-CLA-COUPE-CT-1-3-02-DR.jpg",
     image3:
@@ -148,14 +145,13 @@ export const cars = [
     brand: "Mazda",
     description: "description test",
     descriptionEsp: "description espanol",
-    model: 2019,
     priceHour: 41.0,
     priceDay: 328.0,
     priceTrip: 61.0,
     pax: 3,
     bags: 3,
     imageMain:
-      "https://www.mbusa.com/content/dam/mb-nafta/us/myco/my23/cla/class-page/series/2023-CLA-COUPE-CT-1-3-01-DR.jpg",
+      "https://www.mazdausa.com/siteassets/vehicles/2023/mazda3-sedan/build-and-price/trims/34-jellies/carbon/2022-m3s-fwd-2-5s-carbon-edition-polymetal-gray.png",
     image2:
       "https://www.mbusa.com/content/dam/mb-nafta/us/myco/my23/cla/class-page/series/2023-CLA-COUPE-CT-1-3-02-DR.jpg",
     image3:
@@ -178,7 +174,6 @@ export const cars = [
       "The Toyota prado has 1 Diesel Engine and 1 Petrol Engine on offer. The Diesel engine is 4461 cc while the Petrol engine is 3956 cc . It is available with Automatic transmission.Depending upon the variant and fuel type the prado has a mileage of 7.3 to 8.0 kmpl & Ground clearance of prado is 220 mm. The prado is a 8 seater 6 cylinder car and has length of 4,715 mm, width of 1,875 mm and a wheelbase of 2,790 mm.",
     descriptionEsp:
       "El Toyota Land Cruiser Prado cuenta con un fuerte carácter y un atractivo y robusto diseño basado en líneas agresivas y estilo compacto de gran elegancia con una mezcla de texturas de forma armónica para brindar un diseño que otorga distinción. Este potente todo terreno se ha reinventado y superado a sí mismo.",
-    model: 2019,
     priceHour: 59.0,
     priceDay: 477.0,
     priceTrip: 89.0,
@@ -205,14 +200,13 @@ export const cars = [
     brand: "Ford",
     description: "description test",
     descriptionEsp: "description espanol",
-    model: 2019,
     priceHour: 59.0,
     priceDay: 477.0,
     priceTrip: 89.0,
     pax: 5,
     bags: 3,
     imageMain:
-      "https://www.mbusa.com/content/dam/mb-nafta/us/myco/my23/cla/class-page/series/2023-CLA-COUPE-CT-1-3-01-DR.jpg",
+      "https://www.motortrend.com/uploads/sites/10/2017/11/2017-ford-expedition-limited-el-suv-angular-front.png",
     image2:
       "https://www.mbusa.com/content/dam/mb-nafta/us/myco/my23/cla/class-page/series/2023-CLA-COUPE-CT-1-3-02-DR.jpg",
     image3:
@@ -233,14 +227,13 @@ export const cars = [
     brand: "Toyota",
     description: "description test",
     descriptionEsp: "description espanol",
-    model: 2019,
     priceHour: 59.0,
     priceDay: 477.0,
     priceTrip: 89.0,
     pax: 5,
     bags: 3,
     imageMain:
-      "https://www.mbusa.com/content/dam/mb-nafta/us/myco/my23/cla/class-page/series/2023-CLA-COUPE-CT-1-3-01-DR.jpg",
+      "https://elkamonyauto.com/wp-content/uploads/2020/06/Fortuner.jpg",
     image2:
       "https://www.mbusa.com/content/dam/mb-nafta/us/myco/my23/cla/class-page/series/2023-CLA-COUPE-CT-1-3-02-DR.jpg",
     image3:
@@ -261,14 +254,13 @@ export const cars = [
     brand: "Toyota",
     description: "description test",
     descriptionEsp: "description espanol",
-    model: 2019,
     priceHour: 64.0,
     priceDay: 517.0,
     priceTrip: 129.0,
     pax: 3,
     bags: 3,
     imageMain:
-      "https://www.mbusa.com/content/dam/mb-nafta/us/myco/my23/cla/class-page/series/2023-CLA-COUPE-CT-1-3-01-DR.jpg",
+      "https://www.motortrend.com/uploads/sites/10/2020/05/2020-toyota-4-runner-sr5-4wd-suv-angular-front.png",
     image2:
       "https://www.mbusa.com/content/dam/mb-nafta/us/myco/my23/cla/class-page/series/2023-CLA-COUPE-CT-1-3-02-DR.jpg",
     image3:
@@ -289,7 +281,6 @@ export const cars = [
     brand: "Toyota",
     description: "description test",
     descriptionEsp: "description espanol",
-    model: 2019,
     priceHour: 64.0,
     priceDay: 517.0,
     priceTrip: 129.0,
@@ -316,14 +307,13 @@ export const cars = [
     brand: "Toyota",
     description: "description test",
     descriptionEsp: "description espanol",
-    model: 2019,
     priceHour: 64.0,
     priceDay: 517.0,
     priceTrip: 129.0,
     pax: 3,
     bags: 3,
     imageMain:
-      "https://www.mbusa.com/content/dam/mb-nafta/us/myco/my23/cla/class-page/series/2023-CLA-COUPE-CT-1-3-01-DR.jpg",
+      "https://elkamonyauto.com/wp-content/uploads/2020/06/Fortuner.jpg",
     image2:
       "https://www.mbusa.com/content/dam/mb-nafta/us/myco/my23/cla/class-page/series/2023-CLA-COUPE-CT-1-3-02-DR.jpg",
     image3:
@@ -344,14 +334,13 @@ export const cars = [
     brand: "Mercedes",
     description: "description test",
     descriptionEsp: "description espanol",
-    model: 2019,
     priceHour: 51.0,
     priceDay: 408.0,
     priceTrip: 76.0,
     pax: 6,
     bags: 6,
     imageMain:
-      "https://www.mbusa.com/content/dam/mb-nafta/us/myco/my23/cla/class-page/series/2023-CLA-COUPE-CT-1-3-01-DR.jpg",
+      "https://www.nicepng.com/png/detail/273-2739553_minivan-mercedes-linea-azzurra-mercedes-benz-vito.png",
     image2:
       "https://www.mbusa.com/content/dam/mb-nafta/us/myco/my23/cla/class-page/series/2023-CLA-COUPE-CT-1-3-02-DR.jpg",
     image3:
@@ -372,14 +361,13 @@ export const cars = [
     brand: "Hyundai",
     description: "description test",
     descriptionEsp: "description espanol",
-    model: 2019,
     priceHour: 51.0,
     priceDay: 408.0,
     priceTrip: 76.0,
     pax: 6,
     bags: 6,
     imageMain:
-      "https://www.mbusa.com/content/dam/mb-nafta/us/myco/my23/cla/class-page/series/2023-CLA-COUPE-CT-1-3-01-DR.jpg",
+      "https://www.autoscout24.de/cms-content-assets/3QZ2jUMyjYuNyxZzrd6GLE-3cc2d2e7e621caf3b9d81da4377b67cc-hyundai-grand-starex-side-1100.jpeg",
     image2:
       "https://www.mbusa.com/content/dam/mb-nafta/us/myco/my23/cla/class-page/series/2023-CLA-COUPE-CT-1-3-02-DR.jpg",
     image3:
@@ -400,14 +388,13 @@ export const cars = [
     brand: "Mercedes",
     description: "description test",
     descriptionEsp: "description espanol",
-    model: 2019,
     priceHour: 59.0,
     priceDay: 477.0,
     priceTrip: 89.0,
     pax: 15,
     bags: 15,
     imageMain:
-      "https://www.mbusa.com/content/dam/mb-nafta/us/myco/my23/cla/class-page/series/2023-CLA-COUPE-CT-1-3-01-DR.jpg",
+      "https://imgcdn.oto.com/large/gallery/color/25/2248/mercedes-benz-sprinter-color-942597.jpg",
     image2:
       "https://www.mbusa.com/content/dam/mb-nafta/us/myco/my23/cla/class-page/series/2023-CLA-COUPE-CT-1-3-02-DR.jpg",
     image3:
@@ -428,14 +415,13 @@ export const cars = [
     brand: "Volkswagen",
     description: "description test",
     descriptionEsp: "description espanol",
-    model: 2019,
     priceHour: 59.0,
     priceDay: 477.0,
     priceTrip: 89.0,
     pax: 15,
     bags: 15,
     imageMain:
-      "https://www.mbusa.com/content/dam/mb-nafta/us/myco/my23/cla/class-page/series/2023-CLA-COUPE-CT-1-3-01-DR.jpg",
+      "https://www.nationwidevehiclecontracts.co.uk/m/0/volkswagen-crafter-trendline.JPG",
     image2:
       "https://www.mbusa.com/content/dam/mb-nafta/us/myco/my23/cla/class-page/series/2023-CLA-COUPE-CT-1-3-02-DR.jpg",
     image3:
@@ -456,7 +442,7 @@ export const cars = [
   //   brand: "Mercedes",
   //   description: "description test",
   //   descriptionEsp: "description espanol",
-  //   model: 2019,
+  //
   //   priceHour: "???",
   //   priceDay: "???",
   //   priceTrip: "???",
