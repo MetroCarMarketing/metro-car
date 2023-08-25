@@ -6,7 +6,6 @@ import { useNavigate } from "react-router-dom";
 import { ChevronRight } from "@mui/icons-material";
 
 const Services = ({ translation, setActive }) => {
-  
   const [img, setImg] = useState();
   const [img2, setImg2] = useState();
 
@@ -42,9 +41,11 @@ const Services = ({ translation, setActive }) => {
           <div className="services__body">
             <div className="services__body--text">
               <h1 className="title">{translation.servicesTitle1}</h1>
-              <p className="services__text">{translation.servicesText1}</p>
-              <p className="services__text">{translation.servicesText2}</p>
-              <p className="services__text">{translation.servicesText3}</p>
+              <div className="services__text--paragraph">
+                <p className="services__text">{translation.servicesText1}</p>
+                <p className="services__text">{translation.servicesText2}</p>
+                <p className="services__text">{translation.servicesText3}</p>
+              </div>
               <h1 className="title">{translation.servicesTitle2}</h1>
               <ul className="services__type--list">
                 <div>

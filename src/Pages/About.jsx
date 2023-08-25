@@ -10,11 +10,11 @@ const About = ({ translation }) => {
     document.getElementById("About").classList.add(test);
     setActive(label);
   };
-  
-  useEffect(() =>{
-    document.getElementById("About").classList.add('about')
-    setActive('selector 1')
-  }, [])
+
+  useEffect(() => {
+    document.getElementById("About").classList.add("about");
+    setActive("selector 1");
+  }, []);
 
   return (
     <section id="About">
@@ -33,12 +33,12 @@ const About = ({ translation }) => {
               active={active === "selector 2"}
               activateBtn={() => activateBtn("selector 2", "faq")}
             />
-            <AboutSelector
+            {/* <AboutSelector
               name={translation.aboutSelector3}
               label="selector 3"
               active={active === "selector 3"}
               activateBtn={() => activateBtn("selector 3", "reviews")}
-            />
+            /> */}
           </ul>
           <div className="about__wrapper">
             <div className="about__text--wrapperLeft">
@@ -54,26 +54,36 @@ const About = ({ translation }) => {
           <div className="faq__wrapper">
             <div className="faq__text--wrapperLeft">
               <div className="faq__text">
-                <h3 className="faq__text--title">
-                  {translation.faqTextTitle1}
-                </h3>
-                <p className="faq__text--info">{translation.faqText1}</p>
-                <h3 className="faq__text--title">
-                  {translation.faqTextTitle2}
-                </h3>
-                <p className="faq__text--info">{translation.faqText2}</p>
-                <h3 className="faq__text--title">
-                  {translation.faqTextTitle3}
-                </h3>
-                <p className="faq__text--info">{translation.faqText3}</p>
-                <h3 className="faq__text--title">
-                  {translation.faqTextTitle4}
-                </h3>
-                <p className="faq__text--info">{translation.faqText4}</p>
-                <h3 className="faq__text--title">
-                  {translation.faqTextTitle5}
-                </h3>
-                <p className="faq__text--info">{translation.faqText5}</p>
+                <div className="faq__qa">
+                  <h3 className="faq__text--title">
+                    {translation.faqTextTitle1}
+                  </h3>
+                  <p className="faq__text--info">{translation.faqText1}</p>
+                </div>
+                <div className="faq__qa">
+                  <h3 className="faq__text--title">
+                    {translation.faqTextTitle2}
+                  </h3>
+                  <p className="faq__text--info">{translation.faqText2}</p>
+                </div>
+                <div className="faq__qa">
+                  <h3 className="faq__text--title">
+                    {translation.faqTextTitle3}
+                  </h3>
+                  <p className="faq__text--info">{translation.faqText3}</p>
+                </div>
+                <div className="faq__qa">
+                  <h3 className="faq__text--title">
+                    {translation.faqTextTitle4}
+                  </h3>
+                  <p className="faq__text--info">{translation.faqText4}</p>
+                </div>
+                <div className="faq__qa">
+                  <h3 className="faq__text--title">
+                    {translation.faqTextTitle5}
+                  </h3>
+                  <p className="faq__text--info">{translation.faqText5}</p>
+                </div>
               </div>
             </div>
             <div className="faq__text--wrapperRight"></div>
@@ -84,7 +94,9 @@ const About = ({ translation }) => {
                 <h3 className="reviews__text--title">
                   {translation.reviewsTextTitle1}
                 </h3>
-                <p className="reviews__text--info">{translation.reviewsText1}</p>
+                <p className="reviews__text--info">
+                  {translation.reviewsText1}
+                </p>
               </div>
             </div>
             <div className="reviews__text--wrapperRight"></div>

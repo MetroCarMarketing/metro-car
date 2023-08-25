@@ -35,6 +35,7 @@ nav > .MuiSvgIcon-root {
 }
 
 nav > h1 {
+  cursor: pointer;
   font-size: 1.5em;
   color: var(--cold-white);
   text-align: center;

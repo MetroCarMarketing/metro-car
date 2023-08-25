@@ -10,6 +10,16 @@
    flex-direction: column;
    gap: 2em;
   }
+
+  .services__text--paragraph{
+    display: flex;
+    flex-direction: column;
+    gap: .5em;
+  }
+
+  .services__text--paragraph > p{
+    margin: 0;
+  }
   
   .services__body--text > h1 {
     text-align: center;
@@ -44,6 +54,12 @@
 .services__body--list > div:hover .list__item--deco {
   background-color: var(--accent-color);
   width: 90%;
+}
+
+.services__type--list{
+  display: flex;
+  flex-direction: column;
+  gap: .5em;
 }
 
 .services__type--list > div {

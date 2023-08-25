@@ -25,7 +25,7 @@ const Nav = ({ translation, setEnglish, setSpanish }) => {
       <figure onClick={homeBtn} className="nav__logo--wrapper">
         <img src={logo} alt="" />
       </figure>
-      <h1>
+      <h1 onClick={homeBtn}>
         <span className="upper">M</span>etro<span className="upper">C</span>ar
       </h1>
       <div className="nav__list nav__desktop">
