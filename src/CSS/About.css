@@ -32,6 +32,8 @@
 .faq .faq__wrapper,
 .reviews .reviews__wrapper {
   display: flex;
+  gap: 2em;
+  justify-content: space-between;
   color: var(--cold-white);
 }
 
@@ -56,3 +58,5 @@
 .faq__qa > p{
   margin-top: .5em;
 }
+
+

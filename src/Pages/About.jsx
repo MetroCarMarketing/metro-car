@@ -1,6 +1,10 @@
 import React, { useEffect, useState } from "react";
 import "../CSS/About.css";
 import AboutSelector from "../Components/AboutSelector";
+import VerticalImg from "../Components/VerticalImg";
+import vert1 from "../Assets/vertPic.jpg";
+import vert2 from "../Assets/vert2.jpg";
+
 
 const About = ({ translation }) => {
   const [active, setActive] = useState(null);
@@ -49,7 +53,7 @@ const About = ({ translation }) => {
                 <p className="about__text--info">{translation.aboutText1}</p>
               </div>
             </div>
-            <div className="about__text--wrapperRight"></div>
+            <VerticalImg className='about__img--wrapper vertical--img__wrapper' src={vert1} />
           </div>
           <div className="faq__wrapper">
             <div className="faq__text--wrapperLeft">
@@ -86,9 +90,9 @@ const About = ({ translation }) => {
                 </div>
               </div>
             </div>
-            <div className="faq__text--wrapperRight"></div>
+            <VerticalImg className='faq__img--wrapper vertical--img__wrapper' src={vert2}/>
           </div>
-          <div className="reviews__wrapper">
+          {/* <div className="reviews__wrapper">
             <div className="reviews__text--wrapperLeft">
               <div className="reviews__text">
                 <h3 className="reviews__text--title">
@@ -100,7 +104,7 @@ const About = ({ translation }) => {
               </div>
             </div>
             <div className="reviews__text--wrapperRight"></div>
-          </div>
+          </div> */}
         </div>
       </div>
     </section>

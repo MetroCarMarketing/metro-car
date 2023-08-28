@@ -142,7 +142,12 @@
   .about__text--wrapperLeft,
   .faq__text--wrapperLeft,
   .reviews__text--wrapperLeft {
-    width: calc(50% - 1em);
+    flex: .6;
+  }
+
+  .about__img--wrapper,
+  .faq__img--wrapper{
+    flex: .35;
   }
 
   .fares__organizer--name,

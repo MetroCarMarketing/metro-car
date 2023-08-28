@@ -1,0 +1,10 @@
+.vertical--img__wrapper{
+    flex: 1;
+    border-radius: 1em;
+    box-shadow: 0 0 0.5em 0.5em var(--main-alter);
+    height: 100%;
+}
+
+.vertical--img__wrapper > img{
+    height: 100%;
+}
