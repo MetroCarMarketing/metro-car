@@ -1,5 +1,3 @@
-
-
 export const cars = [
   {
     id: 2,
@@ -8,8 +6,10 @@ export const cars = [
     type: "Luxury Sedan",
     typeEsp: "Sedan Gama Alta",
     brand: "Mercedes",
-    description: "description test",
-    descriptionEsp: "description espanol",
+    description:
+      "Our highest end Luxury sedan available for rides. Its got the highest quality interiors and comfort",
+    descriptionEsp:
+      "Nuestro sedan de mas alta gama, con los mejores interiores y comodidad absoluta",
     priceHour: 53.0,
     priceDay: 428.0,
     priceTrip: 80.0,
@@ -35,8 +35,10 @@ export const cars = [
     type: "Luxury Sedan",
     typeEsp: "Sedan Gama Alta",
     brand: "Audi",
-    description: "description test",
-    descriptionEsp: "description espanol",
+    description:
+      "Our highest end Luxury sedan available for rides. Its got the highest quality interiors and comfort",
+    descriptionEsp:
+      "Nuestro sedan de mas alta gama, con los mejores interiores y comodidad absoluta",
     priceHour: 53.0,
     priceDay: 428.0,
     priceTrip: 80.0,
@@ -62,8 +64,10 @@ export const cars = [
     type: "Luxury Sedan",
     typeEsp: "Sedan Gama Alta",
     brand: "BMW",
-    description: "description test",
-    descriptionEsp: "description espanol",
+    description:
+      "Our highest end Luxury sedan available for rides. Its got the highest quality interiors and comfort",
+    descriptionEsp:
+      "Nuestro sedan de mas alta gama, con los mejores interiores y comodidad absoluta",
     priceHour: 53.0,
     priceDay: 428.0,
     priceTrip: 80.0,
@@ -89,8 +93,10 @@ export const cars = [
     type: "Mid Size Sedan",
     typeEsp: "Sedan Gama Media",
     brand: "Chevrolet",
-    description: "description test",
-    descriptionEsp: "description espanol",
+    description:
+      "A more affordable option for lightweight transportation, still offers good comfort and quality ",
+    descriptionEsp:
+      "Una alternativa mas asequible para transporte personal, cuenta con comodidad y calidad buena",
     priceHour: 41.0,
     priceDay: 328.0,
     priceTrip: 61.0,
@@ -116,8 +122,10 @@ export const cars = [
     type: "Mid Size Sedan",
     typeEsp: "Sedan Gama Media",
     brand: "Hyundai",
-    description: "description test",
-    descriptionEsp: "description espanol",
+    description:
+      "A more affordable option for lightweight transportation, still offers good comfort and quality ",
+    descriptionEsp:
+      "Una alternativa mas asequible para transporte personal, cuenta con comodidad y calidad buena",
     priceHour: 41.0,
     priceDay: 328.0,
     priceTrip: 61.0,
@@ -143,8 +151,10 @@ export const cars = [
     type: "Mid Size Sedan",
     typeEsp: "Sedan Gama Media",
     brand: "Mazda",
-    description: "description test",
-    descriptionEsp: "description espanol",
+    description:
+      "A more affordable option for lightweight transportation, still offers good comfort and quality ",
+    descriptionEsp:
+      "Una alternativa mas asequible para transporte personal, cuenta con comodidad y calidad buena",
     priceHour: 41.0,
     priceDay: 328.0,
     priceTrip: 61.0,
@@ -171,9 +181,9 @@ export const cars = [
     typeEsp: "Camioneta Convencional",
     brand: "Toyota",
     description:
-      "The Toyota prado has 1 Diesel Engine and 1 Petrol Engine on offer. The Diesel engine is 4461 cc while the Petrol engine is 3956 cc . It is available with Automatic transmission.Depending upon the variant and fuel type the prado has a mileage of 7.3 to 8.0 kmpl & Ground clearance of prado is 220 mm. The prado is a 8 seater 6 cylinder car and has length of 4,715 mm, width of 1,875 mm and a wheelbase of 2,790 mm.",
+      "Our high end SUV experience it offers unmatched comfort and space ideal for long trips",
     descriptionEsp:
-      "El Toyota Land Cruiser Prado cuenta con un fuerte carácter y un atractivo y robusto diseño basado en líneas agresivas y estilo compacto de gran elegancia con una mezcla de texturas de forma armónica para brindar un diseño que otorga distinción. Este potente todo terreno se ha reinventado y superado a sí mismo.",
+      "Nuestra experiencia definitiva en camioneta, ofrece comodidad excelente y es espaciosa e ideal para viajes largos",
     priceHour: 59.0,
     priceDay: 477.0,
     priceTrip: 89.0,
@@ -198,8 +208,10 @@ export const cars = [
     type: "SUV",
     typeEsp: "Camioneta Convencional",
     brand: "Ford",
-    description: "description test",
-    descriptionEsp: "description espanol",
+    description:
+      "Our high end SUV experience it offers unmatched comfort and space ideal for long trips",
+    descriptionEsp:
+      "Nuestra experiencia definitiva en camioneta, ofrece comodidad excelente y es espaciosa e ideal para viajes largos",
     priceHour: 59.0,
     priceDay: 477.0,
     priceTrip: 89.0,
@@ -225,8 +237,10 @@ export const cars = [
     type: "SUV",
     typeEsp: "Camioneta Convencional",
     brand: "Toyota",
-    description: "description test",
-    descriptionEsp: "description espanol",
+    description:
+    "Our high end SUV experience it offers unmatched comfort and space ideal for long trips",
+  descriptionEsp:
+    "Nuestra experiencia definitiva en camioneta, ofrece comodidad excelente y es espaciosa e ideal para viajes largos",
     priceHour: 59.0,
     priceDay: 477.0,
     priceTrip: 89.0,
@@ -252,8 +266,10 @@ export const cars = [
     type: "Armored SUV",
     typeEsp: "Camioneta Blindada",
     brand: "Toyota",
-    description: "description test",
-    descriptionEsp: "description espanol",
+    description:
+      "Our high end SUV experience it offers unmatched comfort and space ideal for long trips. Additionally this vehicle offers a ballistic protection with level 3 armored windows",
+    descriptionEsp:
+      "Nuestra experiencia definitiva en camioneta, ofrece comodidad excelente y es espaciosa e ideal para viajes largos. Adicionalmente este vehiculo ofrece proteccion balistica con un blindaje nivel 3 en las ventanas",
     priceHour: 64.0,
     priceDay: 517.0,
     priceTrip: 129.0,
@@ -279,8 +295,10 @@ export const cars = [
     type: "Armored SUV",
     typeEsp: "Camioneta Blindada",
     brand: "Toyota",
-    description: "description test",
-    descriptionEsp: "description espanol",
+    description:
+    "Our high end SUV experience it offers unmatched comfort and space ideal for long trips. Additionally this vehicle offers a ballistic protection with level 3 armored windows",
+  descriptionEsp:
+    "Nuestra experiencia definitiva en camioneta, ofrece comodidad excelente y es espaciosa e ideal para viajes largos. Adicionalmente este vehiculo ofrece proteccion balistica con un blindaje nivel 3 en las ventanas",
     priceHour: 64.0,
     priceDay: 517.0,
     priceTrip: 129.0,
@@ -305,8 +323,10 @@ export const cars = [
     type: "Armored SUV",
     typeEsp: "Camioneta Blindada",
     brand: "Toyota",
-    description: "description test",
-    descriptionEsp: "description espanol",
+    description:
+      "Our high end SUV experience it offers unmatched comfort and space ideal for long trips. Additionally this vehicle offers a ballistic protection with level 3 armored windows",
+    descriptionEsp:
+      "Nuestra experiencia definitiva en camioneta, ofrece comodidad excelente y es espaciosa e ideal para viajes largos. Adicionalmente este vehiculo ofrece proteccion balistica con un blindaje nivel 3 en las ventanas",
     priceHour: 64.0,
     priceDay: 517.0,
     priceTrip: 129.0,

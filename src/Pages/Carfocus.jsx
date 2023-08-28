@@ -155,31 +155,25 @@ const Carfocus = ({ cars, language }) => {
             <p>{car.descriptionEsp}</p>
           )}
           {currentLang === "english" ? (
-            <ul>
+            <ul className="ammenities__list">
               <li>
-                <p>
-                  Passengers: <span className="number">{car.pax}</span>
-                </p>
+                <p>Passengers:</p> <span className="number">{car.pax}</span>
               </li>
               <li>
-                <p>
-                  Bags: <span className="number">{car.bags}</span>
-                </p>
+                <p>Bags:</p>
+                <span className="number">{car.bags}</span>
               </li>
               <li>
-                <p>
-                  Water <Check />
-                </p>
+                <p>Water</p>
+                <Check />
               </li>
               <li>
-                <p>
-                  Mints <Check />
-                </p>
+                <p>Mints</p>
+                <Check />
               </li>
               <li>
-                <p>
-                  Hygiene Products <Check />
-                </p>
+                <p>Hygiene Products</p>
+                <Check />
               </li>
             </ul>
           ) : (
