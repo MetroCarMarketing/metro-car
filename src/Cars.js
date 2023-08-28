@@ -238,9 +238,9 @@ export const cars = [
     typeEsp: "Camioneta Convencional",
     brand: "Toyota",
     description:
-    "Our high end SUV experience it offers unmatched comfort and space ideal for long trips",
-  descriptionEsp:
-    "Nuestra experiencia definitiva en camioneta, ofrece comodidad excelente y es espaciosa e ideal para viajes largos",
+      "Our high end SUV experience it offers unmatched comfort and space ideal for long trips",
+    descriptionEsp:
+      "Nuestra experiencia definitiva en camioneta, ofrece comodidad excelente y es espaciosa e ideal para viajes largos",
     priceHour: 59.0,
     priceDay: 477.0,
     priceTrip: 89.0,
@@ -296,9 +296,9 @@ export const cars = [
     typeEsp: "Camioneta Blindada",
     brand: "Toyota",
     description:
-    "Our high end SUV experience it offers unmatched comfort and space ideal for long trips. Additionally this vehicle offers a ballistic protection with level 3 armored windows",
-  descriptionEsp:
-    "Nuestra experiencia definitiva en camioneta, ofrece comodidad excelente y es espaciosa e ideal para viajes largos. Adicionalmente este vehiculo ofrece proteccion balistica con un blindaje nivel 3 en las ventanas",
+      "Our high end SUV experience it offers unmatched comfort and space ideal for long trips. Additionally this vehicle offers a ballistic protection with level 3 armored windows",
+    descriptionEsp:
+      "Nuestra experiencia definitiva en camioneta, ofrece comodidad excelente y es espaciosa e ideal para viajes largos. Adicionalmente este vehiculo ofrece proteccion balistica con un blindaje nivel 3 en las ventanas",
     priceHour: 64.0,
     priceDay: 517.0,
     priceTrip: 129.0,
@@ -352,8 +352,10 @@ export const cars = [
     type: "Minivan",
     typeEsp: "Minivan",
     brand: "Mercedes",
-    description: "description test",
-    descriptionEsp: "description espanol",
+    description:
+      "Ideal for medium sized parties, this vehicle offers plenty of space for both bags and passengers",
+    descriptionEsp:
+      "Ideal para grupos medianos, este vehiculo ofrece espacio suficiente para pasajeros y maletas",
     priceHour: 51.0,
     priceDay: 408.0,
     priceTrip: 76.0,
@@ -379,8 +381,10 @@ export const cars = [
     type: "Minivan",
     typeEsp: "Minivan",
     brand: "Hyundai",
-    description: "description test",
-    descriptionEsp: "description espanol",
+    description:
+      "Ideal for medium sized parties, this vehicle offers plenty of space for both bags and passengers",
+    descriptionEsp:
+      "Ideal para grupos medianos, este vehiculo ofrece espacio suficiente para pasajeros y maletas",
     priceHour: 51.0,
     priceDay: 408.0,
     priceTrip: 76.0,
@@ -406,8 +410,8 @@ export const cars = [
     type: "Van",
     typeEsp: "Van",
     brand: "Mercedes",
-    description: "description test",
-    descriptionEsp: "description espanol",
+    description: "Specially thought for bigger parties this ride will provide an excellent comfort and experience",
+    descriptionEsp: "Pensado para grupos mas grandes este vehiculo ofrece una comodidad y experiencia excelente",
     priceHour: 59.0,
     priceDay: 477.0,
     priceTrip: 89.0,
@@ -433,8 +437,8 @@ export const cars = [
     type: "Van",
     typeEsp: "Van",
     brand: "Volkswagen",
-    description: "description test",
-    descriptionEsp: "description espanol",
+    description: "Specially thought for bigger parties this ride will provide an excellent comfort and experience",
+    descriptionEsp: "Pensado para grupos mas grandes este vehiculo ofrece una comodidad y experiencia excelente",
     priceHour: 59.0,
     priceDay: 477.0,
     priceTrip: 89.0,
@@ -453,32 +457,31 @@ export const cars = [
     image6:
       "https://www.mbusa.com/content/dam/mb-nafta/us/myco/my23/cla/gallery/series/gallery-class/2023-CLA-COUPE-GAL-012-J-FI-DR.jpg",
   },
-  // {
-  //   id: 15,
-  //   name: "Hino",
-  //   nameEsp: "Hino",
-  //   type: "Coach",
-  //   typeEsp: "Bus",
-  //   brand: "Mercedes",
-  //   description: "description test",
-  //   descriptionEsp: "description espanol",
-  //
-  //   priceHour: "???",
-  //   priceDay: "???",
-  //   priceTrip: "???",
-  //   pax: 2,
-  //   bags: 4,
-  //   imageMain:
-  //     "https://www.mbusa.com/content/dam/mb-nafta/us/myco/my23/cla/class-page/series/2023-CLA-COUPE-CT-1-3-01-DR.jpg",
-  //   image2:
-  //     "https://www.mbusa.com/content/dam/mb-nafta/us/myco/my23/cla/class-page/series/2023-CLA-COUPE-CT-1-3-02-DR.jpg",
-  //   image3:
-  //     "https://www.mbusa.com/content/dam/mb-nafta/us/myco/my23/cla/gallery/series/gallery-class/2023-CLA-COUPE-GAL-010-A-FE-DR.jpg",
-  //   image4:
-  //     "https://www.mbusa.com/content/dam/mb-nafta/us/myco/my23/cla/gallery/series/gallery-class/2023-CLA-COUPE-GAL-017-C-FI-DR.jpg",
-  //   image5:
-  //     "https://www.mbusa.com/content/dam/mb-nafta/us/myco/my23/cla/gallery/series/gallery-class/2023-CLA-COUPE-GAL-018-C-FI-DR.jpg",
-  //   image6:
-  //     "https://www.mbusa.com/content/dam/mb-nafta/us/myco/my23/cla/gallery/series/gallery-class/2023-CLA-COUPE-GAL-012-J-FI-DR.jpg",
-  // },
+  {
+    id: 15,
+    name: "Hino",
+    nameEsp: "Hino",
+    type: "Coach",
+    typeEsp: "Bus",
+    brand: "Mercedes",
+    description: "With the biggest parties in mind this vehicle offers our biggest accomodation for passengers making sure each and everyone has enough space for themselves and their bags",
+    descriptionEsp: "Ofrecemos este servicio teniendo en cuenta los grupos mas grandes, cada uno de los pasajeros tiene el suficiente espacio tanto para ellos como para sus maletas",
+    priceHour: "???",
+    priceDay: "???",
+    priceTrip: "???",
+    pax: 2,
+    bags: 4,
+    imageMain:
+      "https://www.mbusa.com/content/dam/mb-nafta/us/myco/my23/cla/class-page/series/2023-CLA-COUPE-CT-1-3-01-DR.jpg",
+    image2:
+      "https://www.mbusa.com/content/dam/mb-nafta/us/myco/my23/cla/class-page/series/2023-CLA-COUPE-CT-1-3-02-DR.jpg",
+    image3:
+      "https://www.mbusa.com/content/dam/mb-nafta/us/myco/my23/cla/gallery/series/gallery-class/2023-CLA-COUPE-GAL-010-A-FE-DR.jpg",
+    image4:
+      "https://www.mbusa.com/content/dam/mb-nafta/us/myco/my23/cla/gallery/series/gallery-class/2023-CLA-COUPE-GAL-017-C-FI-DR.jpg",
+    image5:
+      "https://www.mbusa.com/content/dam/mb-nafta/us/myco/my23/cla/gallery/series/gallery-class/2023-CLA-COUPE-GAL-018-C-FI-DR.jpg",
+    image6:
+      "https://www.mbusa.com/content/dam/mb-nafta/us/myco/my23/cla/gallery/series/gallery-class/2023-CLA-COUPE-GAL-012-J-FI-DR.jpg",
+  },
 ];
