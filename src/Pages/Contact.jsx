@@ -6,11 +6,14 @@ import tiktok from "../Assets/logo-tiktok.svg";
 import emailjs from "@emailjs/browser";
 
 const Contact = ({ translation, language }) => {
+
   const form = useRef();
+  const loading = document.querySelector(".form__loading");
+  const success = document.querySelector(".form__success");
 
   const sendEmail = (e) => {
     e.preventDefault();
-
+    loading.classList += "form__visible";
     emailjs
       .sendForm(
         "service_dg2350m",
@@ -20,9 +23,12 @@ const Contact = ({ translation, language }) => {
       )
       .then(
         (result) => {
+          loading.classList.remove("form__visible");
+          success.classList += " form__visible";
           console.log(result.text);
         },
         (error) => {
+          alert('Este formulario se encuentra en mantenimiento porfavor contactarnos directamente en metrocarrental@gmail.com / This form is currently under maintenance please contact us directly at metrocarrental2023@gmail.com')
           console.log(error.text);
         }
       );
@@ -35,6 +41,12 @@ const Contact = ({ translation, language }) => {
           <h1 className="title">{translation.contactTitle}</h1>
           <div className="contact__body">
             <div className="contact__left">
+              <div className="form__loading">
+                {translation.formLoading}
+              </div>
+              <div className="form__success">
+                <h1>{translation.formSuccess}</h1>
+              </div>
               <form ref={form} onSubmit={sendEmail}>
                 <div className="form__header">
                   <div className="form__item">

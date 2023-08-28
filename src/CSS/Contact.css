@@ -10,6 +10,7 @@
 }
 
 .contact__left {
+  position: relative;
   flex: 0.65;
 }
 
@@ -85,6 +86,25 @@ form > button {
 form > button:hover {
   background-color: var(--main-alter) !important;
   border: 0.1em solid var(--main-color) !important;
+}
+
+.form__success,
+.form__loading {
+  position: absolute;
+  z-index: 10;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  border-radius: 1em;
+}
+
+.form__success {
+  background-color: #20a350;
+}
+
+.form__loading{
+  background-color: var(--cold-white);
 }
 
 .contact__right {
