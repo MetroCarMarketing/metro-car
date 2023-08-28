@@ -145,11 +145,6 @@
     width: calc(50% - 1em);
   }
 
-  .fares__organizer--top,
-  .faresmap__container {
-    border: 0.2em solid var(--main-color);
-  }
-
   .fares__organizer--name,
   .fares__organizer--hour,
   .fares__organizer--day,
@@ -163,6 +158,10 @@
   }
   .fares__organizer--day {
     flex: 0.325;
+  }
+
+  .fares__organizer--trip{
+    border-right: none;
   }
   
 

@@ -78,6 +78,26 @@
   line-height: 1.75em;
 }
 
+.ammenities__list{
+  display: flex;
+  flex-direction: column;
+  gap: .5em;
+}
+
+.ammenities__list > li{
+  display: flex;
+  align-items: center;
+  gap: .5em;
+}
+
+.ammenities__list > li > p{
+margin: 0;
+}
+
+.ammenities__list > li > .MuiSvgIcon-root{
+  color: var(--accent-color);
+}
+
 .carfocus__btn {
   width: fit-content;
   margin: 0 auto;

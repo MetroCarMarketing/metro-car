@@ -2,10 +2,9 @@ import React, { useEffect, useState } from "react";
 import { useNavigate, useParams } from "react-router-dom";
 import "../CSS/Carfocus.css";
 import { Button } from "@mui/material";
-import { ChevronLeft } from "@mui/icons-material";
+import { Check, ChevronLeft } from "@mui/icons-material";
 
 const Carfocus = ({ cars, language }) => {
-
   const { id } = useParams();
   const car = cars.find((car) => car.id === +id);
 
@@ -20,7 +19,6 @@ const Carfocus = ({ cars, language }) => {
   const [thirdImg, setThirdImg] = useState();
 
   useEffect(() => {
-
     const display = new Image();
     display.src = car.imageMain;
 
@@ -32,12 +30,6 @@ const Carfocus = ({ cars, language }) => {
 
     const third = new Image();
     third.src = car.image3;
-
-    // display.onload = () => {
-    //   setTimeout(() => {
-    //     setDisplayImg(display);
-    //   }, 600);
-    // };
 
     main.onload = () => {
       setTimeout(() => {
@@ -81,13 +73,6 @@ const Carfocus = ({ cars, language }) => {
         <div className="carfocus__imgs--wrapper">
           <figure className="carfocus__mainImage">
             <img src={displayImg} alt="" />
-            {/* {displayImg ? (
-              <img src={displayImg.src} alt="" />
-            ) : (
-              <>
-                <div className="carfocus__mainImage--skeleton skeleton"></div>
-              </>
-            )} */}
           </figure>
           <div className="carfocus__slideshow">
             <figure className="carfocus__slide">
@@ -168,6 +153,57 @@ const Carfocus = ({ cars, language }) => {
             <p>{car.description}</p>
           ) : (
             <p>{car.descriptionEsp}</p>
+          )}
+          {currentLang === "english" ? (
+            <ul>
+              <li>
+                <p>
+                  Passengers: <span className="number">{car.pax}</span>
+                </p>
+              </li>
+              <li>
+                <p>
+                  Bags: <span className="number">{car.bags}</span>
+                </p>
+              </li>
+              <li>
+                <p>
+                  Water <Check />
+                </p>
+              </li>
+              <li>
+                <p>
+                  Mints <Check />
+                </p>
+              </li>
+              <li>
+                <p>
+                  Hygiene Products <Check />
+                </p>
+              </li>
+            </ul>
+          ) : (
+            <ul className="ammenities__list">
+              <li>
+                <p>Pasajeros:</p> <span className="number">{car.pax}</span>
+              </li>
+              <li>
+                <p>Maletas:</p>
+                <span className="number">{car.bags}</span>
+              </li>
+              <li>
+                <p>Agua</p>
+                <Check />
+              </li>
+              <li>
+                <p>Mentas</p>
+                <Check />
+              </li>
+              <li>
+                <p>Articulos de aseo</p>
+                <Check />
+              </li>
+            </ul>
           )}
           {currentLang === "english" ? (
             <div className="carfocus__btn">
