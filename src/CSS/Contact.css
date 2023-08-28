@@ -88,8 +88,11 @@ form > button:hover {
   border: 0.1em solid var(--main-color) !important;
 }
 
-.form__success,
-.form__loading {
+.form__state {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
   position: absolute;
   z-index: 10;
   top: 0;
@@ -97,15 +100,67 @@ form > button:hover {
   height: 100%;
   width: 100%;
   border-radius: 1em;
+  gap: 2em;
 }
 
-.form__success {
-  background-color: #20a350;
+.form__visible{
+  display: flex;
+}
+
+.form__state > h1{
+  text-align: center;
+  z-index: 11;
 }
 
 .form__loading{
   background-color: var(--cold-white);
 }
+
+.form__loading > h1 {
+  color: var(--secondary-color);
+}
+
+.loader {
+  width: 48px;
+  height: 48px;
+  border: 3px solid var(--main-color);
+  border-radius: 50%;
+  display: inline-block;
+  position: relative;
+  box-sizing: border-box;
+  animation: rotation 1s linear infinite;
+}
+.loader::after {
+  content: '';  
+  box-sizing: border-box;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 3px solid;
+  border-color: var(--accent-color) transparent;
+}
+
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+} 
+
+.form__success {
+  background-color: #20a350;
+}
+
+.form__success > .MuiSvgIcon-root{
+  font-size: 6em;
+}
+
 
 .contact__right {
   min-height: 100%;

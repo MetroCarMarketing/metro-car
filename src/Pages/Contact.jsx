@@ -1,37 +1,46 @@
 import React, { useRef } from "react";
 import "../CSS/Contact.css";
 import { Button } from "@mui/material";
-import { Facebook, Instagram, Mail, WhatsApp } from "@mui/icons-material";
+import {
+  Check,
+  Facebook,
+  Instagram,
+  Mail,
+  WhatsApp,
+} from "@mui/icons-material";
 import tiktok from "../Assets/logo-tiktok.svg";
 import emailjs from "@emailjs/browser";
 
 const Contact = ({ translation, language }) => {
-
   const form = useRef();
   const loading = document.querySelector(".form__loading");
   const success = document.querySelector(".form__success");
 
   const sendEmail = (e) => {
     e.preventDefault();
-    loading.classList += "form__visible";
-    emailjs
-      .sendForm(
-        "service_dg2350m",
-        "template_8h6i0ji",
-        form.current,
-        "WXNeydS_bunjf2g3I"
-      )
-      .then(
-        (result) => {
-          loading.classList.remove("form__visible");
-          success.classList += " form__visible";
-          console.log(result.text);
-        },
-        (error) => {
-          alert('Este formulario se encuentra en mantenimiento porfavor contactarnos directamente en metrocarrental@gmail.com / This form is currently under maintenance please contact us directly at metrocarrental2023@gmail.com')
-          console.log(error.text);
-        }
-      );
+    loading.classList.add("form__visible");
+    setTimeout(() => {
+      emailjs
+        .sendForm(
+          "service_dg2350m",
+          "template_8h6i0ji",
+          form.current,
+          "WXNeydS_bunjf2g3I"
+        )
+        .then(
+          (result) => {
+            loading.classList.remove("form__visible");
+            success.classList.add("form__visible");
+            console.log(result.text);
+          },
+          (error) => {
+            alert(
+              "Este formulario se encuentra en mantenimiento porfavor contactarnos directamente en metrocarrental@gmail.com / This form is currently under maintenance please contact us directly at metrocarrental2023@gmail.com"
+            );
+            console.log(error.text);
+          }
+        );
+    }, 1000);
   };
 
   return (
@@ -41,10 +50,12 @@ const Contact = ({ translation, language }) => {
           <h1 className="title">{translation.contactTitle}</h1>
           <div className="contact__body">
             <div className="contact__left">
-              <div className="form__loading">
-                {translation.formLoading}
+              <div className="form__state form__loading">
+                <span class="loader"></span>
+                <h1>{translation.formLoading}</h1>
               </div>
-              <div className="form__success">
+              <div className="form__state form__success">
+                <Check />
                 <h1>{translation.formSuccess}</h1>
               </div>
               <form ref={form} onSubmit={sendEmail}>
