@@ -88,19 +88,22 @@ form > button:hover {
   min-height: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: flex-start;
   flex: 0.35;
   gap: 2em;
 }
 
 .contact__list {
   display: flex;
-  flex-direction: column;
-  gap: 1em;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2em;
+  row-gap: 1em;
   width: 100%;
 }
 
 .contact__list > a {
+  width: calc((100% - 2em) / 3);
   display: flex;
   align-items: center;
   white-space: nowrap;
@@ -135,6 +138,11 @@ form > button:hover {
 .mailBtn > .MuiSvgIcon-root {
   color: #c63f32;
 }
+
+.mailBtn > h1 > span {
+  text-transform: lowercase;
+}
+
 .whatsappBtn > .MuiSvgIcon-root {
   color:  #20a350;
 }

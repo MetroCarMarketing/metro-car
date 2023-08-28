@@ -53,9 +53,6 @@ const Contact = ({ translation }) => {
                   className="instaBtn"
                 >
                   <Instagram />
-                  <h1>
-                    <span>@</span>MetroCar
-                  </h1>
                 </Button>
                 <Button
                   target="_blank"
@@ -64,9 +61,6 @@ const Contact = ({ translation }) => {
                   className="facebookBtn"
                 >
                   <Facebook />
-                  <h1>
-                    <span>@</span>MetroCar
-                  </h1>
                 </Button>
                 <Button
                   target="_blank"
@@ -77,20 +71,14 @@ const Contact = ({ translation }) => {
                   <figure>
                     <img src={tiktok} alt="" />
                   </figure>
-                  <h1>
-                    <span>@</span>MetroCar
-                  </h1>
                 </Button>
                 <Button
                   target="_blank"
                   rel="noreferrer"
-                  href="https://google.com"
+                  href="mailto:metrocarrental2023@gmail.com"
                   className="mailBtn"
                 >
                   <Mail />
-                  <h1>
-                    <span>@</span>MetroCar
-                  </h1>
                 </Button>
                 <Button
                   target="_blank"
@@ -99,7 +87,6 @@ const Contact = ({ translation }) => {
                   className="whatsappBtn"
                 >
                   <WhatsApp />
-                  <h1 className="number">+57 (302) 600 5730</h1>
                 </Button>
               </ul>
               <p>{translation.contactText}</p>
