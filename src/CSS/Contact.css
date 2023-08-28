@@ -9,11 +9,14 @@
   gap: 2em;
 }
 
-.contact__body > form {
+.contact__left {
+  flex: 0.65;
+}
+
+.contact__left > form {
   display: flex;
   flex-direction: column;
   gap: 2em;
-  flex: 0.65;
 }
 
 .form__header {
@@ -37,7 +40,7 @@ label {
   color: var(--cold-white);
 }
 
-input,                                            
+input,
 textarea {
   font-size: 1.25em;
   color: var(--secondary-color);
@@ -144,7 +147,7 @@ form > button:hover {
 }
 
 .whatsappBtn > .MuiSvgIcon-root {
-  color:  #20a350;
+  color: #20a350;
 }
 
 .tiktokBtn > figure {

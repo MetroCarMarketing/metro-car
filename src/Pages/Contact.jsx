@@ -3,23 +3,30 @@ import "../CSS/Contact.css";
 import { Button } from "@mui/material";
 import { Facebook, Instagram, Mail, WhatsApp } from "@mui/icons-material";
 import tiktok from "../Assets/logo-tiktok.svg";
-import emailjs from '@emailjs/browser';
+import emailjs from "@emailjs/browser";
 
-const Contact = ({ translation }) => {
-
+const Contact = ({ translation, language }) => {
   const form = useRef();
 
   const sendEmail = (e) => {
     e.preventDefault();
 
-    emailjs.sendForm('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', form.current, 'YOUR_PUBLIC_KEY')
-      .then((result) => {
+    emailjs
+      .sendForm(
+        "service_dg2350m",
+        "template_8h6i0ji",
+        form.current,
+        "WXNeydS_bunjf2g3I"
+      )
+      .then(
+        (result) => {
           console.log(result.text);
-      }, (error) => {
+        },
+        (error) => {
           console.log(error.text);
-      });
+        }
+      );
   };
-
 
   return (
     <section id="Contact">
@@ -27,23 +34,47 @@ const Contact = ({ translation }) => {
         <div className="row top__row contact__row">
           <h1 className="title">{translation.contactTitle}</h1>
           <div className="contact__body">
-            <form action="">
-              <div className="form__header">
-                <div className="form__item">
-                  <label htmlFor="">{translation.contactFormName}</label>
-                  <input type="text" placeholder="John Doe" />
+            <div className="contact__left">
+              <form ref={form} onSubmit={sendEmail}>
+                <div className="form__header">
+                  <div className="form__item">
+                    <label htmlFor="">{translation.contactFormName}</label>
+                    <input
+                      type="text"
+                      placeholder="John Doe"
+                      name="from_name"
+                      required
+                    />
+                  </div>
+                  <div className="form__item">
+                    <label htmlFor="">Email</label>
+                    <input
+                      type="email"
+                      placeholder="johndoe123@gmail.com"
+                      name="user_email"
+                      required
+                    />
+                  </div>
                 </div>
-                <div className="form__item">
-                  <label htmlFor="">Email</label>
-                  <input type="email" placeholder="johndoe123@gmail.com" />
+                <div className="form__message">
+                  <label htmlFor="">{translation.contactFormMessage}</label>
+                  <textarea
+                    cols="30"
+                    rows="10"
+                    placeholder={translation.contactPlaceholder}
+                    name="message"
+                    required
+                  ></textarea>
                 </div>
-              </div>
-              <div className="form__message">
-                <label htmlFor="">{translation.contactFormMessage}</label>
-                <textarea name="" id="" cols="30" rows="10" placeholder={translation.contactPlaceholder}></textarea>
-              </div>
-              <Button>Enviar</Button>
-            </form>
+                {language === "english" ? (
+                  <>
+                    <Button type="submit">Send</Button>
+                  </>
+                ) : (
+                  <Button type="submit">Enviar</Button>
+                )}
+              </form>
+            </div>
             <div className="contact__right">
               <ul className="contact__list">
                 <Button

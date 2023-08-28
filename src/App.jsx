@@ -73,7 +73,7 @@ function App() {
           />
           <Route
             path="/contact"
-            element={<Contact translation={translation} />}
+            element={<Contact translation={translation} language={language} />}
           />
           <Route path="/about" element={<About translation={translation} />} />
           <Route
