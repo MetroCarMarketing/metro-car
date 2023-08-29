@@ -90,7 +90,7 @@ const About = ({ translation }) => {
                 </div>
               </div>
             </div>
-            <VerticalImg className='faq' src={vert2} skeleton='faq__img--skelton'/>
+            <VerticalImg className='faq' src={vert2}/>
           </div>
           {/* <div className="reviews__wrapper">
             <div className="reviews__text--wrapperLeft">

@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import "../CSS/VerticalImg.css";
 
-const VerticalImg = ({ className, src, skeleton }) => {
+const VerticalImg = ({ className, src }) => {
   const [img, setImg] = useState();
 
   useEffect(() => {
@@ -18,18 +18,15 @@ const VerticalImg = ({ className, src, skeleton }) => {
   return (
     <>
       {img ? (
-        <figure className={`${className}__img--wrapper vertical--img__wrapper`}>
+        <figure className={`${className}__img--wrapper vertical__img--wrapper`}>
           <img src={img.src} alt="" />
         </figure>
       ) : (
         <>
-          <div className={`${skeleton} skeleton`}></div>
+          <div className={`${className}__img--skelton vertical__skeleton skeleton`}></div>
         </>
       )}
     </>
-    // <figure className={className}>
-    //   <img src={src} alt="" />
-    // </figure>
   );
 };
 

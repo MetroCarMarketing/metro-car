@@ -147,6 +147,7 @@
 
   .about__img--wrapper,
   .faq__img--wrapper{
+    display: flex;
     flex: .35;
   }
 
@@ -205,6 +206,10 @@
 
   .footer__title {
     text-align: start;
+  }
+
+  .vertical__skeleton{
+    display: flex;
   }
 }
 
