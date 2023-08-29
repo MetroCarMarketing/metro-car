@@ -53,7 +53,7 @@ const About = ({ translation }) => {
                 <p className="about__text--info">{translation.aboutText1}</p>
               </div>
             </div>
-            <VerticalImg className='about__img--wrapper vertical--img__wrapper' src={vert1} />
+            <VerticalImg className='about' src={vert1} />
           </div>
           <div className="faq__wrapper">
             <div className="faq__text--wrapperLeft">
@@ -90,7 +90,7 @@ const About = ({ translation }) => {
                 </div>
               </div>
             </div>
-            <VerticalImg className='faq__img--wrapper vertical--img__wrapper' src={vert2}/>
+            <VerticalImg className='faq' src={vert2} skeleton='faq__img--skelton'/>
           </div>
           {/* <div className="reviews__wrapper">
             <div className="reviews__text--wrapperLeft">
