@@ -1,0 +1,8 @@
+.coverageHighlights__row{
+    gap: 2em;
+}
+
+.coverageHighlights__row > h1{
+    text-align: center;
+    font-size: 2em;
+}

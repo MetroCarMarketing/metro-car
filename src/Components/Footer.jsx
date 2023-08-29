@@ -25,7 +25,7 @@ const Footer = ({ translation }) => {
               </li>
               <li className="footer__contact--item">
                 <Mail />
-                <p>probando@gmail.com</p>
+                <p>metrocarrental2023@gmail.com</p>
               </li>
               <li className="footer__contact--item">
                 <LocationOnOutlined />

@@ -21,16 +21,8 @@
     display: flex;
   }
 
-  .car__background--phone {
-    display: none;
-  }
-
   nav {
     gap: 1em;
-  }
-
-  .nav__car--desktop {
-    display: flex;
   }
 
   nav > .MuiSvgIcon-root {

@@ -41,6 +41,7 @@
 .faq__text--title,
 .reviews__text--title{
   font-size: 1.3em;
+  font-weight: 600;
 }
 
 .about__text--info,

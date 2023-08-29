@@ -47,9 +47,17 @@
   margin: 0.25em 0 0 0.25em;
 }
 
+.thumbnail__title{
+  font-size: 1.25em;
+}
+.thumbnail__price{
+  font-size: 1em;
+}
+
 .thumbnail__organizer{
   display: flex;
   align-items: center;
+  font-size: .8em;
 }
 .thumbnail__organizer > .MuiSvgIcon-root{
   color: var(--accent-color);

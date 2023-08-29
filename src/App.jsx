@@ -7,8 +7,7 @@ import {
 } from "react-router-dom";
 import Home from "./Pages/Home";
 import Nav from "./Components/Nav";
-// import car from "./Assets/metrocar regency.jpg";
-// import car from "./Assets/Metrocar-logo-completo.jpg";
+import logo from './Assets/Metrocar-logo-completo.jpg'
 import Translation from "./Translation/Languages.json";
 import Fleet from "./Pages/Fleet";
 import Coverage from "./Pages/Coverage";
@@ -87,15 +86,9 @@ function App() {
             }
           />
         </Routes>
-        {/* <figure className="car__background--desktop">
-          <img src={car} alt="" />
-        </figure> */}
-        {/* <figure className="car__background--phone">
-          <img
-            src="https://lh3.googleusercontent.com/-525huazOQu4/YtbKYzB9fNI/AAAAAAAASPI/CKI_QvFEHCAjvd5lGSCgj0iTtgM1lIyxACNcBGAsYHQ/s1600/1658243679408851-0.png"
-            alt=""
-          />
-        </figure> */}
+        <figure className="car__background--desktop">
+          <img src={logo} alt="" />
+        </figure>
         <Footer translation={translation} />
         <Watermark translation={translation} />
       </Router>

@@ -1,9 +1,7 @@
 import React from "react";
-// import logo from "../Assets/2.png";
 import logo from "../Assets/Metrocar-logo-ilustracion.jpg";
 import { useNavigate } from "react-router-dom";
 import "../CSS/Nav.css";
-// import car from "../Assets/metrocar regency.jpg";
 import { MenuOutlined } from "@mui/icons-material";
 import NavBtn from "./NavBtn";
 import TranslateBtns from "./TranslateBtns";
@@ -35,9 +33,6 @@ const Nav = ({ translation, setEnglish, setSpanish }) => {
         <NavBtn text={translation.navLink4} link="/contact" />
         <NavBtn text={translation.navLink5} link="/about" />
       </div>
-      {/* <figure className="nav__car--desktop">
-        <img src={car} alt="" />
-      </figure> */}
       <TranslateBtns setEnglish={setEnglish} setSpanish={setSpanish} />
     </nav>
   );
