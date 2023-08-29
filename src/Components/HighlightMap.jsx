@@ -1,10 +1,10 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
+import CarThumbnailMap from './CarThumbnailMap';
 
-const HighlightMap = ({ car, key }) => {
+const HighlightMap = ({ translation, car }) => {
+  
     return (
-        <div>
-            
-        </div>
+       <CarThumbnailMap item={car} translation={translation}/>
     );
 }
 

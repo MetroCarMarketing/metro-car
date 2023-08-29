@@ -1,0 +1,17 @@
+.carHighlights__row{
+    gap: 2em;
+}
+
+.carHighlights__row > h1{
+    text-align: center;
+    font-size: 2em;
+}
+
+.carHighlights__body{
+    display: flex;
+    gap: 1em;
+}
+
+.carHighlights__body > .thumbnail{
+    width: calc((100% - 2em) / 3);
+} 
