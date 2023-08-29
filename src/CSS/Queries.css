@@ -122,9 +122,9 @@
     width: calc((100% - 3em) / 4);
   }
 
-.contact__body {
-  flex-direction: row;
-}
+  .contact__body {
+    flex-direction: row;
+  }
 
   .contact__body > form {
     flex: 1;
@@ -142,13 +142,13 @@
   .about__text--wrapperLeft,
   .faq__text--wrapperLeft,
   .reviews__text--wrapperLeft {
-    flex: .6;
+    flex: 0.6;
   }
 
   .about__img--wrapper,
-  .faq__img--wrapper{
+  .faq__img--wrapper {
     display: flex;
-    flex: .35;
+    flex: 0.35;
   }
 
   .fares__organizer--name,
@@ -156,20 +156,19 @@
   .fares__organizer--day,
   .fares__organizer--trip {
     border-right: 0.2em solid var(--main-color);
-    flex: .2;
+    flex: 0.2;
   }
 
-  .fares__organizer--name{
-    flex: .15;
+  .fares__organizer--name {
+    flex: 0.15;
   }
   .fares__organizer--day {
     flex: 0.325;
   }
 
-  .fares__organizer--trip{
+  .fares__organizer--trip {
     border-right: none;
   }
-  
 
   .fares__organizer--start,
   .faresmap__container > figure {
@@ -182,17 +181,17 @@
     padding: 1em 0.2em;
   }
 
-  .faresmap__name{
-    flex: .15 !important;
-  }
-  
-  .faresmap__day {
-      flex: 0.325 !important;
+  .faresmap__name {
+    flex: 0.15 !important;
   }
 
-  .faresmap__container > div > span{
+  .faresmap__day {
+    flex: 0.325 !important;
+  }
+
+  .faresmap__container > div > span {
     font-size: 1.25em;
-}
+  }
 
   .footer__text--container {
     flex-direction: row;
@@ -207,8 +206,9 @@
   .footer__title {
     text-align: start;
   }
-
-  .vertical__skeleton{
+  
+  .vertical__img--wrapper,
+  .vertical__skeleton {
     display: flex;
   }
 }

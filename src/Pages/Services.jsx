@@ -4,35 +4,16 @@ import vert1 from "../Assets/vertPic.jpg";
 import vert2 from "../Assets/vert2.jpg";
 import { useNavigate } from "react-router-dom";
 import { ChevronRight } from "@mui/icons-material";
+import VerticalImg from "../Components/VerticalImg";
 
-const Services = ({ translation, setActive }) => {
-  const [img, setImg] = useState();
-  const [img2, setImg2] = useState();
+const Services = ({ translation }) => {
+
 
   const navigateTo = useNavigate();
 
-  const navTo = (nav, value) => {
+  const navTo = (nav) => {
     navigateTo(nav);
-    setActive(value);
   };
-
-  useEffect(() => {
-    const image = new Image();
-    image.src = vert1;
-    const image2 = new Image();
-    image2.src = vert2;
-
-    image.onload = () => {
-      setTimeout(() => {
-        setImg(image);
-      }, 600);
-    };
-    image2.onload = () => {
-      setTimeout(() => {
-        setImg2(image2);
-      }, 600);
-    };
-  });
 
   return (
     <section id="Services">
@@ -113,24 +94,8 @@ const Services = ({ translation, setActive }) => {
               </ul>
             </div>
             <div className="services__body--imgs">
-              {img ? (
-                <figure className="services__body--imgWrapper">
-                  <img src={img.src} alt="" />
-                </figure>
-              ) : (
-                <>
-                  <div className="services__skeleton skeleton"></div>
-                </>
-              )}
-              {img2 ? (
-                <figure className="services__body--imgWrapper">
-                  <img src={img2.src} alt="" />
-                </figure>
-              ) : (
-                <>
-                  <div className="services__skeleton skeleton"></div>
-                </>
-              )}
+              <VerticalImg className='servicesBody' src={vert1}/>
+              <VerticalImg className='servicesBody' src={vert2}/>
             </div>
           </div>
         </div>
