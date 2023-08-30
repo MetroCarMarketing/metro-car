@@ -50,6 +50,10 @@ footer {
   color: var(--cold-white);
 }
 
+.footer__contact--list > a{
+  color: var(--cold-white);
+}
+
 .footer__contact--item > p {
   margin: 0 0 0.1em 0.5em;
 }
