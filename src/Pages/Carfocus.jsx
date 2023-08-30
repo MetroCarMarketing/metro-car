@@ -117,30 +117,51 @@ const Carfocus = ({ cars, language }) => {
                 </>
               )}
             </figure>
-            <figure className="carfocus__slide">
-              <img
-                src={car.image4}
-                onClick={() => setDisplayImg(car.image4)}
-                alt=""
-                className="carfocus__img"
-              />
-            </figure>
-            <figure className="carfocus__slide">
-              <img
-                src={car.image5}
-                onClick={() => setDisplayImg(car.image5)}
-                alt=""
-                className="carfocus__img"
-              />
-            </figure>
-            <figure className="carfocus__slide">
-              <img
-                src={car.image6}
-                onClick={() => setDisplayImg(car.image6)}
-                alt=""
-                className="carfocus__img"
-              />
-            </figure>
+            {car.image4 ? (
+              <>
+                <figure className="carfocus__slide">
+                  <img
+                    src={car.image4}
+                    onClick={() => setDisplayImg(car.image4)}
+                    alt=""
+                    className="carfocus__img"
+                  />
+                </figure>
+                
+              </>
+            ) : (
+              <></>
+            )}
+            {car.image5 ? (
+              <>
+                <figure className="carfocus__slide">
+                  <img
+                    src={car.image5}
+                    onClick={() => setDisplayImg(car.image5)}
+                    alt=""
+                    className="carfocus__img"
+                  />
+                </figure>
+                
+              </>
+            ) : (
+              <></>
+            )}
+            {car.image6 ? (
+              <>
+                <figure className="carfocus__slide">
+                  <img
+                    src={car.image6}
+                    onClick={() => setDisplayImg(car.image6)}
+                    alt=""
+                    className="carfocus__img"
+                  />
+                </figure>
+                
+              </>
+            ) : (
+              <></>
+            )}
           </div>
         </div>
         <div className="carfocus__text--wrapper">

@@ -47,6 +47,7 @@ footer {
 .footer__contact--item {
   display: flex;
   align-items: center;
+  color: var(--cold-white);
 }
 
 .footer__contact--item > p {

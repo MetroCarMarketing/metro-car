@@ -1,8 +1,12 @@
+import classEFront from "./Assets/Cars/Class E/class e interior front.jpg";
+import classEside from "./Assets/Cars/Class E/class e interior side.jpg";
+import classEBack from "./Assets/Cars/Class E/class e back.jpg";
+
 export const cars = [
   {
     id: 2,
-    name: "CLA Coupe",
-    nameEsp: "CLA Coupe",
+    name: "Class E",
+    nameEsp: "Clase E",
     type: "Luxury Sedan",
     typeEsp: "Sedan Gama Alta",
     brand: "Mercedes",
@@ -17,12 +21,9 @@ export const cars = [
     bags: 3,
     imageMain:
       "https://www.mbusa.com/content/dam/mb-nafta/us/myco/my23/cla/class-page/series/2023-CLA-COUPE-CT-1-3-01-DR.jpg",
-    image2:
-      "https://www.mbusa.com/content/dam/mb-nafta/us/myco/my23/cla/class-page/series/2023-CLA-COUPE-CT-1-3-02-DR.jpg",
-    image3:
-      "https://www.mbusa.com/content/dam/mb-nafta/us/myco/my23/cla/gallery/series/gallery-class/2023-CLA-COUPE-GAL-010-A-FE-DR.jpg",
-    image4:
-      "https://www.mbusa.com/content/dam/mb-nafta/us/myco/my23/cla/gallery/series/gallery-class/2023-CLA-COUPE-GAL-017-C-FI-DR.jpg",
+    image2: classEFront,
+    image3: classEside,
+    image4: classEBack,
     image5:
       "https://www.mbusa.com/content/dam/mb-nafta/us/myco/my23/cla/gallery/series/gallery-class/2023-CLA-COUPE-GAL-018-C-FI-DR.jpg",
     image6:
@@ -410,8 +411,10 @@ export const cars = [
     type: "Van",
     typeEsp: "Van",
     brand: "Mercedes",
-    description: "Specially thought for bigger parties this ride will provide an excellent comfort and experience",
-    descriptionEsp: "Pensado para grupos mas grandes este vehiculo ofrece una comodidad y experiencia excelente",
+    description:
+      "Specially thought for bigger parties this ride will provide an excellent comfort and experience",
+    descriptionEsp:
+      "Pensado para grupos mas grandes este vehiculo ofrece una comodidad y experiencia excelente",
     priceHour: 59.0,
     priceDay: 477.0,
     priceTrip: 89.0,
@@ -437,8 +440,10 @@ export const cars = [
     type: "Van",
     typeEsp: "Van",
     brand: "Volkswagen",
-    description: "Specially thought for bigger parties this ride will provide an excellent comfort and experience",
-    descriptionEsp: "Pensado para grupos mas grandes este vehiculo ofrece una comodidad y experiencia excelente",
+    description:
+      "Specially thought for bigger parties this ride will provide an excellent comfort and experience",
+    descriptionEsp:
+      "Pensado para grupos mas grandes este vehiculo ofrece una comodidad y experiencia excelente",
     priceHour: 59.0,
     priceDay: 477.0,
     priceTrip: 89.0,
@@ -464,8 +469,10 @@ export const cars = [
     type: "Coach",
     typeEsp: "Bus",
     brand: "Mercedes",
-    description: "With the biggest parties in mind this vehicle offers our biggest accomodation for passengers making sure each and everyone has enough space for themselves and their bags",
-    descriptionEsp: "Ofrecemos este servicio teniendo en cuenta los grupos mas grandes, cada uno de los pasajeros tiene el suficiente espacio tanto para ellos como para sus maletas",
+    description:
+      "With the biggest parties in mind this vehicle offers our biggest accomodation for passengers making sure each and everyone has enough space for themselves and their bags",
+    descriptionEsp:
+      "Ofrecemos este servicio teniendo en cuenta los grupos mas grandes, cada uno de los pasajeros tiene el suficiente espacio tanto para ellos como para sus maletas",
     priceHour: "???",
     priceDay: "???",
     priceTrip: "???",
