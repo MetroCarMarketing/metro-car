@@ -89,6 +89,7 @@
 
   .services__body--text {
     flex: 0.7;
+    justify-content: space-between;
   }
 
   .list__item--deco {
@@ -100,7 +101,7 @@
 
   .services__body--imgs {
     display: flex;
-    min-height: 1220px;
+    /* min-height: 1220px; */
   }
 
   .services__skeleton {

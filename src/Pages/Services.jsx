@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import "../CSS/Services.css";
 import vert1 from "../Assets/vertPic.jpg";
 import vert2 from "../Assets/vert2.jpg";
