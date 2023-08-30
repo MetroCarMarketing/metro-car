@@ -5,17 +5,16 @@ import { useNavigate } from "react-router-dom";
 import { Home, MenuOpenOutlined } from "@mui/icons-material";
 
 const Burger = ({ translation }) => {
-
-
   const navigateTo = useNavigate();
 
-  const navigateClose = (value) => {
-    navigateTo(value);
+  
+  const closeMenu = () => {
     document.querySelector("body").classList.remove("menuOpen");
   };
 
-  const closeMenu = () => {
-    document.querySelector("body").classList.remove("menuOpen");
+  const navigateClose = (value) => {
+    navigateTo(value);
+    closeMenu()
   };
 
   return (
@@ -32,12 +31,12 @@ const Burger = ({ translation }) => {
           {translation.navLink1}
         </Button>
 
-        <Button onClick={() => navigateClose("/coverage")}>
-          {translation.navLink2}
-        </Button>
-
         <Button onClick={() => navigateClose("/fleet")}>
           {translation.navLink3}
+        </Button>
+
+        <Button onClick={() => navigateClose("/coverage")}>
+          {translation.navLink2}
         </Button>
 
         <Button onClick={() => navigateClose("/contact")}>
