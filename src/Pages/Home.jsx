@@ -8,7 +8,7 @@ const Home = ({ translation, cars }) => {
     <>
       <Landing translation={translation} />
       <CarHighlights translation={translation} cars={cars} />
-      <CoverageHighlights/>
+      <CoverageHighlights translation={translation}/>
     </>
   );
 };

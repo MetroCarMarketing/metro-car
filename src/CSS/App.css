@@ -52,7 +52,7 @@ body::-webkit-scrollbar {
 .row {
   display: flex;
   flex-direction: column;
-  padding: 3em 2em;
+  padding: 2em;
   max-width: 1200px;
   width: 100%;
   height: fit-content;
