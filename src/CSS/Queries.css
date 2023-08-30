@@ -58,6 +58,11 @@
     align-items: center;
   }
 
+  .landing__name {
+    color: var(--cold-white);
+    font-size: 5em;
+  }
+
   .landing__row {
     padding-top: 0;
     margin-top: 4em;

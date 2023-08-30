@@ -1,4 +1,22 @@
+.landing__container {
+  flex-direction: column;
+  gap: 2em;
+}
+
+header {
+  max-width: 1400px;
+}
+
+.landing__name {
+  color: var(--cold-white);
+  font-size: 3em;
+  letter-spacing: .15em;
+  filter: opacity(.8);
+  text-align: center;
+}
+
 .landing__row {
+  position: relative;
   margin-top: 6em;
   padding-bottom: 6em;
 }
@@ -7,6 +25,8 @@
   display: flex;
   flex-direction: column-reverse;
   gap: 4em;
+  right: 0;
+  top: 0;
   flex: 0.5;
   color: var(--cold-white);
 }

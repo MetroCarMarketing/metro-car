@@ -7,7 +7,7 @@ import {
 } from "react-router-dom";
 import Home from "./Pages/Home";
 import Nav from "./Components/Nav";
-import logo from './Assets/Metrocar-logo-completo.jpg'
+import logo from './Assets/Metrocar-logo-ilustracion.jpg'
 import Translation from "./Translation/Languages.json";
 import Fleet from "./Pages/Fleet";
 import Coverage from "./Pages/Coverage";
@@ -18,7 +18,7 @@ import Contact from "./Pages/Contact";
 import About from "./Pages/About";
 import Services from "./Pages/Services";
 import Footer from "./Components/Footer";
-import Watermark from "./Components/Watermark";
+// import Watermark from "./Components/Watermark";
 import Fares from "./Pages/Fares";
 import ScrollToTop from "./Components/ScrollToTop";
 import "./CSS/Queries.css";
@@ -90,7 +90,7 @@ function App() {
           <img src={logo} alt="" />
         </figure>
         <Footer translation={translation} />
-        <Watermark translation={translation} />
+        {/* <Watermark translation={translation} /> */}
       </Router>
     </div>
   );

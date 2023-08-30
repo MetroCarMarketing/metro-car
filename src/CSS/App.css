@@ -115,7 +115,7 @@ button {
 
 .car__background--desktop  > img {
   object-fit: contain;
-  scale: .8;
+  scale: .4;
   filter: blur(2px) opacity(.5);
 }
 

@@ -16,6 +16,7 @@ const Landing = ({ translation, setActive }) => {
   return (
     <section id="Landing">
       <div className="container landing__container top__container">
+        <header><h1 className="landing__name"><span className="upper">M</span>etro<span className="upper">C</span>ar</h1></header>
         <div className="row top__row landing__row">
           <div className="landing__text--container">
             <Button
@@ -28,7 +29,7 @@ const Landing = ({ translation, setActive }) => {
               </figure> */}
             </Button>
             <div className="landing__text">
-              <h2>{translation.landingTitle}</h2>
+              {/* <h2>{translation.landingTitle}</h2> */}
               <p>{translation.landingText}</p>
             </div>
           </div>

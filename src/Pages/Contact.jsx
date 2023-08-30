@@ -13,12 +13,10 @@ import emailjs from "@emailjs/browser";
 
 const Contact = ({ translation, language }) => {
   const form = useRef();
-  const loading = document.querySelector(".form__loading");
-  const success = document.querySelector(".form__success");
 
   const sendEmail = (e) => {
     e.preventDefault();
-    loading.classList.add("form__visible");
+    document.querySelector(".form__loading").classList.add("form__visible");
     setTimeout(() => {
       emailjs
         .sendForm(
@@ -29,15 +27,13 @@ const Contact = ({ translation, language }) => {
         )
         .then(
           (result) => {
-            loading.classList.remove("form__visible");
-            success.classList.add("form__visible");
-            console.log(result.text);
+            document.querySelector(".form__loading").classList.remove("form__visible");
+            document.querySelector(".form__success").classList.add("form__visible");
           },
           (error) => {
             alert(
               "Este formulario se encuentra en mantenimiento porfavor contactarnos directamente en metrocarrental@gmail.com / This form is currently under maintenance please contact us directly at metrocarrental2023@gmail.com"
             );
-            console.log(error.text);
           }
         );
     }, 1000);
