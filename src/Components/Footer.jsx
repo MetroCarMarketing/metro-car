@@ -8,6 +8,10 @@ import {
 } from "@mui/icons-material";
 
 const Footer = ({ translation }) => {
+
+function development() {
+  alert('Este elemento todavia se encuentra en desarrollo / This element  is still under development')
+}
   return (
     <footer>
       <div className="row footer__row">
@@ -19,14 +23,14 @@ const Footer = ({ translation }) => {
           <div className="footer__contact--container">
             <h1 className="footer__title">Informacion de Contacto</h1>
             <ul className="footer__contact--list">
-              <li className="footer__contact--item">
+              <li className="footer__contact--item" onClick={development}>
                 <Instagram />
                 <p>@MetroCar</p>
               </li>
-              <li className="footer__contact--item">
+              <a className="footer__contact--item" href='mailto:metrocarrental2023@gmail.com'>
                 <Mail />
                 <p>metrocarrental2023@gmail.com</p>
-              </li>
+              </a>
               <li className="footer__contact--item">
                 <LocationOnOutlined />
                 <p>Calle 79 # 27A - 21 Bogota, Colombia</p>
