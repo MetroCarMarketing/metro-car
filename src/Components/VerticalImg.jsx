@@ -23,7 +23,7 @@ const VerticalImg = ({ className, src }) => {
         </figure>
       ) : (
         <>
-          <div className={`${className}__img--skelton vertical__skeleton skeleton`}></div>
+          <div className={`${className}__img--skeleton vertical__skeleton skeleton`}><span class="loader"></span></div>
         </>
       )}
     </>

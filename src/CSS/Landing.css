@@ -18,6 +18,8 @@ header {
 .landing__row {
   position: relative;
   flex-direction: row;
+  align-items: center;
+  gap: 4em;
   margin-top: 6em;
   padding-bottom: 6em;
 }
@@ -25,16 +27,15 @@ header {
 .landing__text--container {
   display: flex;
   flex-direction: column-reverse;
-  gap: 4em;
-  right: 0;
-  top: 0;
-  flex: 0.5;
+  gap: 2em;
+  height: 100%;
+  flex: 0.3;
   color: var(--cold-white);
 }
 
 .landing__text--container > .landing__btn {
   padding: 0.3em 0.8em;
-  font-size: 3.5em;
+  font-size: 2.5em;
   display: flex;
   align-items: center;
   gap: 0.3em;
@@ -65,10 +66,9 @@ header {
 }
 
 .landing__text > p {
-  margin-top: 1em;
   text-align: justify;
   font-size: 1.2em;
-  line-height: 1.8em;
+  line-height: 1.6em;
 }
 
 .scroll__container {

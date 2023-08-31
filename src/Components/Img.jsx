@@ -24,8 +24,8 @@ const Img = ({ className, src }) => {
       ) : (
         <>
           <div
-            className={`${className}__img--skelton skeleton skeleton`}
-          ></div>
+            className={`${className}__img--skeleton skeleton`}
+          ><span class="loader"></span></div>
         </>
       )}
     </>

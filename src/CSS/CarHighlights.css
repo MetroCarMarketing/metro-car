@@ -1,4 +1,5 @@
 .carHighlights__row{
+    max-width: 1400px;
     gap: 2em;
 }
 

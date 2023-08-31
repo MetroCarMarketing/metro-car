@@ -32,7 +32,6 @@ body::-webkit-scrollbar {
 
 #root {
   font-size: 10px;
-  /* height: 300vh; */
 }
 
 .menuOpen #root {
@@ -56,7 +55,7 @@ body::-webkit-scrollbar {
   max-width: 1200px;
   width: 100%;
   height: fit-content;
-  margin: 0 auto;
+  margin: 2dvh auto;
   color: var(--cold-white);
   background-color: var(--secondary-fade);
   border-radius: 2em;
@@ -64,7 +63,7 @@ body::-webkit-scrollbar {
 }
 
 .top__row {
-  margin-top: 2em;
+  margin-top: 4em;
 }
 
 figure {
@@ -124,6 +123,9 @@ button {
 }
 
 .skeleton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   margin-bottom: 0.5em;
   animation: pulse 3s infinite;
 }

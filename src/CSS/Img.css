@@ -1,0 +1,25 @@
+.img--wrapper {
+  display: flex;
+  border-radius: 1em;
+  box-shadow: 0 0 0.5em 0.5em var(--main-alter);
+}
+
+.img--wrapper > img {
+  /* height: 100%; */
+  object-fit: cover;
+}
+
+.landing__img--wrapper {
+  flex: 0.7;
+  height: fit-content;
+}
+
+.landing__img--wrapper > img {
+  filter: brightness(0.9);
+}
+
+.landing__img--skeleton {
+  flex: 0.7;
+  aspect-ratio: 4 / 3;
+  border-radius: 1em;
+}

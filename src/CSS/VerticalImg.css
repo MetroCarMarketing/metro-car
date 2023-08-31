@@ -15,10 +15,10 @@
     border-radius: 1em;
 }
 
-.servicesBody__img--skelton{
+.servicesBody__img--skeleton{
     flex: none;
 }
 
-.about__img--skelton{
+.about__img--skeleton{
     flex: .35;
 }
