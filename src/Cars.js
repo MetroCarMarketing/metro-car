@@ -473,9 +473,9 @@ export const cars = [
       "With the biggest parties in mind this vehicle offers our biggest accomodation for passengers making sure each and everyone has enough space for themselves and their bags",
     descriptionEsp:
       "Ofrecemos este servicio teniendo en cuenta los grupos mas grandes, cada uno de los pasajeros tiene el suficiente espacio tanto para ellos como para sus maletas",
-    priceHour: "???",
-    priceDay: "???",
-    priceTrip: "???",
+    priceHour: "bajo cotizacion",
+    priceDay: "bajo cotizacion",
+    priceTrip: "bajo cotizacion",
     pax: 2,
     bags: 4,
     imageMain:
