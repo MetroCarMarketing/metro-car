@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "../CSS/Img.css";
 
-
 const Img = ({ className, src }) => {
   const [img, setImg] = useState();
 
@@ -23,9 +22,9 @@ const Img = ({ className, src }) => {
         </figure>
       ) : (
         <>
-          <div
-            className={`${className}__img--skeleton skeleton`}
-          ><span class="loader"></span></div>
+          <div className={`${className}__img--skeleton skeleton`}>
+            <span class="loader"></span>
+          </div>
         </>
       )}
     </>

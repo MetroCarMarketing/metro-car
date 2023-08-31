@@ -11,7 +11,7 @@ header {
   color: var(--cold-white);
   font-size: 3em;
   letter-spacing: .15em;
-  filter: opacity(.8);
+  /* filter: opacity(.8); */
   text-align: center;
 }
 
@@ -48,17 +48,14 @@ header {
   width: 2.8em;
 }
 
-.landing__btn--icon {
+/* .landing__btn--icon {
   filter: brightness(0.9);
   transition: all 300ms ease;
-}
+} */
 
 .landing__text--container > button:hover {
   background-color: rgba(186, 153, 82, 0.597);
   background-color: var(--main-alter);
-}
-.landing__text--container > button:hover .landing__btn--icon {
-  filter: brightness(0.2);
 }
 
 .landing__text > h2 {
@@ -66,7 +63,7 @@ header {
 }
 
 .landing__text > p {
-  text-align: justify;
+  text-align: left;
   font-size: 1.2em;
   line-height: 1.6em;
 }

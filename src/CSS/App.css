@@ -48,6 +48,7 @@ body::-webkit-scrollbar {
   min-height: 100vh;
   display: flex;
 }
+
 .row {
   display: flex;
   flex-direction: column;
@@ -55,7 +56,7 @@ body::-webkit-scrollbar {
   max-width: 1200px;
   width: 100%;
   height: fit-content;
-  margin: 2dvh auto;
+  margin: 2em auto;
   color: var(--cold-white);
   background-color: var(--secondary-fade);
   border-radius: 2em;
@@ -63,7 +64,7 @@ body::-webkit-scrollbar {
 }
 
 .top__row {
-  margin-top: 4em;
+  margin-top: 2em;
 }
 
 figure {

@@ -196,6 +196,10 @@ const Carfocus = ({ cars, language }) => {
                 <p>Hygiene Products</p>
                 <Check />
               </li>
+              <li>
+                <p>Guest Phone ready for use</p>
+                <Check />
+              </li>
             </ul>
           ) : (
             <ul className="ammenities__list">
@@ -216,6 +220,10 @@ const Carfocus = ({ cars, language }) => {
               </li>
               <li>
                 <p>Articulos de aseo</p>
+                <Check />
+              </li>
+              <li>
+                <p>Telefono de Cortesia listo para el uso</p>
                 <Check />
               </li>
             </ul>

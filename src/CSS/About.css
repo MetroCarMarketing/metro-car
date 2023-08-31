@@ -37,6 +37,10 @@
   color: var(--cold-white);
 }
 
+.about__wrapper{
+  flex-direction: column;
+}
+
 .about__text--title,
 .faq__text--title,
 .reviews__text--title{

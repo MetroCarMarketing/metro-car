@@ -2,8 +2,9 @@ import React, { useEffect, useState } from "react";
 import "../CSS/About.css";
 import AboutSelector from "../Components/AboutSelector";
 import VerticalImg from "../Components/VerticalImg";
-import vert1 from "../Assets/vertPic.jpg";
+import vert1 from "../Assets/zgris.JPG";
 import vert2 from "../Assets/vert2.jpg";
+import Img from "../Components/Img";
 
 
 const About = ({ translation }) => {
@@ -53,7 +54,7 @@ const About = ({ translation }) => {
                 <p className="about__text--info">{translation.aboutText1}</p>
               </div>
             </div>
-            <VerticalImg className='about' src={vert1} />
+            <Img className='about' src={vert1} />
           </div>
           <div className="faq__wrapper">
             <div className="faq__text--wrapperLeft">

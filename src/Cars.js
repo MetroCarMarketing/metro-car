@@ -1,6 +1,8 @@
 import classEFront from "./Assets/Cars/Class E/class e interior front.jpg";
 import classEside from "./Assets/Cars/Class E/class e interior side.jpg";
 import classEBack from "./Assets/Cars/Class E/class e back.jpg";
+import mLogo from "./Assets/zlogo.JPG";
+import gray from "./Assets/Cars/Class E/zgris2.JPG";
 
 export const cars = [
   {
@@ -21,13 +23,11 @@ export const cars = [
     bags: 3,
     imageMain:
       "https://www.mbusa.com/content/dam/mb-nafta/us/myco/my23/cla/class-page/series/2023-CLA-COUPE-CT-1-3-01-DR.jpg",
-    image2: classEFront,
-    image3: classEside,
-    image4: classEBack,
-    image5:
-      "https://www.mbusa.com/content/dam/mb-nafta/us/myco/my23/cla/gallery/series/gallery-class/2023-CLA-COUPE-GAL-018-C-FI-DR.jpg",
-    image6:
-      "https://www.mbusa.com/content/dam/mb-nafta/us/myco/my23/cla/gallery/series/gallery-class/2023-CLA-COUPE-GAL-012-J-FI-DR.jpg",
+    image2: mLogo,
+    image3: gray,
+    image4: classEFront,
+    image5: classEBack,
+    image6: classEside,
   },
   {
     id: 16,
@@ -48,15 +48,15 @@ export const cars = [
     imageMain:
       "https://images.91wheels.com/assets/b_images/main/models/profile/profile1661236986.jpg",
     image2:
-      "https://www.mbusa.com/content/dam/mb-nafta/us/myco/my23/cla/class-page/series/2023-CLA-COUPE-CT-1-3-02-DR.jpg",
+      "https://car-images.bauersecure.com/wp-images/12551/audi_a6_2018_12.jpg",
     image3:
-      "https://www.mbusa.com/content/dam/mb-nafta/us/myco/my23/cla/gallery/series/gallery-class/2023-CLA-COUPE-GAL-010-A-FE-DR.jpg",
-    image4:
-      "https://www.mbusa.com/content/dam/mb-nafta/us/myco/my23/cla/gallery/series/gallery-class/2023-CLA-COUPE-GAL-017-C-FI-DR.jpg",
-    image5:
-      "https://www.mbusa.com/content/dam/mb-nafta/us/myco/my23/cla/gallery/series/gallery-class/2023-CLA-COUPE-GAL-018-C-FI-DR.jpg",
-    image6:
-      "https://www.mbusa.com/content/dam/mb-nafta/us/myco/my23/cla/gallery/series/gallery-class/2023-CLA-COUPE-GAL-012-J-FI-DR.jpg",
+      "https://www.autoparkhonda.com/assets/stock/expanded/transparent/1280/2018auc020001_1280/2018auc020001_1280_28.png?bg-color=FFFFFF&width=400%20400w",
+    // image4:
+    //   "https://www.mbusa.com/content/dam/mb-nafta/us/myco/my23/cla/gallery/series/gallery-class/2023-CLA-COUPE-GAL-017-C-FI-DR.jpg",
+    // image5:
+    //   "https://www.mbusa.com/content/dam/mb-nafta/us/myco/my23/cla/gallery/series/gallery-class/2023-CLA-COUPE-GAL-018-C-FI-DR.jpg",
+    // image6:
+    //   "https://www.mbusa.com/content/dam/mb-nafta/us/myco/my23/cla/gallery/series/gallery-class/2023-CLA-COUPE-GAL-012-J-FI-DR.jpg",
   },
   {
     id: 17,
@@ -77,15 +77,15 @@ export const cars = [
     imageMain:
       "https://discover.bmw.ie/wp-content/uploads/2023/03/520i-M-Sport-Sophisto-Grey-3quarter.png",
     image2:
-      "https://www.mbusa.com/content/dam/mb-nafta/us/myco/my23/cla/class-page/series/2023-CLA-COUPE-CT-1-3-02-DR.jpg",
+      "https://www.millermotorcars.com/imagetag/4670/13/l/Used-2018-BMW-5-Series-M550i-xDrive.jpg",
     image3:
-      "https://www.mbusa.com/content/dam/mb-nafta/us/myco/my23/cla/gallery/series/gallery-class/2023-CLA-COUPE-GAL-010-A-FE-DR.jpg",
-    image4:
-      "https://www.mbusa.com/content/dam/mb-nafta/us/myco/my23/cla/gallery/series/gallery-class/2023-CLA-COUPE-GAL-017-C-FI-DR.jpg",
-    image5:
-      "https://www.mbusa.com/content/dam/mb-nafta/us/myco/my23/cla/gallery/series/gallery-class/2023-CLA-COUPE-GAL-018-C-FI-DR.jpg",
-    image6:
-      "https://www.mbusa.com/content/dam/mb-nafta/us/myco/my23/cla/gallery/series/gallery-class/2023-CLA-COUPE-GAL-012-J-FI-DR.jpg",
+      "https://autobunny-docs.s3.ca-central-1.amazonaws.com/1074/car/forsale/images/2022/03/pic-02262a2bafa53383fc5ec42d72e0e565.jpg",
+    // image4:
+    //   "https://www.mbusa.com/content/dam/mb-nafta/us/myco/my23/cla/gallery/series/gallery-class/2023-CLA-COUPE-GAL-017-C-FI-DR.jpg",
+    // image5:
+    //   "https://www.mbusa.com/content/dam/mb-nafta/us/myco/my23/cla/gallery/series/gallery-class/2023-CLA-COUPE-GAL-018-C-FI-DR.jpg",
+    // image6:
+    //   "https://www.mbusa.com/content/dam/mb-nafta/us/myco/my23/cla/gallery/series/gallery-class/2023-CLA-COUPE-GAL-012-J-FI-DR.jpg",
   },
   {
     id: 3,
