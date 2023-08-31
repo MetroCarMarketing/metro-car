@@ -17,6 +17,7 @@ header {
 
 .landing__row {
   position: relative;
+  flex-direction: row;
   margin-top: 6em;
   padding-bottom: 6em;
 }
