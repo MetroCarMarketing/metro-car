@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from "react";
-import "../CSS/Image.css";
+import "../CSS/Img.css";
 
 
-const Image = ({ className, src }) => {
+const Img = ({ className, src }) => {
   const [img, setImg] = useState();
 
   useEffect(() => {
@@ -32,4 +32,4 @@ const Image = ({ className, src }) => {
   );
 };
 
-export default Image;
+export default Img;

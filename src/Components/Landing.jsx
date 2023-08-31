@@ -3,7 +3,8 @@ import React from "react";
 // import icon from "../Assets/1.png";
 import "../CSS/Landing.css";
 import { useNavigate } from "react-router-dom";
-import VerticalImg from "./VerticalImg";
+import Img from "./Img.jsx";
+import landing from '../Assets/landing.JPG'
 
 const Landing = ({ translation, setActive }) => {
 
@@ -19,7 +20,7 @@ const Landing = ({ translation, setActive }) => {
       <div className="container landing__container top__container">
         <header><h1 className="landing__name"><span className="upper">M</span>etro<span className="upper">C</span>ar</h1></header>
         <div className="row top__row landing__row">
-          <VerticalImg />
+          <Img className='landing' src={landing} />
           <div className="landing__text--container">
             <Button
               onClick={() => navTo("/fleet", "button 3")}
