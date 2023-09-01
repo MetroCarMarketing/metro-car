@@ -35,6 +35,10 @@ const Burger = ({ translation }) => {
           {translation.navLink3}
         </Button>
 
+        <Button onClick={() => navigateClose("/fares")}>
+          {translation.navLink6}
+        </Button>
+
         <Button onClick={() => navigateClose("/coverage")}>
           {translation.navLink2}
         </Button>

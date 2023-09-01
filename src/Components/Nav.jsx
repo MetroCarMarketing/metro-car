@@ -29,6 +29,7 @@ const Nav = ({ translation, setEnglish, setSpanish }) => {
       <div className="nav__list nav__desktop">
         <NavBtn text={translation.navLink1} link="/services" />
         <NavBtn text={translation.navLink3} link="/fleet" />
+        <NavBtn text={translation.navLink6} link="/fares" />
         <NavBtn text={translation.navLink2} link="/coverage" />
         <NavBtn text={translation.navLink4} link="/contact" />
         <NavBtn text={translation.navLink5} link="/about" />

@@ -173,7 +173,7 @@ const Carfocus = ({ cars, language }) => {
         </div>
         <div className="carfocus__text--wrapper">
           <h1>{car.name}</h1>
-          <h2 className="number">$ {car.price} USD/h</h2>
+          <h2 className="number">$ {car.priceHour} USD/h</h2>
           <h3>
             <span className="number">{car.model}</span> {car.brand} {car.type}
           </h3>
