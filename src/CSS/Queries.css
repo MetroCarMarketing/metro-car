@@ -66,17 +66,33 @@
   .landing__row {
     padding-top: 0;
     margin: 2em auto;
-    /* margin-bottom: 5em; */
+    flex-direction: row;
+    gap: 4em;
     justify-content: center;
     background-color: transparent;
+    padding-bottom: 6em;
   }
 
   .landing__text--container {
+    flex-direction: column-reverse;
     background-color: var(--secondary-fade);
     padding: 2em;
     border-radius: 1em;
     max-width: 45%;
     margin-left: auto;
+  }
+
+  .landing__text > p {
+    text-align: left;
+  }
+
+  .landing__img--wrapper {
+    flex: 0.7;
+    height: fit-content;
+  }
+
+  .landing__img--skeleton {
+    flex: .7;
   }
 
   .scroll__container {
@@ -156,6 +172,11 @@
   .faq__img--wrapper {
     display: flex;
     flex: 0.35;
+  }
+
+  .about__img--wrapper,
+  .about__img--skeleton {
+    width: 60%;
   }
 
   .fares__organizer--name,

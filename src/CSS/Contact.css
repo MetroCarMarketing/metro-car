@@ -196,10 +196,26 @@ form > button:hover {
   background-color: var(--main-hover);
 }
 
-.contact__list > a > h1 {
+.contact__list > button {
+  width: calc((100% - 2em) / 3);
+  display: flex;
+  align-items: center;
+  white-space: nowrap;
+  font-size: 2em;
+  color: var(--cold-white);
+  border: 0.1em solid transparent;
+  transition: all 300ms ease;
+}
+
+.contact__list > button:hover {
+  border: 0.1em solid var(--main-color);
+  background-color: var(--main-hover);
+}
+
+/* .contact__list > a > h1 {
   font-size: 0.75em;
   margin: 0 0 0.1em 0.5em;
-}
+} */
 
 .contact__right > p {
   margin: 0 auto;

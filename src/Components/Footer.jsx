@@ -8,10 +8,11 @@ import {
 } from "@mui/icons-material";
 
 const Footer = ({ translation }) => {
-
-function development() {
-  alert('Este elemento todavia se encuentra en desarrollo / This element  is still under development')
-}
+  function development() {
+    alert(
+      "Este elemento todavia se encuentra en desarrollo / This element  is still under development"
+    );
+  }
   return (
     <footer>
       <div className="row footer__row">
@@ -27,7 +28,10 @@ function development() {
                 <Instagram />
                 <p>@MetroCar</p>
               </li>
-              <a className="footer__contact--item" href='mailto:metrocarrental2023@gmail.com'>
+              <a
+                className="footer__contact--item"
+                href="mailto:metrocarrental2023@gmail.com"
+              >
                 <Mail />
                 <p>metrocarrental2023@gmail.com</p>
               </a>
@@ -43,10 +47,20 @@ function development() {
           </div>
         </div>
         <div className="terms">
-          <a href="https://google.com" target="_blank" rel="noreferrer">
+          <a
+            // href="https://google.com"
+            target="_blank"
+            rel="noreferrer"
+            onClick={development}
+          >
             Terminos y Condiciones
           </a>
-          <a href="https://google.com" target="_blank" rel="noreferrer">
+          <a
+            // href="https://google.com"
+            target="_blank"
+            rel="noreferrer"
+            onClick={development}
+          >
             Politica de Privacidad
           </a>
         </div>

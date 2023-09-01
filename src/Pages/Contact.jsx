@@ -14,6 +14,10 @@ import emailjs from "@emailjs/browser";
 const Contact = ({ translation, language }) => {
   const form = useRef();
 
+  const development = () => {
+    alert('Este elemento todavia se encuentra en desarrollo / This element  is still under development')
+  }
+
   const sendEmail = (e) => {
     e.preventDefault();
     document.querySelector(".form__loading").classList.add("form__visible");
@@ -99,24 +103,28 @@ const Contact = ({ translation, language }) => {
                 <Button
                   target="_blank"
                   rel="noreferrer"
-                  href="https://google.com"
+                  // href="https://google.com"
                   className="instaBtn"
+                  onClick={() => development()}
+
                 >
                   <Instagram />
                 </Button>
                 <Button
                   target="_blank"
                   rel="noreferrer"
-                  href="https://google.com"
+                  // href="https://google.com"
                   className="facebookBtn"
+                  onClick={() => development()}
                 >
                   <Facebook />
                 </Button>
                 <Button
                   target="_blank"
                   rel="noreferrer"
-                  href="https://google.com"
+                  // href="https://google.com"
                   className="tiktokBtn gradient"
+                  onClick={() => development()}
                 >
                   <figure>
                     <img src={tiktok} alt="" />

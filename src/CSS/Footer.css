@@ -7,6 +7,7 @@ footer {
 
 .footer__row {
   padding: 2em 2em 1em;
+  margin-bottom: 0;
   background-color: transparent;
   justify-content: center;
   align-items: center;
@@ -42,6 +43,7 @@ footer {
 .footer__contact--list {
   display: flex;
   flex-direction: column;
+  cursor: pointer;
 }
 
 .footer__contact--item {
