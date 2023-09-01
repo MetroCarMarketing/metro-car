@@ -74,95 +74,102 @@ const Carfocus = ({ cars, language }) => {
           <figure className="carfocus__mainImage">
             <img src={displayImg} alt="" />
           </figure>
-          <div className="carfocus__slideshow">
-            <figure className="carfocus__slide">
-              {mainImg ? (
-                <img
-                  src={mainImg.src}
-                  onClick={() => setDisplayImg(mainImg.src)}
-                  alt=""
-                  className="carfocus__img"
-                />
-              ) : (
-                <>
-                  <div className="carfocus__slide--skeleton skeleton"></div>
-                </>
-              )}
-            </figure>
-            <figure className="carfocus__slide">
-              {secondImg ? (
-                <img
-                  src={secondImg.src}
-                  onClick={() => setDisplayImg(secondImg.src)}
-                  alt=""
-                  className="carfocus__img"
-                />
-              ) : (
-                <>
-                  <div className="carfocus__slide--skeleton skeleton"></div>
-                </>
-              )}
-            </figure>
-            <figure className="carfocus__slide">
-              {thirdImg ? (
-                <img
-                  src={thirdImg.src}
-                  onClick={() => setDisplayImg(thirdImg.src)}
-                  alt=""
-                  className="carfocus__img"
-                />
-              ) : (
-                <>
-                  <div className="carfocus__slide--skeleton skeleton"></div>
-                </>
-              )}
-            </figure>
-            {car.image4 ? (
-              <>
-                <figure className="carfocus__slide">
+          {car.image2 ? (
+            <div className="carfocus__slideshow">
+              <figure className="carfocus__slide">
+                {mainImg ? (
                   <img
-                    src={car.image4}
-                    onClick={() => setDisplayImg(car.image4)}
+                    src={mainImg.src}
+                    onClick={() => setDisplayImg(mainImg.src)}
                     alt=""
                     className="carfocus__img"
                   />
-                </figure>
-                
-              </>
-            ) : (
-              <></>
-            )}
-            {car.image5 ? (
-              <>
-                <figure className="carfocus__slide">
+                ) : (
+                  <>
+                    <div className="carfocus__slide--skeleton skeleton"></div>
+                  </>
+                )}
+              </figure>
+              <figure className="carfocus__slide">
+                {secondImg ? (
                   <img
-                    src={car.image5}
-                    onClick={() => setDisplayImg(car.image5)}
+                    src={secondImg.src}
+                    onClick={() => setDisplayImg(secondImg.src)}
                     alt=""
                     className="carfocus__img"
                   />
-                </figure>
-                
-              </>
-            ) : (
-              <></>
-            )}
-            {car.image6 ? (
-              <>
-                <figure className="carfocus__slide">
-                  <img
-                    src={car.image6}
-                    onClick={() => setDisplayImg(car.image6)}
-                    alt=""
-                    className="carfocus__img"
-                  />
-                </figure>
-                
-              </>
-            ) : (
-              <></>
-            )}
-          </div>
+                ) : (
+                  <>
+                    <div className="carfocus__slide--skeleton skeleton"></div>
+                  </>
+                )}
+              </figure>
+              <figure className="carfocus__slide">
+                {car.image3 ? (
+                  <>
+                    {thirdImg ? (
+                      <img
+                        src={thirdImg.src}
+                        onClick={() => setDisplayImg(thirdImg.src)}
+                        alt=""
+                        className="carfocus__img"
+                      />
+                    ) : (
+                      <>
+                        <div className="carfocus__slide--skeleton skeleton"></div>
+                      </>
+                    )}
+                  </>
+                ) : (
+                  <></>
+                )}
+              </figure>
+              {car.image4 ? (
+                <>
+                  <figure className="carfocus__slide">
+                    <img
+                      src={car.image4}
+                      onClick={() => setDisplayImg(car.image4)}
+                      alt=""
+                      className="carfocus__img"
+                    />
+                  </figure>
+                </>
+              ) : (
+                <></>
+              )}
+              {car.image5 ? (
+                <>
+                  <figure className="carfocus__slide">
+                    <img
+                      src={car.image5}
+                      onClick={() => setDisplayImg(car.image5)}
+                      alt=""
+                      className="carfocus__img"
+                    />
+                  </figure>
+                </>
+              ) : (
+                <></>
+              )}
+              {car.image6 ? (
+                <>
+                  <figure className="carfocus__slide">
+                    <img
+                      src={car.image6}
+                      onClick={() => setDisplayImg(car.image6)}
+                      alt=""
+                      className="carfocus__img"
+                    />
+                  </figure>
+                </>
+              ) : (
+                <></>
+              )}
+            </div>
+          ) : (
+            <></>
+          )}
         </div>
         <div className="carfocus__text--wrapper">
           <h1>{car.name}</h1>

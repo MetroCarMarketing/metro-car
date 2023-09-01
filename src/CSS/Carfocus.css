@@ -44,12 +44,17 @@
 
 .carfocus__mainImage {
   width: 100%;
+  background-color: white;
 }
 
 .carfocus__mainImage > img,
 .carfocus__slide > img {
   aspect-ratio: 16 / 9;
   object-fit: cover;
+}
+
+.carfocus__mainImage > img{
+  object-fit: contain;
 }
 
 .carfocus__slideshow {

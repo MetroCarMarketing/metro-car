@@ -3,6 +3,9 @@ import classEside from "./Assets/Cars/Class E/class e interior side.jpg";
 import classEBack from "./Assets/Cars/Class E/class e back.jpg";
 import mLogo from "./Assets/zlogo.JPG";
 import gray from "./Assets/Cars/Class E/zgris2.JPG";
+import sprinterF from "./Assets/Cars/Sprinter/sprinter.png";
+import crafterF from "./Assets/Cars/Crafter/Crafter.jpg";
+import hinoF from "./Assets/Cars/Hino/Hino.jpg";
 
 export const cars = [
   {
@@ -362,12 +365,11 @@ export const cars = [
     priceTrip: 76.0,
     pax: 6,
     bags: 6,
-    imageMain:
-      "https://www.nicepng.com/png/detail/273-2739553_minivan-mercedes-linea-azzurra-mercedes-benz-vito.png",
-    image2:
-      "https://www.mbusa.com/content/dam/mb-nafta/us/myco/my23/cla/class-page/series/2023-CLA-COUPE-CT-1-3-02-DR.jpg",
-    image3:
-      "https://www.mbusa.com/content/dam/mb-nafta/us/myco/my23/cla/gallery/series/gallery-class/2023-CLA-COUPE-GAL-010-A-FE-DR.jpg",
+    imageMain: "https://carsrentalibiza.com/wp-content/uploads/ia.png",
+    // image2:
+    //   "https://www.mbusa.com/content/dam/mb-nafta/us/myco/my23/cla/class-page/series/2023-CLA-COUPE-CT-1-3-02-DR.jpg",
+    // image3:
+    //   "https://www.mbusa.com/content/dam/mb-nafta/us/myco/my23/cla/gallery/series/gallery-class/2023-CLA-COUPE-GAL-010-A-FE-DR.jpg",
     // image4:
     //   "https://www.mbusa.com/content/dam/mb-nafta/us/myco/my23/cla/gallery/series/gallery-class/2023-CLA-COUPE-GAL-017-C-FI-DR.jpg",
     // image5:
@@ -392,11 +394,11 @@ export const cars = [
     pax: 6,
     bags: 6,
     imageMain:
-      "https://www.autoscout24.de/cms-content-assets/3QZ2jUMyjYuNyxZzrd6GLE-3cc2d2e7e621caf3b9d81da4377b67cc-hyundai-grand-starex-side-1100.jpeg",
-    image2:
-      "https://www.mbusa.com/content/dam/mb-nafta/us/myco/my23/cla/class-page/series/2023-CLA-COUPE-CT-1-3-02-DR.jpg",
-    image3:
-      "https://www.mbusa.com/content/dam/mb-nafta/us/myco/my23/cla/gallery/series/gallery-class/2023-CLA-COUPE-GAL-010-A-FE-DR.jpg",
+      "https://autolab.com.co/wp-content/uploads/2022/04/2018-hyundai-grand-starex-main-1558584162.jpg",
+    // image2:
+    //   "https://www.mbusa.com/content/dam/mb-nafta/us/myco/my23/cla/class-page/series/2023-CLA-COUPE-CT-1-3-02-DR.jpg",
+    // image3:
+    //   "https://www.mbusa.com/content/dam/mb-nafta/us/myco/my23/cla/gallery/series/gallery-class/2023-CLA-COUPE-GAL-010-A-FE-DR.jpg",
     // image4:
     //   "https://www.mbusa.com/content/dam/mb-nafta/us/myco/my23/cla/gallery/series/gallery-class/2023-CLA-COUPE-GAL-017-C-FI-DR.jpg",
     // image5:
@@ -420,12 +422,11 @@ export const cars = [
     priceTrip: 89.0,
     pax: 15,
     bags: 15,
-    imageMain:
-      "https://imgcdn.oto.com/large/gallery/color/25/2248/mercedes-benz-sprinter-color-942597.jpg",
-    image2:
-      "https://www.mbusa.com/content/dam/mb-nafta/us/myco/my23/cla/class-page/series/2023-CLA-COUPE-CT-1-3-02-DR.jpg",
-    image3:
-      "https://www.mbusa.com/content/dam/mb-nafta/us/myco/my23/cla/gallery/series/gallery-class/2023-CLA-COUPE-GAL-010-A-FE-DR.jpg",
+    imageMain: sprinterF,
+    // image2:
+    //   "https://www.mbusa.com/content/dam/mb-nafta/us/myco/my23/cla/class-page/series/2023-CLA-COUPE-CT-1-3-02-DR.jpg",
+    // image3:
+    //   "https://www.mbusa.com/content/dam/mb-nafta/us/myco/my23/cla/gallery/series/gallery-class/2023-CLA-COUPE-GAL-010-A-FE-DR.jpg",
     // image4:
     //   "https://www.mbusa.com/content/dam/mb-nafta/us/myco/my23/cla/gallery/series/gallery-class/2023-CLA-COUPE-GAL-017-C-FI-DR.jpg",
     // image5:
@@ -449,12 +450,11 @@ export const cars = [
     priceTrip: 89.0,
     pax: 15,
     bags: 15,
-    imageMain:
-      "https://www.nationwidevehiclecontracts.co.uk/m/0/volkswagen-crafter-trendline.JPG",
-    image2:
-      "https://www.mbusa.com/content/dam/mb-nafta/us/myco/my23/cla/class-page/series/2023-CLA-COUPE-CT-1-3-02-DR.jpg",
-    image3:
-      "https://www.mbusa.com/content/dam/mb-nafta/us/myco/my23/cla/gallery/series/gallery-class/2023-CLA-COUPE-GAL-010-A-FE-DR.jpg",
+    imageMain: crafterF,
+    // image2:
+    //   "https://www.mbusa.com/content/dam/mb-nafta/us/myco/my23/cla/class-page/series/2023-CLA-COUPE-CT-1-3-02-DR.jpg",
+    // image3:
+    //   "https://www.mbusa.com/content/dam/mb-nafta/us/myco/my23/cla/gallery/series/gallery-class/2023-CLA-COUPE-GAL-010-A-FE-DR.jpg",
     // image4:
     //   "https://www.mbusa.com/content/dam/mb-nafta/us/myco/my23/cla/gallery/series/gallery-class/2023-CLA-COUPE-GAL-017-C-FI-DR.jpg",
     // image5:
@@ -478,12 +478,11 @@ export const cars = [
     priceTrip: "bajo cotizacion",
     pax: 2,
     bags: 4,
-    imageMain:
-      "https://www.mbusa.com/content/dam/mb-nafta/us/myco/my23/cla/class-page/series/2023-CLA-COUPE-CT-1-3-01-DR.jpg",
+    imageMain: hinoF,
     image2:
-      "https://www.mbusa.com/content/dam/mb-nafta/us/myco/my23/cla/class-page/series/2023-CLA-COUPE-CT-1-3-02-DR.jpg",
-    image3:
-      "https://www.mbusa.com/content/dam/mb-nafta/us/myco/my23/cla/gallery/series/gallery-class/2023-CLA-COUPE-GAL-010-A-FE-DR.jpg",
+      "https://media.daimlertruck.com/marsMediaSite/scr/1565184043000/40676241v3tv3m3/D520071-Mercedes-Benz-Tourismo-M2-Safety-Coach.jpg",
+    // image3:
+    //   "https://www.mbusa.com/content/dam/mb-nafta/us/myco/my23/cla/gallery/series/gallery-class/2023-CLA-COUPE-GAL-010-A-FE-DR.jpg",
     // image4:
     //   "https://www.mbusa.com/content/dam/mb-nafta/us/myco/my23/cla/gallery/series/gallery-class/2023-CLA-COUPE-GAL-017-C-FI-DR.jpg",
     // image5:
