@@ -1,5 +1,5 @@
 .carHighlights__row{
-    max-width: 1400px;
+    max-width: 75%;
     gap: 2em;
 }
 
@@ -10,9 +10,14 @@
 
 .carHighlights__body{
     display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
     gap: 1em;
 }
 
 .carHighlights__body > .thumbnail{
-    width: calc((100% - 2em) / 3);
+    width: 80%;
+}
+.carHighlights__body > .thumbnail > .thumbnail__wrapper{
+    margin-bottom: .5em;
 }
