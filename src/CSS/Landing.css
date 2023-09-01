@@ -40,7 +40,7 @@ header {
   align-items: center;
   gap: 0.3em;
   line-height: 1.3em;
-  background-color: var(--main-hover);
+  background-color: var(--main-alter);
   text-align: center;
   color: var(--cold-white);
 }
@@ -55,7 +55,7 @@ header {
 
 .landing__text--container > button:hover {
   background-color: rgba(186, 153, 82, 0.597);
-  background-color: var(--main-alter);
+  background-color: var(--main-color);
 }
 
 .landing__text > h2 {
