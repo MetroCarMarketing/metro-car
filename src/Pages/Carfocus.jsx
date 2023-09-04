@@ -172,11 +172,25 @@ const Carfocus = ({ cars, language }) => {
           )}
         </div>
         <div className="carfocus__text--wrapper">
-          <h1>{car.name}</h1>
-          <h2 className="number">$ {car.priceHour} USD/h</h2>
-          <h3>
+          {language === "english" ? (
+            <h1>{car.name}</h1>
+          ) : (
+            <h1>{car.nameEsp}</h1>
+          )}
+          {language === "english" ? (
+            <h2 className="number">$ {car.priceHour} USD / H</h2>
+          ) : (
+            <h2 className="number">$ {car.priceHourEsp} USD / H</h2>
+          )}
+          {language === "english" ? (
+            <h3>
             <span className="number">{car.model}</span> {car.brand} {car.type}
           </h3>
+          ) : (
+            <h3>
+            <span className="number">{car.model}</span> {car.brand} {car.typeEsp}
+          </h3>
+          )}
           {currentLang === "english" ? (
             <p>{car.description}</p>
           ) : (
@@ -230,7 +244,7 @@ const Carfocus = ({ cars, language }) => {
                 <Check />
               </li>
               <li>
-                <p>Telefono de Cortesia listo para el uso</p>
+                <p>Teléfono de Cortesia listo para el uso</p>
                 <Check />
               </li>
             </ul>
