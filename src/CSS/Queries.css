@@ -1,10 +1,33 @@
-@media screen and (max-width: 350px) {
+@media screen and (max-width: 380px) {
+
+  .burger__half{
+    font-size: .7em;
+    gap: .5em;
+  }
+
+  .burger__half > button {
+    font-size: 1.5em;
+  }
+  
   .landing__row {
     margin-top: 4em;
   }
 
   .landing__text--container > .landing__btn {
     font-size: 2.5em;
+  }
+
+  .carHighlights__row{
+    margin-top: 4em;
+  }
+
+  .services__body--text{
+    width: 100%;
+  }
+
+  .services__body--list{
+    height: auto;
+    flex-wrap: wrap;
   }
 }
 
