@@ -1,7 +1,7 @@
 import React from "react";
 import "../CSS/Footer.css";
 import {
-  Instagram,
+  // Instagram,
   LocationOnOutlined,
   Mail,
   PhoneOutlined,
@@ -13,6 +13,7 @@ const Footer = ({ translation }) => {
       "Este elemento todavia se encuentra en desarrollo / This element  is still under development"
     );
   }
+
   return (
     <footer>
       <div className="row footer__row">
@@ -24,10 +25,10 @@ const Footer = ({ translation }) => {
           <div className="footer__contact--container">
             <h1 className="footer__title">Informacion de Contacto</h1>
             <ul className="footer__contact--list">
-              <li className="footer__contact--item" onClick={development}>
+              {/* <li className="footer__contact--item" onClick={development}>
                 <Instagram />
                 <p>@MetroCar</p>
-              </li>
+              </li> */}
               <a
                 className="footer__contact--item"
                 href="mailto:metrocarrental2023@gmail.com"
@@ -35,20 +36,25 @@ const Footer = ({ translation }) => {
                 <Mail />
                 <p>metrocarrental2023@gmail.com</p>
               </a>
-              <li className="footer__contact--item">
+              <a
+                href="https://www.google.com/maps/place/Cl.+79+%2327A-21,+Bogotá/@4.670177,-74.0678601,17z/data=!3m1!4b1!4m6!3m5!1s0x8e3f9af766650075:0xbf4dd3ad9508f610!8m2!3d4.670177!4d-74.0652852!16s%2Fg%2F11c2fsjcxj?entry=ttu"
+                target="_blank"
+                rel="noreferrer"
+                className="footer__contact--item"
+              >
                 <LocationOnOutlined />
                 <p>Calle 79 # 27A - 21 Bogota, Colombia</p>
-              </li>
-              <li className="footer__contact--item">
+              </a>
+              <a href="tel:+573026005730" className="footer__contact--item">
                 <PhoneOutlined />
                 <p>+57 (302) 600 5730</p>
-              </li>
+              </a>
             </ul>
           </div>
         </div>
         <div className="terms">
           <a
-            // href="https://google.com"
+            href="https://google.com"
             target="_blank"
             rel="noreferrer"
             onClick={development}
@@ -56,7 +62,7 @@ const Footer = ({ translation }) => {
             Terminos y Condiciones
           </a>
           <a
-            // href="https://google.com"
+            href="https://google.com"
             target="_blank"
             rel="noreferrer"
             onClick={development}

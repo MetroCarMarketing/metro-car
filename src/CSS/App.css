@@ -21,14 +21,14 @@ body {
   --main-hover: #4234163f;
   --secondary-color: #202020; */
 
-  scrollbar-width: 0;
-  -ms-overflow-style: none;
+  /* scrollbar-width: 0;
+  -ms-overflow-style: none; */
   background-color: var(--secondary-color);
 }
 
-body::-webkit-scrollbar {
+/* body::-webkit-scrollbar {
   display: none;
-}
+} */
 
 #root {
   font-size: 10px;
