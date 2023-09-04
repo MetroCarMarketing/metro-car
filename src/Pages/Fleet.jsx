@@ -75,7 +75,7 @@ const Fleet = ({ language, translation, cars: initialCars }) => {
                 onChange={(e) => filterCars(e.target.value)}
                 defaultValue="ALL"
               >
-                <option value="ALL">Vehiculos</option>
+                <option value="ALL">Vehículos</option>
                 <option value="MIDS">Sedan Gama Media</option>
                 <option value="CAR">Sedan Gama Alta</option>
                 <option value="SUV">Camioneta Convencional</option>

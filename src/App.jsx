@@ -89,7 +89,7 @@ function App() {
         <figure className="car__background--desktop">
           <img src={logo} alt="" />
         </figure>
-        <Footer translation={translation} />
+        <Footer translation={translation} language={language}/>
         {/* <Watermark translation={translation} /> */}
       </Router>
     </div>

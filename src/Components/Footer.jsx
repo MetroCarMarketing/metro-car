@@ -7,7 +7,7 @@ import {
   PhoneOutlined,
 } from "@mui/icons-material";
 
-const Footer = ({ translation }) => {
+const Footer = ({ translation, language }) => {
   function development() {
     alert(
       "Este elemento todavia se encuentra en desarrollo / This element  is still under development"
@@ -23,7 +23,12 @@ const Footer = ({ translation }) => {
             <p>{translation.footerText}</p>
           </div> */}
           <div className="footer__contact--container">
-            <h1 className="footer__title">Informacion de Contacto</h1>
+            {language === "english" ? (
+              <h1 className="footer__title">Contact Information</h1>
+            ) : (
+              <h1 className="footer__title">información de Contacto</h1>
+            )}
+
             <ul className="footer__contact--list">
               {/* <li className="footer__contact--item" onClick={development}>
                 <Instagram />
@@ -43,7 +48,7 @@ const Footer = ({ translation }) => {
                 className="footer__contact--item"
               >
                 <LocationOnOutlined />
-                <p>Calle 79 # 27A - 21 Bogota, Colombia</p>
+                <p>Calle 79 # 27A - 21 Bogotá, Colombia</p>
               </a>
               <a href="tel:+573026005730" className="footer__contact--item">
                 <PhoneOutlined />
@@ -53,22 +58,45 @@ const Footer = ({ translation }) => {
           </div>
         </div>
         <div className="terms">
-          <a
-            href="https://google.com"
-            target="_blank"
-            rel="noreferrer"
-            onClick={development}
-          >
-            Terminos y Condiciones
-          </a>
-          <a
-            href="https://google.com"
-            target="_blank"
-            rel="noreferrer"
-            onClick={development}
-          >
-            Politica de Privacidad
-          </a>
+          {language === "english" ? (
+            <>
+              <a
+                href="https://google.com"
+                target="_blank"
+                rel="noreferrer"
+                onClick={development}
+              >
+                Terms and Conditions
+              </a>
+              <a
+                href="https://google.com"
+                target="_blank"
+                rel="noreferrer"
+                onClick={development}
+              >
+                Privacy Policy
+              </a>
+            </>
+          ) : (
+            <>
+              <a
+                href="https://google.com"
+                target="_blank"
+                rel="noreferrer"
+                onClick={development}
+              >
+                Términos y Condiciones
+              </a>
+              <a
+                href="https://google.com"
+                target="_blank"
+                rel="noreferrer"
+                onClick={development}
+              >
+                Política de Privacidad
+              </a>
+            </>
+          )}
         </div>
         <p className="footer__credits">
           {translation.footerCredits}
