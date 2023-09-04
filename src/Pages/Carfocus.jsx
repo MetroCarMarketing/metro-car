@@ -258,7 +258,7 @@ const Carfocus = ({ cars, language }) => {
                   car.type === "SUV" ? "la" : "el"
                 }%20${car.typeEsp}%20${car.name}`}
               >
-                Reserva este vehiculo!
+                Reserva este vehículo!
               </Button>
             </div>
           )}
