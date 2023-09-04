@@ -1,6 +1,7 @@
 import classEFront from "./Assets/Cars/Class E/class e interior front.jpg";
 import classEside from "./Assets/Cars/Class E/class e interior side.jpg";
 import classEBack from "./Assets/Cars/Class E/class e back.jpg";
+import BMWF from "./Assets/Cars/Series 5/BMWF.png";
 import mLogo from "./Assets/zlogo.JPG";
 import gray from "./Assets/Cars/Class E/zgris2.JPG";
 import sprinterF from "./Assets/Cars/Sprinter/sprinter.png";
@@ -70,7 +71,7 @@ export const cars = [
   {
     id: 17,
     name: "Series 5",
-    nameEsp: "Series 5",
+    nameEsp: "Serie 5",
     type: "Luxury Sedan",
     typeEsp: "Sedan Gama Alta",
     brand: "BMW",
@@ -86,8 +87,7 @@ export const cars = [
     priceTrip: 80.0,
     pax: 3,
     bags: 3,
-    imageMain:
-      "https://discover.bmw.ie/wp-content/uploads/2023/03/520i-M-Sport-Sophisto-Grey-3quarter.png",
+    imageMain: BMWF,
     image2:
       "https://www.millermotorcars.com/imagetag/4670/13/l/Used-2018-BMW-5-Series-M550i-xDrive.jpg",
     image3:
