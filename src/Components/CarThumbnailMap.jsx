@@ -3,7 +3,7 @@ import "../CSS/CarThumbnailMap.css";
 import { useNavigate } from "react-router-dom";
 import { Check } from "@mui/icons-material";
 
-const CarThumbnailMap = ({ item, translation }) => {
+const CarThumbnailMap = ({ item, translation, language }) => {
   const navigateTo = useNavigate();
 
   const [img, setImg] = useState();
@@ -26,7 +26,14 @@ const CarThumbnailMap = ({ item, translation }) => {
             <img src={img.src} alt="" />
           </figure>
           <div className="thumbnail__info">
-            <h2 className="thumbnail__title">{item.name}</h2>
+            <span>
+              <h2 className="thumbnail__title">{item.brand}</h2>
+              {language === "english" ? (
+                <h2 className="thumbnail__title">{item.name}</h2>
+              ) : (
+                <h2 className="thumbnail__title">{item.nameEsp}</h2>
+              )}
+            </span>
             <h3 className="thumbnail__price number">
               $ {item.priceHour} <span>/ h</span>
             </h3>
@@ -40,7 +47,7 @@ const CarThumbnailMap = ({ item, translation }) => {
               <h4>
                 {translation.bags} : <span className="number">{item.bags}</span>
               </h4>
-              <Check/>
+              <Check />
             </div>
           </div>
         </>

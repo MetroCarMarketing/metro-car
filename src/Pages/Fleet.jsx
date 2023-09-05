@@ -93,6 +93,7 @@ const Fleet = ({ language, translation, cars: initialCars }) => {
                   cars={products}
                   item={item}
                   key={item.id}
+                  language={language}
                 />
               ))}
             </div>

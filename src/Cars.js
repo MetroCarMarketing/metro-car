@@ -11,7 +11,7 @@ import hinoF from "./Assets/Cars/Hino/Hino.jpg";
 export const cars = [
   {
     id: 2,
-    name: "Class E",
+    name: "E Class",
     nameEsp: "Clase E",
     type: "Luxury Sedan",
     typeEsp: "Sedan Gama Alta",
@@ -70,7 +70,7 @@ export const cars = [
   },
   {
     id: 17,
-    name: "Series 5",
+    name: "5 Series",
     nameEsp: "Serie 5",
     type: "Luxury Sedan",
     typeEsp: "Sedan Gama Alta",
@@ -165,8 +165,8 @@ export const cars = [
   },
   {
     id: 5,
-    name: "Mazda 3",
-    nameEsp: "Mazda 3",
+    name: "3",
+    nameEsp: "3",
     type: "Mid Size Sedan",
     typeEsp: "Sedan Gama Media",
     brand: "Mazda",
