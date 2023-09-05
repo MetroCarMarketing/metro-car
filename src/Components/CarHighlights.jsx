@@ -2,7 +2,7 @@ import React from "react";
 import "../CSS/CarHighlights.css";
 import HighlightMap from "./HighlightMap";
 
-const CarHighlights = ({ translation, cars }) => {
+const CarHighlights = ({ translation, cars, language}) => {
   return (
     <section id="carHighlights">
       <div className="container carHighlights__container">
@@ -10,7 +10,7 @@ const CarHighlights = ({ translation, cars }) => {
           <h1>{translation.landingCars}</h1>
           <div className="carHighlights__body">
             {cars.filter((car) => car.type === 'Luxury Sedan').map((car) => (
-              <HighlightMap key={car.id} car={car} translation={translation}/>
+              <HighlightMap key={car.id} car={car} translation={translation} language={language} />
             ))}
           </div>
         </div>

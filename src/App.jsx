@@ -47,7 +47,7 @@ function App() {
         />
         <Burger translation={translation} />
         <Routes>
-          <Route path="/" element={<Home translation={translation} cars={cars} />} />
+          <Route path="/" element={<Home translation={translation} cars={cars} language={language}/>} />
           <Route
             path="/services"
             element={<Services translation={translation} />}
