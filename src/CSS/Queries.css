@@ -1,14 +1,13 @@
 @media screen and (max-width: 380px) {
-
-  .burger__half{
-    font-size: .7em;
-    gap: .5em;
+  .burger__half {
+    font-size: 0.7em;
+    gap: 0.5em;
   }
 
   .burger__half > button {
     font-size: 1.5em;
   }
-  
+
   .landing__row {
     margin-top: 4em;
   }
@@ -17,17 +16,21 @@
     font-size: 2.5em;
   }
 
-  .carHighlights__row{
+  .carHighlights__row {
     margin-top: 4em;
   }
 
-  .services__body--text{
+  .services__body--text {
     width: 100%;
   }
 
-  .services__body--list{
+  .services__body--list {
     height: auto;
     flex-wrap: wrap;
+  }
+
+  .carfocus__btn > a  {
+    font-size: 1.5em;
   }
 }
 
@@ -36,7 +39,7 @@
     font-size: 14px;
   }
 
-  .row{
+  .row {
     max-width: 1200px;
   }
 
@@ -119,16 +122,16 @@
   }
 
   .landing__img--skeleton {
-    flex: .7;
+    flex: 0.7;
   }
 
   .scroll__container {
     bottom: 0em;
   }
 
-  .carHighlights__row{
+  .carHighlights__row {
     max-width: 1400px;
-}
+  }
 
   .carHighlights__body {
     flex-wrap: nowrap;
@@ -170,6 +173,11 @@
 
   .carfocus__backBtn > p {
     margin-top: 0;
+  }
+
+  .carfocus__text--wrapper {
+    margin-left: 1.5em;
+    flex: 0.45;
   }
 
   .thumbnail {
@@ -276,20 +284,19 @@
   nav {
     gap: 2em;
   }
-  
+
   .nav__list > button > h1,
   .translate__btns > button > h1 {
     font-size: 1.2em;
   }
 }
 
-@media screen and (min-width: 700px) and (orientation: portrait){
-
-  #root{
-font-size: 12px;
+@media screen and (min-width: 700px) and (orientation: portrait) {
+  #root {
+    font-size: 12px;
   }
 
-  .top__container{
+  .top__container {
     padding-top: 8em;
   }
 }

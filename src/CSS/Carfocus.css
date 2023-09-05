@@ -73,8 +73,7 @@
 .carfocus__text--wrapper {
   color: var(--cold-white);
   position: relative;
-  margin-left: 1.5em;
-  flex: 0.45;
+  max-width: 100%;
 }
 
 .carfocus__text--wrapper > p {
@@ -111,6 +110,7 @@ margin: 0;
 
 .carfocus__btn > a {
   white-space: nowrap;
+  text-align: center;
   font-size: 2em;
   padding: 0.8em;
   text-transform: inherit !important;
