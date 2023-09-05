@@ -1,4 +1,9 @@
 @media screen and (max-width: 380px) {
+
+  .nav__logo--wrapper{
+    display: none;
+  }
+
   .burger__half {
     font-size: 0.7em;
     gap: 0.5em;
@@ -9,7 +14,7 @@
   }
 
   .landing__row {
-    margin-top: 4em;
+    margin-top: 0em;
   }
 
   .landing__text--container > .landing__btn {
