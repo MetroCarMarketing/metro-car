@@ -5,7 +5,7 @@ const Price = ({ price }) => {
     const nPrice = Number(price).toFixed(2)
 
     return (
-        <span className="number">$ {nPrice} USD</span>
+        <span className="number">$ {nPrice}</span>
     );
 }
 
