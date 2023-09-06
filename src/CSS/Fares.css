@@ -23,6 +23,7 @@
 }
 
 .fares__organizer--top > div > h3{
+  font-size: 1em;
   text-align: center;
 }
 
@@ -38,7 +39,7 @@
 .fares__organizer--trip {
   display: flex;
   align-items: center;
-  justify-content: flex-start;
+  justify-content: center;
   flex-direction: column;
   flex: 0.25;
   border-right: 0.1em solid var(--main-color);
