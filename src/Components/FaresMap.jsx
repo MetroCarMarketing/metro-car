@@ -9,6 +9,7 @@ const FaresMap = ({ car, language }) => {
         <img src={car.imageMain} alt="" />
       </figure>
       <div className="faresmap__name">
+        <span className="faresmap__brand">{car.brand}</span>
         {language === "english" ? (
           <span>{car.name}</span>
         ) : (

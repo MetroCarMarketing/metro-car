@@ -9,6 +9,7 @@ const Fares = ({ translation, cars, language }) => {
         <div className="row top__row fares__row">
           <h1 className="title">Estas son nuestras tarifas</h1>
           <div className="fares__organizer">
+            <p>{translation.faresPrice}</p>
             <div className="fares__organizer--top">
               <div className="fares__organizer--start"></div>
               <div className="fares__organizer--name">

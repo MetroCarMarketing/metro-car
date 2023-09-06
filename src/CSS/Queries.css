@@ -223,6 +223,14 @@
     width: 60%;
   }
 
+  .fares__organizer--top{
+    border-width: .2em;
+  }
+
+  .fares__organizer--start{
+    flex: .15;
+  }
+
   .fares__organizer--name,
   .fares__organizer--hour,
   .fares__organizer--day,
@@ -232,14 +240,15 @@
   }
 
   .fares__organizer--name {
-    flex: 0.15;
-  }
-  .fares__organizer--day {
-    flex: 0.325;
+    flex: 0.25;
   }
 
   .fares__organizer--trip {
     border-right: none;
+  }
+
+  .faresmap__container{
+    border-width: .2em;
   }
 
   .fares__organizer--start,
@@ -250,16 +259,16 @@
   .faresmap__container > div {
     flex: 0.2;
     border-right: 0.2em solid var(--main-color);
-    padding: 1em 0.2em;
+    padding: 1em 0;
   }
 
   .faresmap__name {
-    flex: 0.15 !important;
+    flex: 0.25 !important;
   }
-
+/* 
   .faresmap__day {
-    flex: 0.325 !important;
-  }
+    flex: 0.25 !important;
+  } */
 
   .faresmap__container > div > span {
     font-size: 1.25em;
