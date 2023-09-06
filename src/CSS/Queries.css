@@ -36,6 +36,10 @@
   .carfocus__btn > a {
     font-size: 1.5em;
   }
+
+  .fares__organizer--top > div > h3{
+    font-size: .8em;
+  }
 }
 
 @media screen and (min-width: 1000px) {
