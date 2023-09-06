@@ -8,6 +8,15 @@
   flex-direction: column;
 }
 
+.fares__organizer > p{
+  font-size: .8em;
+  margin-top:.4em;
+}
+.fares__organizer > p:first-child{
+  margin-top: 0;
+  margin-bottom: .4em;
+}
+
 .fares__organizer--top {
   display: flex;
   border: 0.1em solid var(--main-color);
@@ -55,7 +64,11 @@
 
 .faresmap__container > figure > img {
   aspect-ratio: 16 / 9;
-  object-fit: cover;
+  object-fit: contain;
+}
+
+.faresmap__name{
+  flex-direction: column;
 }
 
 .faresmap__brand{

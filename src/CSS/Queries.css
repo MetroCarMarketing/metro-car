@@ -1,6 +1,5 @@
 @media screen and (max-width: 380px) {
-
-  .nav__logo--wrapper{
+  .nav__logo--wrapper {
     display: none;
   }
 
@@ -34,7 +33,7 @@
     flex-wrap: wrap;
   }
 
-  .carfocus__btn > a  {
+  .carfocus__btn > a {
     font-size: 1.5em;
   }
 }
@@ -223,12 +222,12 @@
     width: 60%;
   }
 
-  .fares__organizer--top{
-    border-width: .2em;
+  .fares__organizer--top {
+    border-width: 0.2em;
   }
 
-  .fares__organizer--start{
-    flex: .15;
+  .fares__organizer--start {
+    flex: 0.15;
   }
 
   .fares__organizer--name,
@@ -247,8 +246,8 @@
     border-right: none;
   }
 
-  .faresmap__container{
-    border-width: .2em;
+  .faresmap__container {
+    border-width: 0.2em;
   }
 
   .fares__organizer--start,
@@ -264,11 +263,8 @@
 
   .faresmap__name {
     flex: 0.25 !important;
+    flex-direction: row;
   }
-/* 
-  .faresmap__day {
-    flex: 0.25 !important;
-  } */
 
   .faresmap__container > div > span {
     font-size: 1.25em;
@@ -283,10 +279,6 @@
   .footer__info--container {
     max-width: 40%;
   }
-
-  /* .footer__title {
-    text-align: start;
-  } */
 
   .vertical__img--wrapper,
   .vertical__skeleton {
