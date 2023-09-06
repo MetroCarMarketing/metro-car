@@ -16,11 +16,9 @@ const Fares = ({ translation, cars, language }) => {
               </div>
               <div className="fares__organizer--hour">
                 <h3>{translation.faresHour}</h3>
-                <p>{translation.faresHourText}</p>
               </div>
               <div className="fares__organizer--day">
                 <h3>{translation.faresDay}</h3>
-                <p>{translation.faresDayText}</p>
               </div>
               <div className="fares__organizer--trip">
                 <h3>{translation.faresTrip}</h3>
@@ -28,8 +26,10 @@ const Fares = ({ translation, cars, language }) => {
             </div>
             {cars.map((car) => (
               <FaresMap key={car.id} car={car} translation={translation} language={language} />
-            ))}
+              ))}
           </div>
+              <p>{translation.faresHourText}</p>
+              <p>{translation.faresDayText}</p>
         </div>
       </div>
     </section>
