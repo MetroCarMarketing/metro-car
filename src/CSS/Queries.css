@@ -312,9 +312,15 @@
 }
 
 @media screen and (max-width: 1200px) {
+
+  .row{
+    border-radius: 1em;
+    padding: 1.5em 1em;
+  }
+
   .row,
   nav {
-    max-width: 1100px;
+    max-width: 95%;
   }
 
   .navLink {
