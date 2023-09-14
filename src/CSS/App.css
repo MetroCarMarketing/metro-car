@@ -17,19 +17,8 @@ body {
   /* --secondary-fade: #08123be0; */
   --cold-white: #e2e7eb;
   --accent-color: #fb9040;
-  /* --main-color: #e1ba66;
-  --main-alter: #ba995298;
-  --main-hover: #4234163f;
-  --secondary-color: #202020; */
-
-  /* scrollbar-width: 0;
-  -ms-overflow-style: none; */
   background-color: var(--secondary-color);
 }
-
-/* body::-webkit-scrollbar {
-  display: none;
-} */
 
 #root {
   font-size: 10px;
