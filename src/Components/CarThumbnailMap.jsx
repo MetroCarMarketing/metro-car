@@ -35,7 +35,15 @@ const CarThumbnailMap = ({ item, translation, language }) => {
               )}
             </span>
             <h3 className="thumbnail__price number">
+            {language === "english" ? (
+              <>
               $ {item.priceHour} <span>/ h</span>
+                </>
+              ) : (
+                <>
+                  $ {item.priceHourEsp} <span>/ h</span>
+                </>
+              )}
             </h3>
             <div className="thumbnail__organizer">
               <h4>
