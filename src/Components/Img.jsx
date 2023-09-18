@@ -11,7 +11,7 @@ const Img = ({ className, src }) => {
     image.onload = () => {
       setTimeout(() => {
         setImg(image);
-      }, 600);
+      }, 400);
     };
   });
   return (
