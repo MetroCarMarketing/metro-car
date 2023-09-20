@@ -11,7 +11,7 @@ const VerticalImg = ({ className, src }) => {
     image.onload = () => {
       setTimeout(() => {
         setImg(image);
-      }, 600);
+      }, 400);
     };
   });
 
