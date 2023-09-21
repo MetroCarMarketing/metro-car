@@ -1,7 +1,7 @@
 .translate__btns {
   display: flex;
   align-items: center;
-  gap: 0.25em;
+  gap: 0.5em;
   height: 6em;
   z-index: 10;
   margin-left: auto;
